@@ -45,8 +45,9 @@ public class MainActivity extends Activity {
 						String keyword = text.getText().toString();
 						text.setText("");
 						Iterator<String> result = Dict.search(keyword, db);
+						items.clear();
 						while(result.hasNext())  {
-							items.add(0, (String) result.next());
+							items.add((String) result.next());
 						}
 						aa.notifyDataSetChanged();;
 						return true;
