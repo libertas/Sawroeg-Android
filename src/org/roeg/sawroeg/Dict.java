@@ -10,6 +10,15 @@ import android.database.sqlite.SQLiteDatabase;
 
 public class Dict {
 	
+	private static int min(ArrayList a) {
+		int tmp = (Integer) a.get(0);
+		for(int i = 0; i < a.size(); i++) {
+			if((Integer) a.get(i) < tmp)
+				tmp = (Integer) a.get(i);
+		}
+		return tmp;
+	}
+	
 	private static boolean isCharChinese(char c) {
 		Character.UnicodeBlock ub = Character.UnicodeBlock.of(c);
         if (ub == Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS
@@ -33,16 +42,38 @@ public class Dict {
 	
 	public static Iterator<String> search(String keyword, SQLiteDatabase db) {
 		ArrayList<String> result = new ArrayList<String>();
+		ArrayList<String> result1 = new ArrayList<String>();
+		ArrayList distances = new ArrayList();
 		Cursor c;
-		if(isStringChinese(keyword))
+		if(keyword.length() < 1)
+		{
+			result.add("Ndi miz");
+			return result.iterator();
+		}
+		boolean issc = isStringChinese(keyword);
+		if(issc)
 			c = db.rawQuery("SELECT * FROM sawguq WHERE value like \"%%$s%%\"".replace("$s", keyword), null);
 		else
 			c = db.rawQuery("SELECT * FROM sawguq WHERE key like \"%%$s%%\"".replace("$s", keyword), null);
 		String i, j;
+		int distance;
 		while(c.moveToNext()) {
 			i = c.getString(c.getColumnIndex("key"));
 			j = c.getString(c.getColumnIndex("value"));
-        	result.add(i + " " + j);
+			result1.add(i + " " + j);
+			if(issc)
+				distance = Levenshtein.distance(j, j.length(), keyword, keyword.length());
+			else
+				distance = Levenshtein.distance(i, i.length(), keyword, keyword.length());
+			distances.add(distance);
+		}
+		int m, index;
+		while(distances.size() != 0) {
+			m = min(distances);
+			index = distances.indexOf(m);
+			result.add(result1.get(index));
+			result1.remove(index);
+			distances.remove(index);
 		}
 		return result.iterator();
 	}

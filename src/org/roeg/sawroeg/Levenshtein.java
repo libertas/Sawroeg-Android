@@ -41,19 +41,19 @@ public class Levenshtein {
      * @param u
      * @return distance
      */
-    protected int distance(String s, int len_s, String u, int len_u) {
+    protected static int distance(String s, int len_s, String u, int len_u) {
         // Testing for empty strings
-        if(len_s == 0) return len_u;
-        if(len_u == 0) return len_s;
+        if(len_s <= 0) return len_u;
+        if(len_u <= 0) return len_s;
         
         // Testing if last characters match
         int cost = 1;
         if(s.charAt(len_s - 1) == u.charAt(len_u - 1) ) cost = 0;
         
         // return minimum of delete char from s, from t, and from both
-        return Math.min(this.distance(s, len_s - 1, u, len_u) + 1, 
-               Math.min(this.distance(s, len_s, u, len_u - 1) + 1,
-                        this.distance(s, len_s - 1, u, len_u - 1) + cost)
+        return Math.min(distance(s, len_s - 1, u, len_u) + 1, 
+               Math.min(distance(s, len_s, u, len_u - 1) + 1,
+                        distance(s, len_s - 1, u, len_u - 1) + cost)
         );
     }  
 }
