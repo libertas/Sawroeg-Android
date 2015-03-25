@@ -1,8 +1,11 @@
 package org.roeg.sawroeg;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 import android.app.Activity;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -17,6 +20,8 @@ public class MainActivity extends Activity {
 	
 	private ArrayAdapter<String> aa;
     private ArrayList<String> items;
+    private SQLiteDatabase db;
+    
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +29,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		Toast.makeText(MainActivity.this, "Anqcoux Ma Yungh Sawroeg~", Toast.LENGTH_SHORT).show();
 		
+		//Create the UI
 		ListView list = (ListView) findViewById(R.id.listView1);
 		final EditText text = (EditText) findViewById(R.id.editText1);
 		items = new ArrayList<String>();
@@ -36,10 +42,12 @@ public class MainActivity extends Activity {
 			public boolean onKey(View v, int keyCode, KeyEvent event) {
 				if(event.getAction() == KeyEvent.ACTION_DOWN)
 					if(keyCode == KeyEvent.KEYCODE_ENTER){
-						String i = text.getText().toString();
-						Toast.makeText(MainActivity.this, i, Toast.LENGTH_SHORT).show();
+						String keyword = text.getText().toString();
 						text.setText("");
-						items.add(0,i);
+						Iterator<String> result = Dict.search(keyword, db);
+						while(result.hasNext())  {
+							items.add(0, (String) result.next());
+						}
 						aa.notifyDataSetChanged();;
 						return true;
 					}
@@ -47,7 +55,22 @@ public class MainActivity extends Activity {
 			}
 		});
 		
-	}
+		//Check the database,it might takes very long time
+		db = openOrCreateDatabase("sawguq.db", MODE_PRIVATE, null);
+		try {
+			Cursor c = db.rawQuery("select * from sawguq",null);
+		}
+		catch(Exception e) {
+			Toast.makeText(MainActivity.this, "Creating Database...", Toast.LENGTH_SHORT).show();
+			CreateDb.create(db);
+		}
+		finally {
+			
+		}
+		
+		
+		
+}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
