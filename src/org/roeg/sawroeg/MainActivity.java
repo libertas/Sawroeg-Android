@@ -4,9 +4,12 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -73,18 +76,27 @@ public class MainActivity extends Activity {
 		//Check the database,it might takes very long time
 		db = openOrCreateDatabase("sawguq.db", MODE_PRIVATE, null);
 		try {
-			Cursor c = db.rawQuery("select * from sawguq",null);
+			Cursor c = db.rawQuery("select * from sawguq", null);
 		}
 		catch(Exception e) {
-			Toast.makeText(MainActivity.this, "Creating Database...", Toast.LENGTH_SHORT).show();
-			CreateDb.create(db);
+			final ProgressDialog dialog = ProgressDialog.show(this, "Ancang", "Baez neix dwg baez daih'it mwngz yungh,"
+					+ "aen ancang neix yaek yungh bae geij faencung.", true);
+			final Handler handler = new Handler() {
+				public void handleMessage(Message msg) {
+					super.handleMessage(msg);
+					dialog.dismiss();
+				}
+			};
+			new Thread() {
+				public void run() {
+					CreateDb.create(db);
+					handler.sendEmptyMessage(0);
+				}
+			}.start();
 		}
 		finally {
 			
 		}
-		
-		
-		
 }
 
 	@Override
