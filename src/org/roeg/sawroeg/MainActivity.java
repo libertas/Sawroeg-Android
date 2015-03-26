@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -22,6 +23,15 @@ public class MainActivity extends Activity {
     private ArrayList<String> items;
     private SQLiteDatabase db;
     
+    private void newSearch(String keyword) {
+    	Iterator<String> result = Dict.search(keyword, db);
+		items.clear();
+		while(result.hasNext())  {
+			items.add((String) result.next());
+		}
+		aa.notifyDataSetChanged();;
+    }
+    
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +41,7 @@ public class MainActivity extends Activity {
 		
 		//Create the UI
 		ListView list = (ListView) findViewById(R.id.listView1);
+		
 		final EditText text = (EditText) findViewById(R.id.editText1);
 		items = new ArrayList<String>();
 		aa = new ArrayAdapter<String>(this,
@@ -43,16 +54,19 @@ public class MainActivity extends Activity {
 				if(event.getAction() == KeyEvent.ACTION_DOWN)
 					if(keyCode == KeyEvent.KEYCODE_ENTER){
 						String keyword = text.getText().toString();
-						text.setText("");
-						Iterator<String> result = Dict.search(keyword, db);
-						items.clear();
-						while(result.hasNext())  {
-							items.add((String) result.next());
-						}
-						aa.notifyDataSetChanged();;
+						newSearch(keyword);
 						return true;
 					}
 				return false;
+			}
+		});
+		
+		final Button ebutton = (Button) findViewById(R.id.button1);
+		ebutton.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				String keyword = text.getText().toString();
+				newSearch(keyword);
 			}
 		});
 		
