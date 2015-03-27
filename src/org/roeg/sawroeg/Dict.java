@@ -40,7 +40,7 @@ public class Dict {
 		return flag;
 	}
 	
-	public static Iterator<String> search(String keyword, SQLiteDatabase db) {
+	public static Iterator<String> search(String keyword, SQLiteDatabase db, int limit_length) {
 		ArrayList<String> result = new ArrayList<String>();
 		ArrayList<String> result1 = new ArrayList<String>();
 		ArrayList distances = new ArrayList();
@@ -67,13 +67,14 @@ public class Dict {
 				distance = Levenshtein.distance(i, i.length(), keyword, keyword.length());
 			distances.add(distance);
 		}
-		int m, index;
-		while(distances.size() != 0) {
+		int m, index, count = 0;
+		while(distances.size() != 0 && count != limit_length) {
 			m = min(distances);
 			index = distances.indexOf(m);
 			result.add(result1.get(index));
 			result1.remove(index);
 			distances.remove(index);
+			count++;
 		}
 		return result.iterator();
 	}

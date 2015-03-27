@@ -5,6 +5,8 @@ import java.util.Iterator;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -27,10 +29,15 @@ public class MainActivity extends Activity {
     private SQLiteDatabase db;
     
     private void newSearch(String keyword) {
-    	Iterator<String> result = Dict.search(keyword, db);
+    	SharedPreferences settings = getSharedPreferences("org.roeg.sawroeg_preferences", MODE_PRIVATE);
+		String length_s = settings.getString("length_edit", "30");
+		int limit_length = Integer.valueOf(length_s).intValue();
+    	Iterator<String> result = Dict.search(keyword, db, limit_length);
 		items.clear();
+		int count = 1;
 		while(result.hasNext())  {
-			items.add((String) result.next());
+			items.add(String.valueOf(count) + "." + (String) result.next());
+			count++;
 		}
 		aa.notifyDataSetChanged();;
     }
@@ -113,6 +120,9 @@ public class MainActivity extends Activity {
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
 		if (id == R.id.action_settings) {
+			Intent intent = new Intent();
+			intent.setClass(MainActivity.this, SettingsActivity.class);
+			startActivity(intent);
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
