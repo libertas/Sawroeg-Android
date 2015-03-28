@@ -38,6 +38,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="android.preference.PreferenceActivity" />
         </activity>
+        <activity
+            android:name=".VocabularyActivity"
+            android:label="@string/title_activity_vocabulary" >
+        </activity>
     </application>
 
 </manifest>

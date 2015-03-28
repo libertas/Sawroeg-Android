@@ -16,17 +16,20 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
+import android.widget.AdapterView.OnItemClickListener;
 
 public class MainActivity extends Activity {
 	
 	private ArrayAdapter<String> aa;
     private ArrayList<String> items;
-    private SQLiteDatabase db;
+    public static SQLiteDatabase db;
     
     private void newSearch(String keyword) {
     	SharedPreferences settings = getSharedPreferences("org.roeg.sawroeg_preferences", MODE_PRIVATE);
@@ -39,7 +42,7 @@ public class MainActivity extends Activity {
 			items.add(String.valueOf(count) + "." + (String) result.next());
 			count++;
 		}
-		aa.notifyDataSetChanged();;
+		aa.notifyDataSetChanged();
     }
     
 	
@@ -71,6 +74,15 @@ public class MainActivity extends Activity {
 			}
 		});
 		
+		list.setOnItemLongClickListener(new OnItemLongClickListener(){
+			public boolean onItemLongClick(AdapterView<?> arg0, View view, final int location, long arg3) {
+				String fav_item = ((String) items.get(location)).split(".", 2)[1].substring(1);
+				db.execSQL("INSERT INTO favs VALUES (?)", new Object[]{fav_item});
+				Toast.makeText(MainActivity.this, "Gya " + fav_item.split(" ", 2)[0] +
+						" haeuj diuzmoeg hoj bae liux", Toast.LENGTH_SHORT).show();
+				return true;
+			}
+		});
 		final Button ebutton = (Button) findViewById(R.id.button1);
 		ebutton.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -82,6 +94,7 @@ public class MainActivity extends Activity {
 		
 		//Check the database,it might takes very long time
 		db = openOrCreateDatabase("sawguq.db", MODE_PRIVATE, null);
+		db.execSQL("CREATE TABLE IF NOT EXISTS favs (item)");
 		try {
 			Cursor c = db.rawQuery("select * from sawguq", null);
 		}
@@ -122,6 +135,11 @@ public class MainActivity extends Activity {
 		if (id == R.id.action_settings) {
 			Intent intent = new Intent();
 			intent.setClass(MainActivity.this, SettingsActivity.class);
+			startActivity(intent);
+			return true;
+		}
+		if (id == R.id.diuzmoeg_hoj) {
+			Intent intent = new Intent(this, VocabularyActivity.class);
 			startActivity(intent);
 			return true;
 		}
