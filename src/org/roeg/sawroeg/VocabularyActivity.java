@@ -10,28 +10,47 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.AdapterView.OnItemClickListener;
 
 public class VocabularyActivity extends Activity {
-
+	
+	SQLiteDatabase db;
+	ArrayList<String> items;
+	ArrayAdapter<String> aa;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_vocabulary);
-		ListView list = (ListView) findViewById(R.id.listView1);
-		ArrayList<String> items = new ArrayList<String>();
-		ArrayAdapter<String> aa = new ArrayAdapter<String>(this,
+		db = MainActivity.db;
+		items = new ArrayList<String>();
+		aa = new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1,
 				items);
+		ListView list = (ListView) findViewById(R.id.listView1);
 		list.setAdapter(aa);
-		SQLiteDatabase db = MainActivity.db;
 		Cursor c = db.rawQuery("SELECT * FROM favs", null);
+		
 		while(c.moveToNext() && c != null) {
 			String i = c.getString(c.getColumnIndex("item"));
 			items.add(i);
 		}
 		aa.notifyDataSetChanged();
+		
+		list.setOnItemClickListener(new OnItemClickListener()
+        {
+          @Override
+          public void onItemClick(AdapterView arg0, View arg1, int arg2,long arg3)
+          {
+              String i = (String)items.get(arg2);
+              aa.remove(i);
+              db.execSQL("DELETE FROM favs WHERE item IS \"%s\"".replace("%s", i));
+              aa.notifyDataSetChanged();
+          }
+      });
 	}
 
 	@Override
