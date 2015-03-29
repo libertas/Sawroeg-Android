@@ -78,8 +78,8 @@ public class MainActivity extends Activity {
 			public boolean onItemLongClick(AdapterView<?> arg0, View view, final int location, long arg3) {
 				String fav_item = ((String) items.get(location)).split(".", 2)[1].substring(1);
 				db.execSQL("INSERT OR IGNORE INTO favs VALUES (?)", new Object[]{fav_item});
-				Toast.makeText(MainActivity.this, "Gya " + fav_item.split(" ", 2)[0] +
-						" haeuj diuzmoeg hoj bae liux", Toast.LENGTH_SHORT).show();
+				Toast.makeText(MainActivity.this, "Gya \"" + fav_item.split(" ", 2)[0] +
+						"\" haeuj diuzmoeg hoj bae liux", Toast.LENGTH_SHORT).show();
 				return true;
 			}
 		});
@@ -95,9 +95,9 @@ public class MainActivity extends Activity {
 		//Check the database,it might takes very long time
 		db = openOrCreateDatabase("sawguq.db", MODE_PRIVATE, null);
 		db.execSQL("CREATE TABLE IF NOT EXISTS favs (item)");
-		db.execSQL("CREATE UNIQUE INDEX idx_item ON favs (item)");
+		db.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS idx_item ON favs (item)");
 		try {
-			Cursor c = db.rawQuery("select * from sawguq", null);
+			Cursor c = db.rawQuery("SELECT * FROM sawguq", null);
 		}
 		catch(Exception e) {
 			final ProgressDialog dialog = ProgressDialog.show(this, "Ancang", "Baez neix dwg baez daih'it mwngz yungh,"
