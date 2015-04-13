@@ -3,9 +3,11 @@ package org.roeg.sawroeg;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.text.ClipboardManager;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,7 +15,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView.OnItemLongClickListener;
 
 public class VocabularyActivity extends Activity {
 	
@@ -45,12 +49,22 @@ public class VocabularyActivity extends Activity {
           @Override
           public void onItemClick(AdapterView arg0, View arg1, int arg2,long arg3)
           {
-              String i = (String)items.get(arg2);
-              aa.remove(i);
-              db.execSQL("DELETE FROM favs WHERE item IS \"%s\"".replace("%s", i));
-              aa.notifyDataSetChanged();
+        	  String i = (String)items.get(arg2);
+              ClipboardManager cm =(ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+              cm.setText(i);
+              Toast.makeText(VocabularyActivity.this, "Fukceih diuzmoeg \"" + i.split(" ", 2)[0] + "\"", Toast.LENGTH_SHORT).show();
           }
       });
+		
+		list.setOnItemLongClickListener(new OnItemLongClickListener(){
+			public boolean onItemLongClick(AdapterView<?> arg0, View view, final int location, long arg3) {
+				String i = (String)items.get(location);
+	            aa.remove(i);
+	            db.execSQL("DELETE FROM favs WHERE item IS \"%s\"".replace("%s", i));
+	            aa.notifyDataSetChanged();
+	            return true;
+			}
+		});
 	}
 
 	@Override
