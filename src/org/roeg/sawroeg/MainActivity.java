@@ -83,8 +83,9 @@ public class MainActivity extends Activity {
           {
               String i = (String)items.get(arg2);
               ClipboardManager cm =(ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+              i = i.split(".", 2)[1].substring(1);
               cm.setText(i);
-              Toast.makeText(MainActivity.this, "Fukceih diuzmoeg \"" + i.split(" ", 2)[0] + "\"", Toast.LENGTH_SHORT).show();
+              Toast.makeText(MainActivity.this, "Fukceih diuzmoeg \"" + i + "\"", Toast.LENGTH_SHORT).show();
           }
       });
 

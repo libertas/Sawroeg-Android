@@ -52,7 +52,7 @@ public class VocabularyActivity extends Activity {
         	  String i = (String)items.get(arg2);
               ClipboardManager cm =(ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
               cm.setText(i);
-              Toast.makeText(VocabularyActivity.this, "Fukceih diuzmoeg \"" + i.split(" ", 2)[0] + "\"", Toast.LENGTH_SHORT).show();
+              Toast.makeText(VocabularyActivity.this, "Fukceih \"" + i + "\"", Toast.LENGTH_SHORT).show();
           }
       });
 		
