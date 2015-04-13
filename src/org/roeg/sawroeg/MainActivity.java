@@ -5,6 +5,7 @@ import java.util.Iterator;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
@@ -12,18 +13,19 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.text.ClipboardManager;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
-import android.widget.AdapterView.OnItemClickListener;
 
 public class MainActivity extends Activity {
 	
@@ -73,7 +75,18 @@ public class MainActivity extends Activity {
 				return false;
 			}
 		});
-		
+
+		list.setOnItemClickListener(new OnItemClickListener()
+        {
+          @Override
+          public void onItemClick(AdapterView arg0, View arg1, int arg2,long arg3)
+          {
+              String i = (String)items.get(arg2);
+              ClipboardManager cm =(ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+              cm.setText(i);
+          }
+      });
+
 		list.setOnItemLongClickListener(new OnItemLongClickListener(){
 			public boolean onItemLongClick(AdapterView<?> arg0, View view, final int location, long arg3) {
 				String fav_item = ((String) items.get(location)).split(".", 2)[1].substring(1);
