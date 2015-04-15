@@ -7,6 +7,7 @@
         android:orderInCategory="100"
         android:showAsAction="never"
         android:title="@string/action_settings"/>
-    <item android:id="@+id/diuzmoeg_hoj" android:orderInCategory="200" android:title="Diuzmoeg Hoj"></item>
-
+    <item android:id="@+id/diuzmoeg_hoj"
+        android:orderInCategory="200"
+        android:title="@string/title_activity_vocabulary"/>
 </menu>
