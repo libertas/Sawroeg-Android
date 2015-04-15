@@ -37,9 +37,8 @@ public final class R {
     }
     public static final class menu {
         public static final int main=0x7f080000;
-        public static final int preference=0x7f080001;
-        public static final int settings=0x7f080002;
-        public static final int vocabulary=0x7f080003;
+        public static final int settings=0x7f080001;
+        public static final int vocabulary=0x7f080002;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
