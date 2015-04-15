@@ -10,4 +10,7 @@
     <item android:id="@+id/diuzmoeg_hoj"
         android:orderInCategory="200"
         android:title="@string/title_activity_vocabulary"/>
+    <item android:id="@+id/diujcienq"
+        android:orderInCategory="200"
+        android:title="@string/title_activity_challenge"/>
 </menu>

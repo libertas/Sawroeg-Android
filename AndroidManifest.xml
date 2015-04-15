@@ -34,6 +34,10 @@
             android:name=".VocabularyActivity"
             android:label="@string/title_activity_vocabulary" >
         </activity>
+        <activity
+            android:name=".ChallengeActivity"
+            android:label="@string/title_activity_challenge" >
+        </activity>
     </application>
 
 </manifest>

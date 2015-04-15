@@ -159,6 +159,11 @@ public class MainActivity extends Activity {
 			startActivity(intent);
 			return true;
 		}
+		if (id == R.id.diujcienq) {
+			Intent intent = new Intent(this, ChallengeActivity.class);
+			startActivity(intent);
+			return true;
+		}
 		return super.onOptionsItemSelected(item);
 	}
 }
