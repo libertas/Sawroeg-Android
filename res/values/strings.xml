@@ -2,10 +2,8 @@
 <resources>
 
     <string name="app_name">Sawroeg</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_preference">PreferenceActivity</string>
-    <string name="title_activity_settings">SettingsActivity</string>
-    <string name="title_activity_vocabulary">VocabularyActivity</string>
+    <string name="action_settings">Sietceih</string>
+    <string name="title_activity_settings">Sietceih</string>
+    <string name="title_activity_vocabulary">Diuzmoeg Hoj</string>
 
 </resources>
