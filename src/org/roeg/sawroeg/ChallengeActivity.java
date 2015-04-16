@@ -1,34 +1,56 @@
 package org.roeg.sawroeg;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
-public class ChallengeActivity extends ActionBarActivity {
+public class ChallengeActivity extends Activity {
+	
+	static SQLiteDatabase db;
+	static Cursor c;
+	static TextView textView1;
+	static Button button1;
+	static int refreshCounter = 0;
+	static String ans = "";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_challenge);
+		textView1 = (TextView) findViewById(R.id.textView1);
+		button1 = (Button) findViewById(R.id.button1);
+		button1.setText("Yienjok");
+		button1.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				refreshContent();
+			}
+		});
+		db = MainActivity.db;
+		refreshContent();
+		
 	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.challenge, menu);
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
+	
+	public static void refreshContent() {
+		String key = "";
+		c = db.rawQuery("SELECT * FROM favs ORDER BY RANDOM() LIMIT 1", null);
+		
+		if(refreshCounter % 2 != 0) {
+			textView1.setText(ans);
+			button1.setText("Aen Laeng");
 		}
-		return super.onOptionsItemSelected(item);
+		else {
+			if(c.moveToNext() && c != null) {
+				ans = c.getString(c.getColumnIndex("item"));
+				key = ans.split(" ", 2)[0];
+			}
+			textView1.setText(key);
+			button1.setText("Yienjok");
+		}
+		refreshCounter++;
 	}
 }
