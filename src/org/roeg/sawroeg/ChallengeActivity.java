@@ -14,8 +14,7 @@ public class ChallengeActivity extends Activity {
 	static SQLiteDatabase db;
 	static Cursor c;
 	static TextView textView1;
-	static Button button1;
-	static int refreshCounter = 0;
+	static Button button1, button2, button3;
 	static String ans = "";
 
 	@Override
@@ -29,40 +28,55 @@ public class ChallengeActivity extends Activity {
           @Override
           public void onClick(View v)
           {
-              refreshContent();
+              refreshContent("yienjok");
           }
       });
 		
 		button1 = (Button) findViewById(R.id.button1);
-		button1.setText("Yienjok");
+		button2 = (Button) findViewById(R.id.button2);
+		button3 = (Button) findViewById(R.id.button3);
 		button1.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				refreshContent();
+				refreshContent("ndirox");
+			}
+		});
+		button2.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				refreshContent("roxdi");
+			}
+		});
+		button1.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				refreshContent("roxdoh");
 			}
 		});
 		
 		db = MainActivity.db;
-		refreshContent();
+		refreshContent("begin");
 		
 	}
 	
-	public static void refreshContent() {
+	public static void refreshContent(String command) {
 		String key = "";
-		c = db.rawQuery("SELECT * FROM favs ORDER BY RANDOM() LIMIT 1", null);
-		
-		if(refreshCounter % 2 != 0) {
-			textView1.setText(ans);
-			button1.setText("Aen Laeng");
-		}
-		else {
+		if(command == "roxdoh" || command == "begin") {
+			c = db.rawQuery("SELECT * FROM favs ORDER BY RANDOM() LIMIT 1", null);
 			if(c.moveToNext() && c != null) {
 				ans = c.getString(c.getColumnIndex("item"));
 				key = ans.split(" ", 2)[0];
+				textView1.setText(key);
 			}
-			textView1.setText(key);
-			button1.setText("Yienjok");
 		}
-		refreshCounter++;
+		else if(command == "roxdi") {
+			textView1.setText(ans);
+		}
+		else if(command == "ndirox") {
+			textView1.setText(ans);
+		}
+		else if(command == "yienjok") {
+			textView1.setText(ans);
+		}
 	}
 }
