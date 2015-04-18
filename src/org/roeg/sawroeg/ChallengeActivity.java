@@ -15,7 +15,11 @@ public class ChallengeActivity extends Activity {
 	static Cursor c;
 	static TextView textView1;
 	static Button button1, button2, button3;
-	static String ans = "";
+	static String ans = "", key = "";
+	static int refreshState = 0;
+	// 0 means the keyword is being shown
+	//1 means the entire entry (or + warningMsg2)
+	//2 means the entire entry + warningMsg1
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +32,8 @@ public class ChallengeActivity extends Activity {
           @Override
           public void onClick(View v)
           {
-              refreshContent("yienjok");
+        	  String s = (String) textView1.getText();
+        	  refreshContent("yienjok");
           }
       });
 		
@@ -47,7 +52,7 @@ public class ChallengeActivity extends Activity {
 				refreshContent("roxdi");
 			}
 		});
-		button1.setOnClickListener(new View.OnClickListener() {
+		button3.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				refreshContent("roxdoh");
@@ -60,23 +65,56 @@ public class ChallengeActivity extends Activity {
 	}
 	
 	public static void refreshContent(String command) {
-		String key = "";
-		if(command == "roxdoh" || command == "begin") {
+		String warningMsg1 = "\n\n(Naenz dieg neix bae yawj diuz laneg)";
+		String warningMsg2 = "\n\n(Youq laj neix genj aen ndeu la)";
+		if((command == "roxdoh" || command == "begin")
+				&& (refreshState == 0 || refreshState == 1)) {
 			c = db.rawQuery("SELECT * FROM favs ORDER BY RANDOM() LIMIT 1", null);
 			if(c.moveToNext() && c != null) {
 				ans = c.getString(c.getColumnIndex("item"));
 				key = ans.split(" ", 2)[0];
 				textView1.setText(key);
+				refreshState = 0;
+			}
+			else {
+				textView1.setText("Ndi miz diuzmoeg hoj.");
 			}
 		}
 		else if(command == "roxdi") {
-			textView1.setText(ans);
+			if(ans != "") {
+				if(refreshState == 0) {
+					textView1.append(warningMsg1);
+					refreshState = 2;
+				}
+				else if(refreshState == 1) {
+					refreshContent("begin");
+				}
+			}
 		}
 		else if(command == "ndirox") {
-			textView1.setText(ans);
+			if(ans != "") {
+				if(refreshState == 0) {
+					textView1.append(warningMsg1);
+					refreshState = 2;
+				}
+				else if(refreshState == 1) {
+					refreshContent("begin");
+				}
+			}
 		}
 		else if(command == "yienjok") {
-			textView1.setText(ans);
+			if(ans != "") {
+				if(refreshState == 0) {
+					textView1.setText(ans);
+					refreshState = 1;
+				}
+				else if(refreshState == 1) {
+					textView1.setText(ans + warningMsg2);
+				}
+				else if(refreshState == 2) {
+					refreshContent("begin");
+				}
+			}
 		}
 	}
 }
