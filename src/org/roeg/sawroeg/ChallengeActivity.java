@@ -32,7 +32,6 @@ public class ChallengeActivity extends Activity {
           @Override
           public void onClick(View v)
           {
-        	  String s = (String) textView1.getText();
         	  refreshContent("yienjok");
           }
       });
