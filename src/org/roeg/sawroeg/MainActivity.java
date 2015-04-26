@@ -32,6 +32,7 @@ public class MainActivity extends Activity {
 	private ArrayAdapter<String> aa;
     private ArrayList<String> items;
     public static SQLiteDatabase db;
+    private ListView list;
     
     private void newSearch(String keyword) {
     	SharedPreferences settings = getSharedPreferences("org.roeg.sawroeg_preferences", MODE_PRIVATE);
@@ -55,7 +56,7 @@ public class MainActivity extends Activity {
 		Toast.makeText(MainActivity.this, "Anqcoux Ma Yungh Sawroeg~", Toast.LENGTH_SHORT).show();
 		
 		//Create the UI
-		ListView list = (ListView) findViewById(R.id.listView1);
+		list = (ListView) findViewById(R.id.listView1);
 		
 		final EditText text = (EditText) findViewById(R.id.editText1);
 		items = new ArrayList<String>();
@@ -70,6 +71,7 @@ public class MainActivity extends Activity {
 					if(keyCode == KeyEvent.KEYCODE_ENTER){
 						String keyword = text.getText().toString();
 						newSearch(keyword);
+						list.setSelection(0);
 						return true;
 					}
 				return false;
@@ -104,6 +106,7 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				String keyword = text.getText().toString();
 				newSearch(keyword);
+				list.setSelection(0);
 			}
 		});
 		
