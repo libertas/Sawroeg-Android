@@ -18,8 +18,8 @@ public class ChallengeActivity extends Activity {
 	static String ans = "", key = "";
 	static int refreshState = 0;
 	// 0 means the keyword is being shown
-	//1 means the entire entry (or + warningMsg2)
-	//2 means the entire entry + warningMsg1
+	// 1 means the entire entry (or + warningMsg2)
+	// 2 means the entire entry + warningMsg1
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -66,8 +66,7 @@ public class ChallengeActivity extends Activity {
 	public static void refreshContent(String command) {
 		String warningMsg1 = "\n\n(Naenz dieg neix bae yawj diuz laneg)";
 		String warningMsg2 = "\n\n(Youq laj neix genj aen ndeu la)";
-		if((command == "roxdoh" || command == "begin")
-				&& (refreshState == 0 || refreshState == 1)) {
+		if(command == "roxdoh" || command == "begin") {
 			c = db.rawQuery("SELECT * FROM favs ORDER BY RANDOM() LIMIT 1", null);
 			if(c.moveToNext() && c != null) {
 				ans = c.getString(c.getColumnIndex("item"));
@@ -82,7 +81,7 @@ public class ChallengeActivity extends Activity {
 		else if(command == "roxdi") {
 			if(ans != "") {
 				if(refreshState == 0) {
-					textView1.append(warningMsg1);
+					textView1.append(ans + warningMsg1);
 					refreshState = 2;
 				}
 				else if(refreshState == 1) {
@@ -93,7 +92,7 @@ public class ChallengeActivity extends Activity {
 		else if(command == "ndirox") {
 			if(ans != "") {
 				if(refreshState == 0) {
-					textView1.append(warningMsg1);
+					textView1.append(ans + warningMsg1);
 					refreshState = 2;
 				}
 				else if(refreshState == 1) {
