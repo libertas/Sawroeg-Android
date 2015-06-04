@@ -28,7 +28,7 @@ public class VocabularyActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_vocabulary);
-		db = MainActivity.db;
+		db = MainActivity.datadb;
 		items = new ArrayList<String>();
 		aa = new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1,

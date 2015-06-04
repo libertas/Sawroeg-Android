@@ -37,6 +37,7 @@ public class MainActivity extends Activity {
 	private ArrayAdapter<String> aa;
     private ArrayList<String> items;
     public static SQLiteDatabase db;
+	public static SQLiteDatabase datadb;
     private ListView list;
     
     private void newSearch(String keyword) {
@@ -99,7 +100,7 @@ public class MainActivity extends Activity {
 		list.setOnItemLongClickListener(new OnItemLongClickListener(){
 			public boolean onItemLongClick(AdapterView<?> arg0, View view, final int location, long arg3) {
 				String fav_item = ((String) items.get(location)).split(".", 2)[1].substring(1);
-				db.execSQL("INSERT OR IGNORE INTO favs VALUES (?)", new Object[]{fav_item});
+				datadb.execSQL("INSERT OR IGNORE INTO favs VALUES (?)", new Object[]{fav_item});
 				Toast.makeText(MainActivity.this, "Gya \"" + fav_item.split(" ", 2)[0] +
 						"\" haeuj diuzmoeg hoj bae liux", Toast.LENGTH_SHORT).show();
 				return true;
@@ -115,41 +116,25 @@ public class MainActivity extends Activity {
 			}
 		});
 		
-		//Check the database,it might takes very long time
+		//Copy the database
 		db = openOrCreateDatabase("sawguq.db", MODE_PRIVATE, null);
-		db.execSQL("CREATE TABLE IF NOT EXISTS favs (item)");
-		db.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS idx_item ON favs (item)");
+		datadb = openOrCreateDatabase("data.db", MODE_PRIVATE, null);
+		datadb.execSQL("CREATE TABLE IF NOT EXISTS favs (item)");
+		datadb.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS idx_item ON favs (item)");
 		try {
-			Cursor c = db.rawQuery("SELECT * FROM sawguq", null);
+			FileOutputStream out = new FileOutputStream("data/data/org.roeg.sawroeg/databases/sawguq.db");
+			InputStream in = getResources().getAssets().open("sawguq.db");
+			byte[] buffer = new byte[1024];
+			int readBytes = 0;
+			while ((readBytes = in.read(buffer)) != -1)
+				out.write(buffer, 0, readBytes);
+			in.close();
+			out.close();
 		}
-		catch(Exception e) {
-			final ProgressDialog dialog = ProgressDialog.show(this, "Ancang", "Baez neix dwg baez daih'it mwngz yungh,"
-					+ "aen ancang neix yaek yungh bae geij faencung.", true);
-			final Handler handler = new Handler() {
-				public void handleMessage(Message msg) {
-					super.handleMessage(msg);
-					dialog.dismiss();
-				}
-			};
-			try {
-				FileOutputStream out = new FileOutputStream("data/data/org.roeg.sawroeg/databases/sawguq.db");
-				InputStream in = getResources().getAssets().open("sawguq.db");
-				byte[] buffer = new byte[1024];
-				int readBytes = 0;
-				while ((readBytes = in.read(buffer)) != -1)
-					out.write(buffer, 0, readBytes);
-				in.close();
-				out.close();
-			}
-			catch(Exception e1){
-				throw new Error("Unable to create database");
-			}
-			finally {
-				handler.sendEmptyMessage(0);
-			}
+		catch(Exception e1){
+			throw new Error("Unable to create database");
 		}
 		finally {
-			
 		}
 }
 

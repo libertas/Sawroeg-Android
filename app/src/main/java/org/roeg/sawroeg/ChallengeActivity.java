@@ -58,7 +58,7 @@ public class ChallengeActivity extends Activity {
 			}
 		});
 		
-		db = MainActivity.db;
+		db = MainActivity.datadb;
 		refreshContent("begin");
 		
 	}
