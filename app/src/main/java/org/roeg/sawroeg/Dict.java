@@ -60,7 +60,7 @@ public class Dict {
 		while(c.moveToNext()) {
 			i = c.getString(c.getColumnIndex("key"));
 			j = c.getString(c.getColumnIndex("value"));
-			result1.add(i + " " + j);
+			result1.add(j);
 			if(issc)
 				distance = Levenshtein.distance(j, j.length(), keyword, keyword.length());
 			else
