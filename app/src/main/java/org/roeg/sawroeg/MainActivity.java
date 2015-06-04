@@ -1,6 +1,8 @@
 package org.roeg.sawroeg;
 
+import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
@@ -130,14 +132,17 @@ public class MainActivity extends Activity {
 				}
 			};
 			try {
+				FileOutputStream out = new FileOutputStream("data/data/org.roeg.sawroeg/databases/sawguq.db");
+				InputStream in = getResources().getAssets().open("sawguq.db");
+				byte[] buffer = new byte[1024];
+				int readBytes = 0;
+				while ((readBytes = in.read(buffer)) != -1)
+					out.write(buffer, 0, readBytes);
+				in.close();
+				out.close();
 			}
-			catch(Exception e1) {
+			catch(Exception e1){
 				throw new Error("Unable to create database");
-				/*new Thread() {
-					public void run() {
-						handler.sendEmptyMessage(0);
-					}
-				}.start();*/
 			}
 			finally {
 				handler.sendEmptyMessage(0);
