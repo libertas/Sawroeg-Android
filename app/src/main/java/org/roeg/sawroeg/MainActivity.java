@@ -130,9 +130,6 @@ public class MainActivity extends Activity {
 				}
 			};
 			try {
-				DbHelper myDbHelper;
-			    myDbHelper = new DbHelper(this);
-			    myDbHelper.createDataBase();
 			}
 			catch(Exception e1) {
 				throw new Error("Unable to create database");
