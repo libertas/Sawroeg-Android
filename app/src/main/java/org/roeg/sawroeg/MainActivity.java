@@ -138,7 +138,6 @@ public class MainActivity extends Activity {
 				throw new Error("Unable to create database");
 				/*new Thread() {
 					public void run() {
-						CreateDb.create(db);
 						handler.sendEmptyMessage(0);
 					}
 				}.start();*/
