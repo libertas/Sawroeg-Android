@@ -35,14 +35,24 @@ public class VocabularyActivity extends Activity {
 				items);
 		ListView list = (ListView) findViewById(R.id.listView1);
 		list.setAdapter(aa);
-		Cursor c = db.rawQuery("SELECT * FROM favs", null);
-		
-		while(c.moveToNext() && c != null) {
-			String i = c.getString(c.getColumnIndex("item"));
-			items.add(i);
+		Cursor c = null;
+		try {
+			c = db.rawQuery("SELECT * FROM favs", null);
+
+			while(c.moveToNext() && c != null) {
+				String i = c.getString(c.getColumnIndex("item"));
+				items.add(i);
+			}
 		}
-		aa.notifyDataSetChanged();
-		
+		catch(Exception e){
+
+		}
+		finally {
+			if (c != null)
+				c.close();
+			aa.notifyDataSetChanged();
+		}
+
 		list.setOnItemClickListener(new OnItemClickListener()
         {
           @Override

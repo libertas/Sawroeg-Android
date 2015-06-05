@@ -44,28 +44,37 @@ public class Dict {
 		ArrayList<String> result = new ArrayList<String>();
 		ArrayList<String> result1 = new ArrayList<String>();
 		ArrayList distances = new ArrayList();
-		Cursor c;
+		Cursor c = null;
 		if(keyword.length() < 1)
 		{
 			result.add("Ndi miz");
 			return result.iterator();
 		}
-		boolean issc = isStringChinese(keyword);
-		if(issc)
-			c = db.rawQuery("SELECT * FROM sawguq WHERE value like \"%%$s%%\"".replace("$s", keyword), null);
-		else
-			c = db.rawQuery("SELECT * FROM sawguq WHERE key like \"%%$s%%\"".replace("$s", keyword), null);
-		String i, j;
-		int distance;
-		while(c.moveToNext()) {
-			i = c.getString(c.getColumnIndex("key"));
-			j = c.getString(c.getColumnIndex("value"));
-			result1.add(j);
+		try {
+			boolean issc = isStringChinese(keyword);
 			if(issc)
-				distance = Levenshtein.distance(j, j.length(), keyword, keyword.length());
+				c = db.rawQuery("SELECT * FROM sawguq WHERE value like \"%%$s%%\"".replace("$s", keyword), null);
 			else
-				distance = Levenshtein.distance(i, i.length(), keyword, keyword.length());
-			distances.add(distance);
+				c = db.rawQuery("SELECT * FROM sawguq WHERE key like \"%%$s%%\"".replace("$s", keyword), null);
+			String i, j;
+			int distance;
+			while(c.moveToNext()) {
+				i = c.getString(c.getColumnIndex("key"));
+				j = c.getString(c.getColumnIndex("value"));
+				result1.add(j);
+				if(issc)
+					distance = Levenshtein.distance(j, j.length(), keyword, keyword.length());
+				else
+					distance = Levenshtein.distance(i, i.length(), keyword, keyword.length());
+				distances.add(distance);
+			}
+		}
+		catch(Exception e){
+
+		}
+		finally {
+			if(c != null)
+				c.close();
 		}
 		int m, index, count = 0;
 		while(distances.size() != 0 && count != limit_length) {
