@@ -100,7 +100,7 @@ public class MainActivity extends Activity {
 		list.setOnItemLongClickListener(new OnItemLongClickListener(){
 			public boolean onItemLongClick(AdapterView<?> arg0, View view, final int location, long arg3) {
 				String fav_item = ((String) items.get(location)).split(".", 2)[1].substring(1);
-				datadb.execSQL("INSERT OR IGNORE INTO favs VALUES (?)", new Object[]{fav_item});
+				datadb.execSQL("INSERT OR IGNORE INTO favs VALUES (?, 0)", new Object[]{fav_item});
 				Toast.makeText(MainActivity.this, "Gya \"" + fav_item.split(" ", 2)[0] +
 						"\" haeuj diuzmoeg hoj bae liux", Toast.LENGTH_SHORT).show();
 				return true;
@@ -119,7 +119,7 @@ public class MainActivity extends Activity {
 		//Copy the database
 		db = openOrCreateDatabase("sawguq.db", MODE_PRIVATE, null);
 		datadb = openOrCreateDatabase("data.db", MODE_PRIVATE, null);
-		datadb.execSQL("CREATE TABLE IF NOT EXISTS favs (item)");
+		datadb.execSQL("CREATE TABLE IF NOT EXISTS favs (item, data)");
 		datadb.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS idx_item ON favs (item)");
 		try {
 			FileOutputStream out = new FileOutputStream("data/data/org.roeg.sawroeg/databases/sawguq.db");
