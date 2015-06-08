@@ -77,6 +77,9 @@ public class ChallengeActivity extends Activity {
 			else {
 				textView1.setText("Ndi miz diuzmoeg hoj.");
 			}
+			if(command == "roxdoh") {
+				db.execSQL("UPDATE favs set data=data+2 where item=\"" + ans + "\"");
+			}
 		}
 		else if(command == "roxdi") {
 			if(ans != "") {
