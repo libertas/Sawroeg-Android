@@ -68,7 +68,7 @@ public class ChallengeActivity extends Activity {
 		String warningMsg1 = "\n\n(Naenz dieg neix bae yawj diuz laneg)";
 		String warningMsg2 = "\n\n(Youq laj neix genj aen ndeu la)";
 		if(command == "roxdoh" || command == "begin") {
-			c = db.rawQuery("SELECT * FROM favs ORDER BY data LIMIT 1", null);
+			c = db.rawQuery("SELECT * FROM (SELECT * FROM favs ORDER BY data) ORDER BY RANDOM() LIMIT 1", null);
 			if(c.moveToNext() && c != null) {
 				ans = c.getString(c.getColumnIndex("item"));
 				key = ans.split(" ", 2)[0];
