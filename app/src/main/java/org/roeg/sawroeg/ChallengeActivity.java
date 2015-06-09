@@ -62,7 +62,8 @@ public class ChallengeActivity extends Activity {
 		refreshContent("begin");
 		
 	}
-	
+
+	// ATTENTION: This function is bad designed and need to be rewritten
 	public static void refreshContent(String command) {
 		String warningMsg1 = "\n\n(Naenz dieg neix bae yawj diuz laneg)";
 		String warningMsg2 = "\n\n(Youq laj neix genj aen ndeu la)";
