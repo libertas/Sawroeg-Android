@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -121,11 +121,11 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/home/libertas/Develop/StudioProjects/sawroeg-android/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/home/libertas/Develop/Sawroeg-Android/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
@@ -159,14 +159,14 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/home/libertas/Develop/StudioProjects/sawroeg-android/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/libertas/Develop/Sawroeg-Android/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Sietceiq</string>
     <string name="app_name">Sawroeg</string>
     <string name="title_activity_challenge">Diujcienq Sawcuengh</string>
     <string name="title_activity_settings">Sietceiq</string>
     <string name="title_activity_vocabulary">Diuzmoeg Hoj</string>
-    <!-- From: file:/home/libertas/Develop/StudioProjects/sawroeg-android/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/home/libertas/Develop/Sawroeg-Android/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
@@ -178,7 +178,7 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    <!-- From: file:/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance">
         <item name="android:textColor">?android:textColorPrimary</item>

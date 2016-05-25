@@ -43,7 +43,12 @@ public class MainActivity extends Activity {
     private void newSearch(String keyword) {
     	SharedPreferences settings = getSharedPreferences("org.roeg.sawroeg_preferences", MODE_PRIVATE);
 		String length_s = settings.getString("length_edit", "30");
-		int limit_length = Integer.valueOf(length_s).intValue();
+		int limit_length;
+		try {
+			limit_length = Integer.valueOf(length_s).intValue();
+		} catch (Exception e) {
+			limit_length = 30;
+		}
     	Iterator<String> result = Dict.search(keyword, db, limit_length);
 		items.clear();
 		int count = 1;
