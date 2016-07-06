@@ -2,32 +2,60 @@
 <items version="2" >
 
     <item
-        jar="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/classes-f9f23c0ad4e6e70298eb94b23c09eb0b358b3179.jar" />
+        jar="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_67e9cd7f8b8afe7d766cbd262ae3ef7cf914cf7d/classes.dex" />
     </item>
     <item
-        jar="/opt/android-sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-1cd1039154f1bb9cc0d4a9da3e8b7ec509fd8b06.jar" />
+        jar="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_819ffd6361759bbaaeb630d408301214fb36b821/classes.dex" />
     </item>
     <item
-        jar="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/classes-39b52ae6e227e5a189b8b540e0f499b3f8066727.jar" />
+        jar="/home/libertas/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/24.0.0/2943c74db6d4346ab8c6531adac91fa05c137c40/support-annotations-24.0.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_87872c407cfa724dbe7962bd30c03adc025f54b1/classes.dex" />
     </item>
     <item
-        jar="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/libs/internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-5f189660c77f99eefbb75f53902fa36cee033976.jar" />
+        jar="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="f060190a847ac9690d19c1318633f7866693c917">
+        <dex dex="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_6f6c756910ab1830c6c44fac8f27143b9acd764a/classes.dex" />
+    </item>
+    <item
+        jar="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="a906cba21b0bed48a4143ec9bf58a9b6557e9ff4">
+        <dex dex="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_03d81982f724939d3bcb720cb73f7479f67ba047/classes.dex" />
+    </item>
+    <item
+        jar="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.0.0_3bb34f2822fc5943567b4b1f2f70f76da9952037/classes.dex" />
+    </item>
+    <item
+        jar="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.0.0_fef4d1d4dc763188147acf54d7b5dfbc8682193b/classes.dex" />
+    </item>
+    <item
+        jar="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.0.0_086ce1de37fb4f3b5e508abce8b9823b878a3bdc/classes.dex" />
     </item>
 
 </items>

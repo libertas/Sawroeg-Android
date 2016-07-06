@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Sawroeg-Android.iml" filepath="$PROJECT_DIR$/Sawroeg-Android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/app.iml" filepath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../StudioProjects/sawroeg-android/sawroeg-android.iml" filepath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/sawroeg-android.iml" />
     </modules>
   </component>
 </project>
