@@ -19,5 +19,5 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:24.+'
+    compile 'com.android.support:design:24.+'
 }

@@ -7,9 +7,104 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endLine": 4,
+                    "endColumn": 40,
+                    "endOffset": 91
+                },
+                "from": {
+                    "file": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/src/main/res/values-v14/colors.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 143,
+                        "endColumn": 40,
+                        "endOffset": 179
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 96,
+                    "endColumn": 41,
+                    "endOffset": 133
+                },
+                "from": {
+                    "file": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/src/main/res/values-v14/colors.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 41,
+                        "endOffset": 92
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 138,
+                    "endColumn": 45,
+                    "endOffset": 179
+                },
+                "from": {
+                    "file": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/src/main/res/values-v14/colors.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 97,
+                        "endColumn": 45,
+                        "endOffset": 138
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 184,
+                    "endColumn": 42,
+                    "endOffset": 222
+                },
+                "from": {
+                    "file": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/src/main/res/values-v14/colors.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 230,
+                        "endColumn": 42,
+                        "endOffset": 268
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 227,
+                    "endColumn": 45,
+                    "endOffset": 268
+                },
+                "from": {
+                    "file": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/src/main/res/values-v14/colors.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 184,
+                        "endColumn": 45,
+                        "endOffset": 225
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 273,
+                    "endLine": 9,
                     "endColumn": 12,
-                    "endOffset": 201
+                    "endOffset": 419
                 },
                 "from": {
                     "file": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/src/main/res/values-v14/styles.xml",
@@ -25,12 +120,12 @@
             },
             {
                 "to": {
-                    "startLine": 5,
+                    "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 206,
-                    "endLine": 9,
+                    "startOffset": 424,
+                    "endLine": 14,
                     "endColumn": 12,
-                    "endOffset": 477
+                    "endOffset": 695
                 },
                 "from": {
                     "file": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v14/values-v14.xml",
@@ -46,11 +141,11 @@
             },
             {
                 "to": {
-                    "startLine": 10,
+                    "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 482,
+                    "startOffset": 700,
                     "endColumn": 70,
-                    "endOffset": 548
+                    "endOffset": 766
                 },
                 "from": {
                     "file": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v14/values-v14.xml",
@@ -65,11 +160,11 @@
             },
             {
                 "to": {
-                    "startLine": 11,
+                    "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 553,
+                    "startOffset": 771,
                     "endColumn": 82,
-                    "endOffset": 631
+                    "endOffset": 849
                 },
                 "from": {
                     "file": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v14/values-v14.xml",
@@ -84,12 +179,12 @@
             },
             {
                 "to": {
-                    "startLine": 12,
+                    "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 636,
-                    "endLine": 17,
+                    "startOffset": 854,
+                    "endLine": 22,
                     "endColumn": 12,
-                    "endOffset": 1041
+                    "endOffset": 1259
                 },
                 "from": {
                     "file": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v14/values-v14.xml",
@@ -105,12 +200,12 @@
             },
             {
                 "to": {
-                    "startLine": 18,
+                    "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 1046,
-                    "endLine": 23,
+                    "startOffset": 1264,
+                    "endLine": 28,
                     "endColumn": 12,
-                    "endOffset": 1463
+                    "endOffset": 1681
                 },
                 "from": {
                     "file": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v14/values-v14.xml",
@@ -126,11 +221,11 @@
             },
             {
                 "to": {
-                    "startLine": 24,
+                    "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 1468,
+                    "startOffset": 1686,
                     "endColumn": 119,
-                    "endOffset": 1583
+                    "endOffset": 1801
                 },
                 "from": {
                     "file": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v14/values-v14.xml",
@@ -145,11 +240,11 @@
             },
             {
                 "to": {
-                    "startLine": 25,
+                    "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 1588,
+                    "startOffset": 1806,
                     "endColumn": 62,
-                    "endOffset": 1646
+                    "endOffset": 1864
                 },
                 "from": {
                     "file": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v14/values-v14.xml",
@@ -164,12 +259,12 @@
             },
             {
                 "to": {
-                    "startLine": 26,
+                    "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 1651,
-                    "endLine": 28,
+                    "startOffset": 1869,
+                    "endLine": 33,
                     "endColumn": 12,
-                    "endOffset": 1800
+                    "endOffset": 2018
                 },
                 "from": {
                     "file": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v14/values-v14.xml",
@@ -185,11 +280,11 @@
             },
             {
                 "to": {
-                    "startLine": 29,
+                    "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 1805,
+                    "startOffset": 2023,
                     "endColumn": 62,
-                    "endOffset": 1863
+                    "endOffset": 2081
                 },
                 "from": {
                     "file": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v14/values-v14.xml",
@@ -204,11 +299,11 @@
             },
             {
                 "to": {
-                    "startLine": 30,
+                    "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 1868,
+                    "startOffset": 2086,
                     "endColumn": 131,
-                    "endOffset": 1995
+                    "endOffset": 2213
                 },
                 "from": {
                     "file": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v14/values-v14.xml",

@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/res/merged/debug/menu/vocabulary.xml",
-        "source": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/src/main/res/menu/vocabulary.xml"
-    },
-    {
         "merged": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/res/merged/debug/menu/main.xml",
         "source": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/res/merged/debug/menu/vocabulary.xml",
+        "source": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/src/main/res/menu/vocabulary.xml"
     },
     {
         "merged": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/res/merged/debug/menu/settings.xml",

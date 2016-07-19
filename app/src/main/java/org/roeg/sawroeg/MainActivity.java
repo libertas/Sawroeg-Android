@@ -1,23 +1,17 @@
 package org.roeg.sawroeg;
 
-import java.io.File;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import android.app.Activity;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
+import android.support.design.widget.TextInputLayout;
+import android.support.v7.app.AppCompatActivity;
 import android.text.ClipboardManager;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -32,7 +26,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 	
 	private ArrayAdapter<String> aa;
     private ArrayList<String> items;
@@ -67,9 +61,11 @@ public class MainActivity extends Activity {
 		Toast.makeText(MainActivity.this, "Anqcoux Ma Yungh Sawroeg~", Toast.LENGTH_SHORT).show();
 		
 		//Create the UI
-		list = (ListView) findViewById(R.id.listView1);
-		
-		final EditText text = (EditText) findViewById(R.id.editText1);
+		list = (ListView) findViewById(R.id.listView);
+
+		TextInputLayout textInputLayout = (TextInputLayout) findViewById(R.id.textInputLayout);
+		final EditText text = textInputLayout.getEditText();
+
 		items = new ArrayList<String>();
 		aa = new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1,
@@ -111,7 +107,7 @@ public class MainActivity extends Activity {
 				return true;
 			}
 		});
-		final Button ebutton = (Button) findViewById(R.id.button1);
+		final Button ebutton = (Button) findViewById(R.id.buttonSearch);
 		ebutton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {

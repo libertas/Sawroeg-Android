@@ -9,6 +9,13 @@
         <dex dex="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_67e9cd7f8b8afe7d766cbd262ae3ef7cf914cf7d/classes.dex" />
     </item>
     <item
+        jar="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="fc29308a7a8f6d4407b34634eb48fb8b817f9b23">
+        <dex dex="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.0.0_e1177076dd6537cdcbddc1b30e29f272db94efdf/classes.dex" />
+    </item>
+    <item
         jar="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
         jumboMode="true"
         revision="24.0.0"
@@ -26,14 +33,14 @@
         jar="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="f060190a847ac9690d19c1318633f7866693c917">
+        sha1="9e1bd2db5c4e1bf40b883497be93358f25312ddf">
         <dex dex="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_6f6c756910ab1830c6c44fac8f27143b9acd764a/classes.dex" />
     </item>
     <item
         jar="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="a906cba21b0bed48a4143ec9bf58a9b6557e9ff4">
+        sha1="06d705040f26ead0e789933b64c0f7e1327b36c6">
         <dex dex="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_03d81982f724939d3bcb720cb73f7479f67ba047/classes.dex" />
     </item>
     <item
@@ -56,6 +63,13 @@
         revision="24.0.0"
         sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
         <dex dex="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.0.0_086ce1de37fb4f3b5e508abce8b9823b878a3bdc/classes.dex" />
+    </item>
+    <item
+        jar="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="894922f67adeaaef51f077a29e315da21a3382d3">
+        <dex dex="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.0.0_6e10c9961559204099f0e9f033a5c44c818f934e/classes.dex" />
     </item>
 
 </items>
