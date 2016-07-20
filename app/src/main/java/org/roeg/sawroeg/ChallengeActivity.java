@@ -63,10 +63,10 @@ public class ChallengeActivity extends Activity {
 		
 	}
 
-	// ATTENTION: This function is bad designed and need to be rewritten
+	// ATTENTION: This function is badly designed and need to be rewritten
 	public static void refreshContent(String command) {
-		String warningMsg1 = "\n\n(Naenz dieg neix bae yawj diuz laneg)";
-		String warningMsg2 = "\n\n(Youq laj neix genj aen ndeu la)";
+		final String warningMsg1 = "\n\n(Naenz dieg neix bae yawj diuz laneg)";
+		final String warningMsg2 = "\n\n(Youq laj neix genj aen ndeu la)";
 		if(command == "roxdoh" || command == "begin") {
 			c = db.rawQuery("SELECT * FROM (SELECT * FROM favs ORDER BY data) ORDER BY RANDOM() LIMIT 1", null);
 			if(c.moveToNext() && c != null) {
@@ -85,7 +85,7 @@ public class ChallengeActivity extends Activity {
 		else if(command == "roxdi") {
 			if(ans != "") {
 				if(refreshState == 0) {
-					textView1.append(ans + warningMsg1);
+					textView1.setText(ans + warningMsg1);
 					refreshState = 2;
 				}
 				else if(refreshState == 1) {
@@ -96,7 +96,7 @@ public class ChallengeActivity extends Activity {
 		else if(command == "ndirox") {
 			if(ans != "") {
 				if(refreshState == 0) {
-					textView1.append(ans + warningMsg1);
+					textView1.setText(ans + warningMsg1);
 					refreshState = 2;
 				}
 				else if(refreshState == 1) {

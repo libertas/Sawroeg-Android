@@ -4,154 +4,30 @@
     api-level="22"
     density="xxhdpi"
     format="7"
-    timestamp="562485214694"
+    timestamp="3595195065940"
     token="8044365128920800610" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="168" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="93" />
     <task
         name="verifier"
-        duration="0" />
+        duration="9" />
 
     <artifact
-        location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/res/resources-debug.ap_"
-        type="RESOURCES" />
-    <artifact
-        location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_03d81982f724939d3bcb720cb73f7479f67ba047/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.0.0_fef4d1d4dc763188147acf54d7b5dfbc8682193b/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.0.0_e1177076dd6537cdcbddc1b30e29f272db94efdf/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.0.0_3bb34f2822fc5943567b4b1f2f70f76da9952037/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_67e9cd7f8b8afe7d766cbd262ae3ef7cf914cf7d/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_6f6c756910ab1830c6c44fac8f27143b9acd764a/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_87872c407cfa724dbe7962bd30c03adc025f54b1/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.0.0_086ce1de37fb4f3b5e508abce8b9823b878a3bdc/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_819ffd6361759bbaaeb630d408301214fb36b821/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.0.0_6e10c9961559204099f0e9f033a5c44c818f934e/classes.dex"
-        type="DEX" />
+        location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="483576005698" >
+    <build timestamp="3595195065940" >
         <artifact
             location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
-    </build>
-    <build timestamp="562485214694" >
-        <artifact
-            location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/res/resources-debug.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_03d81982f724939d3bcb720cb73f7479f67ba047/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.0.0_fef4d1d4dc763188147acf54d7b5dfbc8682193b/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.0.0_e1177076dd6537cdcbddc1b30e29f272db94efdf/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.0.0_3bb34f2822fc5943567b4b1f2f70f76da9952037/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_67e9cd7f8b8afe7d766cbd262ae3ef7cf914cf7d/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_6f6c756910ab1830c6c44fac8f27143b9acd764a/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_87872c407cfa724dbe7962bd30c03adc025f54b1/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.0.0_086ce1de37fb4f3b5e508abce8b9823b878a3bdc/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_819ffd6361759bbaaeb630d408301214fb36b821/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.0.0_6e10c9961559204099f0e9f033a5c44c818f934e/classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="88656060512057" >
-        <artifact
-            location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
-            type="DEX" />
     </build>
 
 </instant-run>

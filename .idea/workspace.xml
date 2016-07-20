@@ -23,6 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d5bc86b-7cf5-4dbd-926d-71de91b06a85" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/org/roeg/sawroeg/BuildConfig$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/org/roeg/sawroeg/ChallengeActivity$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/org/roeg/sawroeg/MainActivity$1$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/org/roeg/sawroeg/MainActivity$2$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/org/roeg/sawroeg/MainActivity$3$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/org/roeg/sawroeg/MainActivity$4$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/org/roeg/sawroeg/MainActivity$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/buildId.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/.gradle/2.10/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
@@ -31,54 +40,32 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/classes/debug/org/roeg/sawroeg/BuildConfig.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/classes/debug/org/roeg/sawroeg/BuildConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/classes/debug/org/roeg/sawroeg/ChallengeActivity.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/classes/debug/org/roeg/sawroeg/ChallengeActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/classes/debug/org/roeg/sawroeg/MainActivity$1.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/classes/debug/org/roeg/sawroeg/MainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/classes/debug/org/roeg/sawroeg/MainActivity$2.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/classes/debug/org/roeg/sawroeg/MainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/classes/debug/org/roeg/sawroeg/MainActivity$3.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/classes/debug/org/roeg/sawroeg/MainActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/classes/debug/org/roeg/sawroeg/MainActivity$4.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/classes/debug/org/roeg/sawroeg/MainActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/classes/debug/org/roeg/sawroeg/MainActivity.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/classes/debug/org/roeg/sawroeg/MainActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/incremental-verifier/debug/org/roeg/sawroeg/BuildConfig.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/incremental-verifier/debug/org/roeg/sawroeg/BuildConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/incremental-verifier/debug/org/roeg/sawroeg/ChallengeActivity.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/incremental-verifier/debug/org/roeg/sawroeg/ChallengeActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/incremental-verifier/debug/org/roeg/sawroeg/MainActivity$1.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/incremental-verifier/debug/org/roeg/sawroeg/MainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/incremental-verifier/debug/org/roeg/sawroeg/MainActivity$2.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/incremental-verifier/debug/org/roeg/sawroeg/MainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/incremental-verifier/debug/org/roeg/sawroeg/MainActivity$3.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/incremental-verifier/debug/org/roeg/sawroeg/MainActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/incremental-verifier/debug/org/roeg/sawroeg/MainActivity$4.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/incremental-verifier/debug/org/roeg/sawroeg/MainActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/incremental-verifier/debug/org/roeg/sawroeg/MainActivity.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/incremental-verifier/debug/org/roeg/sawroeg/MainActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/instant-run-support/debug/classes.zip" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/instant-run-support/debug/classes.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/instant-run-support/debug/resources.zip" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/instant-run-support/debug/resources.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.0.0_fef4d1d4dc763188147acf54d7b5dfbc8682193b.jar" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.0.0_fef4d1d4dc763188147acf54d7b5dfbc8682193b.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.0.0_086ce1de37fb4f3b5e508abce8b9823b878a3bdc.jar" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.0.0_086ce1de37fb4f3b5e508abce8b9823b878a3bdc.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/pre-dexed/debug/com.android.support-design-24.0.0_e1177076dd6537cdcbddc1b30e29f272db94efdf.jar" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/pre-dexed/debug/com.android.support-design-24.0.0_e1177076dd6537cdcbddc1b30e29f272db94efdf.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-24.0.0_6e10c9961559204099f0e9f033a5c44c818f934e.jar" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-24.0.0_6e10c9961559204099f0e9f033a5c44c818f934e.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.0.0_819ffd6361759bbaaeb630d408301214fb36b821.jar" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.0.0_819ffd6361759bbaaeb630d408301214fb36b821.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.0.0_3bb34f2822fc5943567b4b1f2f70f76da9952037.jar" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.0.0_3bb34f2822fc5943567b4b1f2f70f76da9952037.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/pre-dexed/debug/debug_7a58d66de5f8b15ff5ee4fdab9af5ef14f972f72.jar" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/pre-dexed/debug/debug_7a58d66de5f8b15ff5ee4fdab9af5ef14f972f72.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0_67e9cd7f8b8afe7d766cbd262ae3ef7cf914cf7d.jar" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0_67e9cd7f8b8afe7d766cbd262ae3ef7cf914cf7d.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/pre-dexed/debug/support-annotations-24.0.0_87872c407cfa724dbe7962bd30c03adc025f54b1.jar" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/pre-dexed/debug/support-annotations-24.0.0_87872c407cfa724dbe7962bd30c03adc025f54b1.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/res/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/org/roeg/sawroeg/BuildConfig.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/org/roeg/sawroeg/BuildConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/org/roeg/sawroeg/ChallengeActivity.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/org/roeg/sawroeg/ChallengeActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/org/roeg/sawroeg/MainActivity$1.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/org/roeg/sawroeg/MainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/org/roeg/sawroeg/MainActivity$2.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/org/roeg/sawroeg/MainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/org/roeg/sawroeg/MainActivity$3.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/org/roeg/sawroeg/MainActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/org/roeg/sawroeg/MainActivity$4.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/org/roeg/sawroeg/MainActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/org/roeg/sawroeg/MainActivity.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/org/roeg/sawroeg/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/org/roeg/sawroeg/BuildConfig.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/org/roeg/sawroeg/BuildConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/org/roeg/sawroeg/ChallengeActivity.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/org/roeg/sawroeg/ChallengeActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/org/roeg/sawroeg/MainActivity$1.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/org/roeg/sawroeg/MainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/org/roeg/sawroeg/MainActivity$2.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/org/roeg/sawroeg/MainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/org/roeg/sawroeg/MainActivity$3.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/org/roeg/sawroeg/MainActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/org/roeg/sawroeg/MainActivity$4.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/org/roeg/sawroeg/MainActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/org/roeg/sawroeg/MainActivity.class" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/org/roeg/sawroeg/MainActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/outputs/apk/app-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/.idea/misc.xml" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/generated/source/buildConfig/debug/org/roeg/sawroeg/BuildConfig.java" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/generated/source/buildConfig/debug/org/roeg/sawroeg/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/blame/res/debug/single/layout.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/bundles/debug/instant-run/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/bundles/debug/instant-run/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/instant-run-support/debug/manifest.crc" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/instant-run-support/debug/manifest.crc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/instant-run-support/debug/reload-changes.txt" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/instant-run-support/debug/reload-changes.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/build/intermediates/restart-dex/debug/build-info.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/java/org/roeg/sawroeg/ChallengeActivity.java" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/java/org/roeg/sawroeg/ChallengeActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/java/org/roeg/sawroeg/MainActivity.java" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/java/org/roeg/sawroeg/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/../StudioProjects/sawroeg-android/build/intermediates/dex-cache/cache.xml" />
     </list>
     <ignored path="sawroeg-android.iws" />
@@ -107,51 +94,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="styles.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/res/values/styles.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1376673">
-              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="colors.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/res/values-v14/colors.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/res/layout/activity_main.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.3333335">
-              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-              <folding>
-                <element signature="e#889#922#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/java/org/roeg/sawroeg/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -159,6 +101,36 @@
               <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChallengeActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/java/org/roeg/sawroeg/ChallengeActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.42727274">
+              <caret line="86" column="39" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
+              <folding>
+                <element signature="e#1235#1348#0" expanded="true" />
+                <element signature="e#1347#1348#0" expanded="true" />
+                <element signature="e#1380#1492#0" expanded="true" />
+                <element signature="e#1491#1492#0" expanded="true" />
+                <element signature="e#1524#1637#0" expanded="true" />
+                <element signature="e#1636#1637#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_challenge.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/res/layout/activity_challenge.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.581818">
+              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -1904,9 +1876,9 @@
         <option value="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/res/values-v14/colors.xml" />
         <option value="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/java/org/roeg/sawroeg/Dict.java" />
-        <option value="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/java/org/roeg/sawroeg/ChallengeActivity.java" />
-        <option value="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/java/org/roeg/sawroeg/MainActivity.java" />
         <option value="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/java/org/roeg/sawroeg/MainActivity.java" />
+        <option value="$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/java/org/roeg/sawroeg/ChallengeActivity.java" />
       </list>
     </option>
   </component>
@@ -1953,38 +1925,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Gradle Scripts" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sawroeg-android" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sawroeg-android" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2331,6 +2271,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925472" sideWeight="0.51970184" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925472" sideWeight="0.4802982" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925472" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2343,14 +2284,13 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39933258" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2371,7 +2311,9 @@
     </ignored-roots>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="8" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -2609,25 +2551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/res/values-v14/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/java/org/roeg/sawroeg/Dict.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.052083332">
@@ -2636,14 +2559,6 @@
             <element signature="e#1278#1286#0" expanded="true" />
             <element signature="e#1333#1341#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/java/org/roeg/sawroeg/ChallengeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2663,6 +2578,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1376673">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/res/values-v14/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.378119">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26229507">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding>
+            <element signature="e#889#922#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/android-sdk/platforms/android-24/android.jar!/android/view/View.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2884614">
+          <caret line="317" column="19" selection-start-line="317" selection-start-column="19" selection-end-line="317" selection-end-column="19" />
+          <folding>
+            <element signature="e#14171#14172#0" expanded="true" />
+            <element signature="e#14222#14223#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/android-sdk/platforms/android-24/android.jar!/android/os/Looper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.1923075">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding>
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/android-sdk/platforms/android-24/android.jar!/android/os/Handler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7418655">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding>
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/res/layout/activity_challenge.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.581818">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/java/org/roeg/sawroeg/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2671,21 +2667,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/java/org/roeg/sawroeg/ChallengeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.3333335">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.42727274">
+          <caret line="86" column="39" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
           <folding>
-            <element signature="e#889#922#0" expanded="true" />
+            <element signature="e#1235#1348#0" expanded="true" />
+            <element signature="e#1347#1348#0" expanded="true" />
+            <element signature="e#1380#1492#0" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
+            <element signature="e#1524#1637#0" expanded="true" />
+            <element signature="e#1636#1637#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../StudioProjects/sawroeg-android/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1376673">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
