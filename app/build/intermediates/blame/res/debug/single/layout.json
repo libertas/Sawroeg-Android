@@ -200,12 +200,12 @@
         "source": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
-        "source": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/select_dialog_item_material.xml"
-    },
-    {
         "merged": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
         "source": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/select_dialog_item_material.xml"
     },
     {
         "merged": "/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",

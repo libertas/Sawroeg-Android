@@ -45,10 +45,12 @@ public class MainActivity extends AppCompatActivity {
 		}
     	Iterator<String> result = Dict.search(keyword, db, limit_length);
 		items.clear();
-		int count = 1;
 		while(result.hasNext())  {
-			items.add(String.valueOf(count) + "." + (String) result.next());
-			count++;
+			String[] tmp = result.next().split(" ", 2);
+			String key = tmp[0];
+			String value = tmp[1];
+
+			items.add(key + "\n" + value);
 		}
 		aa.notifyDataSetChanged();
     }
@@ -92,7 +94,6 @@ public class MainActivity extends AppCompatActivity {
           {
               String i = (String)items.get(arg2);
               ClipboardManager cm =(ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-              i = i.split(".", 2)[1].substring(1);
               cm.setText(i);
               Toast.makeText(MainActivity.this, "Fukceih diuzmoeg \"" + i + "\"", Toast.LENGTH_SHORT).show();
           }
@@ -100,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
 
 		list.setOnItemLongClickListener(new OnItemLongClickListener(){
 			public boolean onItemLongClick(AdapterView<?> arg0, View view, final int location, long arg3) {
-				String fav_item = ((String) items.get(location)).split(".", 2)[1].substring(1);
+				String fav_item = (String) items.get(location);
 				datadb.execSQL("INSERT OR IGNORE INTO favs VALUES (?, 0)", new Object[]{fav_item});
 				Toast.makeText(MainActivity.this, "Gya \"" + fav_item.split(" ", 2)[0] +
 						"\" haeuj diuzmoeg hoj bae liux", Toast.LENGTH_SHORT).show();

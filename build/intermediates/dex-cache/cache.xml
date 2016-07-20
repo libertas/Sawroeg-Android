@@ -33,14 +33,14 @@
         jar="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="9e1bd2db5c4e1bf40b883497be93358f25312ddf">
+        sha1="5bf7b0f1a2d0159aa984a03f748a99780d53e713">
         <dex dex="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_6f6c756910ab1830c6c44fac8f27143b9acd764a/classes.dex" />
     </item>
     <item
         jar="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="06d705040f26ead0e789933b64c0f7e1327b36c6">
+        sha1="2d96418ece9f69bc439ac99cbb2d10d4c51177c1">
         <dex dex="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_03d81982f724939d3bcb720cb73f7479f67ba047/classes.dex" />
     </item>
     <item

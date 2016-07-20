@@ -71,7 +71,7 @@ public class ChallengeActivity extends Activity {
 			c = db.rawQuery("SELECT * FROM (SELECT * FROM favs ORDER BY data) ORDER BY RANDOM() LIMIT 1", null);
 			if(c.moveToNext() && c != null) {
 				ans = c.getString(c.getColumnIndex("item"));
-				key = ans.split(" ", 2)[0];
+				key = ans.split("\n", 2)[0];
 				textView1.setText(key);
 				refreshState = 0;
 			}

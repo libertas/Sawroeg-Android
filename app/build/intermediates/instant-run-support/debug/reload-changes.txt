@@ -1,0 +1,2 @@
+CHANGED,/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/org/roeg/sawroeg/BuildConfig$override.class
+CHANGED,/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
