@@ -4,27 +4,27 @@
     api-level="22"
     density="xxhdpi"
     format="7"
-    timestamp="3595195065940"
+    timestamp="5197935052374"
     token="8044365128920800610" >
 
     <task
         name="javac"
-        duration="168" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="93" />
+        duration="0" />
     <task
         name="verifier"
-        duration="9" />
+        duration="0" />
 
     <artifact
         location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="3595195065940" >
+    <build timestamp="5197935052374" >
         <artifact
             location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
