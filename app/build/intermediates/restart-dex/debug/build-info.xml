@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="arm64-v8a,armeabi-v7a,armeabi"
-    api-level="22"
-    density="xxhdpi"
+    api-level="24"
+    density="420dpi"
     format="7"
-    timestamp="5197935052374"
-    token="8044365128920800610" >
+    timestamp="5891177917151"
+    token="3908393224972194562" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="68" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="28" />
     <task
         name="verifier"
-        duration="0" />
+        duration="4" />
 
     <artifact
-        location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/outputs/apk/app-debug.apk"
+        location="/home/libertas/Develop/Sawroeg-Android/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="5197935052374" >
+    <build timestamp="5891177917151" >
         <artifact
-            location="/home/libertas/Develop/StudioProjects/sawroeg-android/app/build/outputs/apk/app-debug.apk"
+            location="/home/libertas/Develop/Sawroeg-Android/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
 
