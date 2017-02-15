@@ -2,11 +2,11 @@ package org.roeg.sawroeg;
 
 import java.util.ArrayList;
 
-import android.app.Activity;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.ClipboardManager;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,7 +18,7 @@ import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
 
-public class VocabularyActivity extends Activity {
+public class VocabularyActivity extends AppCompatActivity {
 	
 	SQLiteDatabase db;
 	ArrayList<String> items;

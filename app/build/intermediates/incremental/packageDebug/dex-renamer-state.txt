@@ -1,4 +1,4 @@
-#Wed Feb 15 18:43:12 CST 2017
+#Wed Feb 15 20:03:12 CST 2017
 base.0=/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_26142ef3979ca9b134dacef085323f6d24d0e50f
 renamed.1=classes2.dex
 renamed.0=classes.dex

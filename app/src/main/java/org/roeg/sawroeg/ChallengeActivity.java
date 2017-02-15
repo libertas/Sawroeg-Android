@@ -1,15 +1,15 @@
 package org.roeg.sawroeg;
 
-import android.app.Activity;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class ChallengeActivity extends Activity {
+public class ChallengeActivity extends AppCompatActivity {
 	
 	static SQLiteDatabase db;
 	static Cursor c;
