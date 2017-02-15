@@ -9,8 +9,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.text.ClipboardManager;
 import android.view.KeyEvent;
@@ -21,21 +21,26 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-	
-	private ArrayAdapter<String> aa;
-    private ArrayList<String> items;
-    public static SQLiteDatabase db;
+
+	private ArrayAdapter<String> itemsArray;
+	private ArrayList<String> items;
+
+	private ArrayAdapter<String> historyArray;
+	private ArrayList<String> historyStrings;
+
+
+	public static SQLiteDatabase db;
 	public static SQLiteDatabase datadb;
-    private ListView list;
-    
-    private void newSearch(String keyword) {
-    	SharedPreferences settings = getSharedPreferences("org.roeg.sawroeg_preferences", MODE_PRIVATE);
+	private ListView list;
+
+	private void newSearch(String keyword) {
+		SharedPreferences settings = getSharedPreferences("org.roeg.sawroeg_preferences", MODE_PRIVATE);
 		String length_s = settings.getString("length_edit", "30");
 		int limit_length;
 		try {
@@ -43,81 +48,26 @@ public class MainActivity extends AppCompatActivity {
 		} catch (Exception e) {
 			limit_length = 30;
 		}
-    	Iterator<String> result = Dict.search(keyword, db, limit_length);
+		Iterator<String> result = Dict.search(keyword, db, limit_length);
 		items.clear();
-		while(result.hasNext())  {
+		while (result.hasNext()) {
 			String[] tmp = result.next().split(" ", 2);
 			String key = tmp[0];
 			String value = tmp[1];
 
 			items.add(key + "\n" + value);
 		}
-		aa.notifyDataSetChanged();
-    }
-    
-	
+		itemsArray.notifyDataSetChanged();
+	}
+
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		Toast.makeText(MainActivity.this, "Anqcoux Ma Yungh Sawroeg~", Toast.LENGTH_SHORT).show();
-		
-		//Create the UI
-		list = (ListView) findViewById(R.id.listView);
+		Toast.makeText(MainActivity.this, "Angqcoux Ma Yungh Sawroeg~", Toast.LENGTH_SHORT).show();
 
-		TextInputLayout textInputLayout = (TextInputLayout) findViewById(R.id.textInputLayout);
-		final EditText text = textInputLayout.getEditText();
 
-		items = new ArrayList<String>();
-		aa = new ArrayAdapter<String>(this,
-				android.R.layout.simple_list_item_1,
-				items);
-		list.setAdapter(aa);
-		text.setOnKeyListener(new View.OnKeyListener() {
-			@Override
-			public boolean onKey(View v, int keyCode, KeyEvent event) {
-				if(event.getAction() == KeyEvent.ACTION_DOWN)
-					if(keyCode == KeyEvent.KEYCODE_ENTER){
-						String keyword = text.getText().toString();
-						newSearch(keyword);
-						list.setSelection(0);
-						return true;
-					}
-				return false;
-			}
-		});
-
-		list.setOnItemClickListener(new OnItemClickListener()
-        {
-          @Override
-          public void onItemClick(AdapterView arg0, View arg1, int arg2,long arg3)
-          {
-              String i = (String)items.get(arg2);
-              ClipboardManager cm =(ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-              cm.setText(i);
-              Toast.makeText(MainActivity.this, "Fukceih diuzmoeg \"" + i + "\"", Toast.LENGTH_SHORT).show();
-          }
-      });
-
-		list.setOnItemLongClickListener(new OnItemLongClickListener(){
-			public boolean onItemLongClick(AdapterView<?> arg0, View view, final int location, long arg3) {
-				String fav_item = (String) items.get(location);
-				datadb.execSQL("INSERT OR IGNORE INTO favs VALUES (?, 0)", new Object[]{fav_item});
-				Toast.makeText(MainActivity.this, "Gya \"" + fav_item.split(" ", 2)[0] +
-						"\" haeuj diuzmoeg hoj bae liux", Toast.LENGTH_SHORT).show();
-				return true;
-			}
-		});
-		final Button ebutton = (Button) findViewById(R.id.buttonSearch);
-		ebutton.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				String keyword = text.getText().toString();
-				newSearch(keyword);
-				list.setSelection(0);
-			}
-		});
-		
 		//Copy the database
 		db = openOrCreateDatabase("sawguq.db", MODE_PRIVATE, null);
 		datadb = openOrCreateDatabase("data.db", MODE_PRIVATE, null);
@@ -132,13 +82,79 @@ public class MainActivity extends AppCompatActivity {
 				out.write(buffer, 0, readBytes);
 			in.close();
 			out.close();
-		}
-		catch(Exception e1){
+		} catch (Exception e1) {
 			throw new Error("Unable to create database");
+		} finally {
 		}
-		finally {
+
+
+		//Create the UI
+		list = (ListView) findViewById(R.id.listView);
+
+		final AutoCompleteTextView text = (AutoCompleteTextView) findViewById(R.id.editText);
+		historyStrings = new ArrayList<String>();
+		Iterator<String> allKeys = Dict.getAll(db);
+		while(allKeys.hasNext()) {
+			String nextKey = allKeys.next();
+			if(!historyStrings.contains(nextKey)) {
+				historyStrings.add(nextKey);
+			}
 		}
-}
+		historyArray = new ArrayAdapter<String>(this,
+				android.R.layout.simple_list_item_1,
+				historyStrings);
+		text.setAdapter(historyArray);
+
+		items = new ArrayList<String>();
+		itemsArray = new ArrayAdapter<String>(this,
+				android.R.layout.simple_list_item_1,
+				items);
+		list.setAdapter(itemsArray);
+		text.setOnKeyListener(new View.OnKeyListener() {
+			@Override
+			public boolean onKey(View v, int keyCode, KeyEvent event) {
+				if (event.getAction() == KeyEvent.ACTION_DOWN)
+					if (keyCode == KeyEvent.KEYCODE_ENTER) {
+						String keyword = text.getText().toString();
+
+						newSearch(keyword);
+						list.setSelection(0);
+						return true;
+					}
+				return false;
+			}
+		});
+
+		list.setOnItemClickListener(new OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView arg0, View arg1, int arg2, long arg3) {
+				String i = (String) items.get(arg2);
+				ClipboardManager cm = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+				cm.setText(i);
+				Toast.makeText(MainActivity.this, "Fukceih diuzmoeg \"" + i + "\"", Toast.LENGTH_SHORT).show();
+			}
+		});
+
+		list.setOnItemLongClickListener(new OnItemLongClickListener() {
+			public boolean onItemLongClick(AdapterView<?> arg0, View view, final int location, long arg3) {
+				String fav_item = (String) items.get(location);
+				datadb.execSQL("INSERT OR IGNORE INTO favs VALUES (?, 0)", new Object[]{fav_item});
+				Toast.makeText(MainActivity.this, "Gya \"" + fav_item.split(" ", 2)[0] +
+						"\" haeuj diuzmoeg hoj bae liux", Toast.LENGTH_SHORT).show();
+				return true;
+			}
+		});
+		final Button ebutton = (Button) findViewById(R.id.buttonSearch);
+		ebutton.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				String keyword = text.getText().toString();
+
+				newSearch(keyword);
+				list.setSelection(0);
+			}
+		});
+	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -170,5 +186,15 @@ public class MainActivity extends AppCompatActivity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public void onStart() {
+		super.onStart();
+	}
+
+	@Override
+	public void onStop() {
+		super.onStop();
 	}
 }

@@ -87,4 +87,25 @@ public class Dict {
 		}
 		return result.iterator();
 	}
+
+	public static Iterator<String> getAll(SQLiteDatabase db) {
+		ArrayList<String> result = new ArrayList<String>();
+		Cursor c = null;
+
+		try {
+			c = db.rawQuery("SELECT * FROM sawguq", null);
+
+			while(c.moveToNext()) {
+				result.add(c.getString(c.getColumnIndex("key")));
+			}
+
+		} catch (Exception e) {
+
+		} finally {
+			if(c != null)
+				c.close();
+		}
+
+		return result.iterator();
+	}
 }
