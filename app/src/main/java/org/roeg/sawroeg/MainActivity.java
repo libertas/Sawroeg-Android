@@ -93,13 +93,8 @@ public class MainActivity extends AppCompatActivity {
 
 		final AutoCompleteTextView text = (AutoCompleteTextView) findViewById(R.id.editText);
 		historyStrings = new ArrayList<String>();
-		Iterator<String> allKeys = Dict.getAll(db);
-		while(allKeys.hasNext()) {
-			String nextKey = allKeys.next();
-			if(!historyStrings.contains(nextKey)) {
-				historyStrings.add(nextKey);
-			}
-		}
+		ArrayList<String> allKeys = Dict.getAll(db);
+		historyStrings.addAll(allKeys);
 		historyArray = new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1,
 				historyStrings);

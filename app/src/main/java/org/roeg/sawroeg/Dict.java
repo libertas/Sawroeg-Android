@@ -88,12 +88,12 @@ public class Dict {
 		return result.iterator();
 	}
 
-	public static Iterator<String> getAll(SQLiteDatabase db) {
+	public static ArrayList<String> getAll(SQLiteDatabase db) {
 		ArrayList<String> result = new ArrayList<String>();
 		Cursor c = null;
 
 		try {
-			c = db.rawQuery("SELECT * FROM sawguq", null);
+			c = db.rawQuery("SELECT distinct(key) FROM sawguq", null);
 
 			while(c.moveToNext()) {
 				result.add(c.getString(c.getColumnIndex("key")));
@@ -106,6 +106,6 @@ public class Dict {
 				c.close();
 		}
 
-		return result.iterator();
+		return result;
 	}
 }
