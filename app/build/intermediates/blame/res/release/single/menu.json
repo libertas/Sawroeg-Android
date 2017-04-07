@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/res/merged/release/menu/vocabulary.xml",
+        "source": "/home/libertas/Develop/Sawroeg-Android/app/src/main/res/menu/vocabulary.xml"
+    },
+    {
+        "merged": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/res/merged/release/menu/settings.xml",
+        "source": "/home/libertas/Develop/Sawroeg-Android/app/src/main/res/menu/settings.xml"
+    },
+    {
+        "merged": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/res/merged/release/menu/main.xml",
+        "source": "/home/libertas/Develop/Sawroeg-Android/app/src/main/res/menu/main.xml"
+    }
+]

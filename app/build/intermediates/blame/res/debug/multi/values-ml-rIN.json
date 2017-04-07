@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ml-rIN/values-ml-rIN.xml",
+        "outputFile": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ml-rIN/values-ml-rIN.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 219
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 327
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 450
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 568
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 683
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 776
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -125,7 +125,7 @@
                     "endOffset": 881
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -144,7 +144,7 @@
                     "endOffset": 1013
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -163,7 +163,7 @@
                     "endOffset": 1090
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -182,7 +182,7 @@
                     "endOffset": 1166
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -201,7 +201,7 @@
                     "endOffset": 1248
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -220,7 +220,7 @@
                     "endOffset": 1359
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -239,7 +239,7 @@
                     "endOffset": 1465
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -258,7 +258,7 @@
                     "endOffset": 1563
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -277,7 +277,7 @@
                     "endOffset": 1677
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -296,7 +296,7 @@
                     "endOffset": 1778
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -315,7 +315,7 @@
                     "endOffset": 1889
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -334,7 +334,7 @@
                     "endOffset": 2017
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -353,7 +353,7 @@
                     "endOffset": 2118
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -372,7 +372,7 @@
                     "endOffset": 2373
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
@@ -391,7 +391,7 @@
                     "endOffset": 2515
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -410,7 +410,7 @@
                     "endOffset": 2726
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -429,7 +429,7 @@
                     "endOffset": 2867
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -448,7 +448,7 @@
                     "endOffset": 3002
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -467,7 +467,7 @@
                     "endOffset": 3221
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -486,7 +486,7 @@
                     "endOffset": 3458
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -505,7 +505,7 @@
                     "endOffset": 3585
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -524,7 +524,7 @@
                     "endOffset": 3775
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -543,7 +543,7 @@
                     "endOffset": 3900
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -562,7 +562,7 @@
                     "endOffset": 4085
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -581,7 +581,7 @@
                     "endOffset": 4211
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -600,7 +600,7 @@
                     "endOffset": 4347
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -619,7 +619,7 @@
                     "endOffset": 4535
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
@@ -638,7 +638,7 @@
                     "endOffset": 4665
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
@@ -657,7 +657,7 @@
                     "endOffset": 4853
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -676,7 +676,7 @@
                     "endOffset": 4981
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 25,
                         "startColumn": 4,
@@ -695,7 +695,7 @@
                     "endOffset": 5251
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values-ml-rIN/common_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values-ml-rIN/common_strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -714,7 +714,7 @@
                     "endOffset": 5505
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -733,7 +733,7 @@
                     "endOffset": 5629
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -752,7 +752,7 @@
                     "endOffset": 5747
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -771,7 +771,7 @@
                     "endOffset": 5952
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -790,7 +790,7 @@
                     "endOffset": 6090
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -809,7 +809,7 @@
                     "endOffset": 6298
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -828,7 +828,7 @@
                     "endOffset": 6442
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -847,7 +847,7 @@
                     "endOffset": 6633
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -866,7 +866,7 @@
                     "endOffset": 6726
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
@@ -885,7 +885,7 @@
                     "endOffset": 6825
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 29,
                         "startColumn": 4,
@@ -904,7 +904,7 @@
                     "endOffset": 6947
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-ml-rIN/base_strings.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
@@ -923,7 +923,7 @@
                     "endOffset": 7048
                 },
                 "from": {
-                    "file": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
+                    "file": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ml-rIN/values-ml-rIN.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
