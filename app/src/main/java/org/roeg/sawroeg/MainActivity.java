@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
 	public static SQLiteDatabase datadb;
 	private ListView list;
 
+	AutoCompleteTextView text;
+
 	private void newSearch(String keyword) {
 		SharedPreferences settings = getSharedPreferences("org.roeg.sawroeg_preferences", MODE_PRIVATE);
 		String length_s = settings.getString("length_edit", "30");
@@ -90,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
 		//Create the UI
 		list = (ListView) findViewById(R.id.listView);
 
-		final AutoCompleteTextView text = (AutoCompleteTextView) findViewById(R.id.editText);
+		text = (AutoCompleteTextView) findViewById(R.id.editText);
 		historyStrings = new ArrayList<String>();
 		ArrayList<String> allKeys = Dict.getAll(db);
 		historyStrings.addAll(allKeys);
@@ -109,6 +111,8 @@ public class MainActivity extends AppCompatActivity {
 			public boolean onKey(View v, int keyCode, KeyEvent event) {
 				if (event.getAction() == KeyEvent.ACTION_DOWN)
 					if (keyCode == KeyEvent.KEYCODE_ENTER) {
+						text.dismissDropDown();
+
 						String keyword = text.getText().toString();
 
 						newSearch(keyword);
@@ -142,6 +146,8 @@ public class MainActivity extends AppCompatActivity {
 		ebutton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				text.dismissDropDown();
+				
 				String keyword = text.getText().toString();
 
 				newSearch(keyword);
