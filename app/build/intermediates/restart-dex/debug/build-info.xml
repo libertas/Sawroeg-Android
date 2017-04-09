@@ -5,29 +5,29 @@
     density="420dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="18171492084560"
+    timestamp="7454887405594"
     token="3908393224972194562"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="153" />
+        duration="142" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="4" />
+        duration="112" />
     <task
         name="verifier"
-        duration="1" />
+        duration="5" />
 
     <artifact
         location="/home/libertas/Develop/Sawroeg-Android/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="18171492084560"
+        timestamp="7454887405594"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/libertas/Develop/Sawroeg-Android/app/build/outputs/apk/app-debug.apk"

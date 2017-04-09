@@ -60,6 +60,10 @@
         "source": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/notification_media_action.xml"
     },
     {
+        "merged": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/res/merged/debug/layout/activity_splash.xml",
+        "source": "/home/libertas/Develop/Sawroeg-Android/app/src/main/res/layout/activity_splash.xml"
+    },
+    {
         "merged": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
         "source": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_action_menu_item_layout.xml"
     },

@@ -32,48 +32,52 @@ MERGED from [com.android.support:support-v4:24.0.0] /home/libertas/Develop/Sawro
 		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:9:9-45
 	android:theme
 		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:11:9-40
-activity#org.roeg.sawroeg.MainActivity
-ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:12:9-20:20
-	android:label
-		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:14:13-45
+activity#org.roeg.sawroeg.SplashActivity
+ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:12:9-18:20
 	android:name
-		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:13:13-41
+		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:12:19-49
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:15:13-19:29
+ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:13:13-17:29
 action#android.intent.action.MAIN
-ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:16:17-69
+ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:14:17-69
 	android:name
-		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:16:25-66
+		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:18:17-77
+ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:16:17-77
 	android:name
-		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:18:27-74
+		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:16:27-74
+activity#org.roeg.sawroeg.MainActivity
+ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:19:9-22:20
+	android:label
+		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:21:13-45
+	android:name
+		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:20:13-41
 activity#org.roeg.sawroeg.SettingsActivity
-ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:21:9-28:20
+ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:23:9-30:20
 	android:label
-		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:23:13-60
+		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:25:13-60
 	android:parentActivityName
-		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:24:13-79
+		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:26:13-79
 	android:name
-		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:22:13-45
+		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:24:13-45
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:25:13-27:73
+ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:27:13-29:73
 	android:value
-		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:27:17-70
+		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:29:17-70
 	android:name
-		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:26:17-63
+		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:28:17-63
 activity#org.roeg.sawroeg.VocabularyActivity
-ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:29:9-32:20
+ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:31:9-33:74
 	android:label
-		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:31:13-62
+		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:33:13-62
 	android:name
-		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:30:13-47
+		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:32:13-47
 activity#org.roeg.sawroeg.ChallengeActivity
-ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:33:9-36:20
+ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:34:9-36:73
 	android:label
-		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:35:13-61
+		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:36:13-61
 	android:name
-		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:34:13-46
+		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:35:13-46
 uses-sdk
 INJECTED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:24.0.0] /home/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/AndroidManifest.xml:20:5-43
