@@ -3,6 +3,8 @@ package org.roeg.sawroeg;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Iterator;
 
 import android.content.Context;
@@ -95,6 +97,14 @@ public class MainActivity extends AppCompatActivity {
 		text = (AutoCompleteTextView) findViewById(R.id.editText);
 		historyStrings = new ArrayList<String>();
 		ArrayList<String> allKeys = Dict.getAll(db);
+
+		Collections.sort(allKeys, new Comparator<String>() {
+			@Override
+			public int compare(String s, String t1) {
+				return s.compareTo(t1);
+			}
+		});
+
 		historyStrings.addAll(allKeys);
 		historyArray = new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1,
