@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
 
 		db.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/newdict.db' AS 'new';");
 		db.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/sawguq.db' AS 'old';");
-		db.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM old.sawguq UNION SELECT * FROM new.sawguq;");
+		db.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM new.sawguq UNION SELECT * FROM old.sawguq;");
 
 
 		//Create the UI
