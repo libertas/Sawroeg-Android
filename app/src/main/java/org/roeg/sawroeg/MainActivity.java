@@ -1,5 +1,6 @@
 package org.roeg.sawroeg;
 
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -64,6 +65,14 @@ public class MainActivity extends AppCompatActivity {
 	}
 
 	private void checkDatabase(String dbname) {
+		File f = new File("data/data/org.roeg.sawroeg/databases/" + dbname);
+		if(f.exists()) {
+			System.out.println("The database " + dbname + " exists");
+			return;
+		} else {
+			System.out.println("Copying the database " + dbname);
+		}
+
 		try {
 			FileOutputStream out = new FileOutputStream("data/data/org.roeg.sawroeg/databases/" + dbname);
 			InputStream in = getResources().getAssets().open(dbname);
