@@ -63,22 +63,10 @@ public class MainActivity extends AppCompatActivity {
 		itemsArray.notifyDataSetChanged();
 	}
 
-
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
-		Toast.makeText(MainActivity.this, "Angqcoux Ma Yungh Sawroeg~", Toast.LENGTH_SHORT).show();
-
-
-		//Copy the database
-		db = openOrCreateDatabase("sawguq.db", MODE_PRIVATE, null);
-		datadb = openOrCreateDatabase("data.db", MODE_PRIVATE, null);
-		datadb.execSQL("CREATE TABLE IF NOT EXISTS favs (item, data)");
-		datadb.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS idx_item ON favs (item)");
+	private void checkDatabase(String dbname) {
 		try {
-			FileOutputStream out = new FileOutputStream("data/data/org.roeg.sawroeg/databases/sawguq.db");
-			InputStream in = getResources().getAssets().open("sawguq.db");
+			FileOutputStream out = new FileOutputStream("data/data/org.roeg.sawroeg/databases/" + dbname);
+			InputStream in = getResources().getAssets().open(dbname);
 			byte[] buffer = new byte[1024];
 			int readBytes = 0;
 			while ((readBytes = in.read(buffer)) != -1)
@@ -89,6 +77,28 @@ public class MainActivity extends AppCompatActivity {
 			throw new Error("Unable to create database");
 		} finally {
 		}
+	}
+
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		Toast.makeText(MainActivity.this, "Angqcoux Ma Yungh Sawroeg~", Toast.LENGTH_SHORT).show();
+
+
+		//Copy the database
+		db = openOrCreateDatabase(":memory:", MODE_PRIVATE, null);
+		datadb = openOrCreateDatabase("data.db", MODE_PRIVATE, null);
+		datadb.execSQL("CREATE TABLE IF NOT EXISTS favs (item, data)");
+		datadb.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS idx_item ON favs (item)");
+
+		checkDatabase("sawguq.db");
+		checkDatabase("newdict.db");
+
+		db.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/newdict.db' AS 'new';");
+		db.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/sawguq.db' AS 'old';");
+		db.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM old.sawguq UNION SELECT * FROM new.sawguq;");
 
 
 		//Create the UI
