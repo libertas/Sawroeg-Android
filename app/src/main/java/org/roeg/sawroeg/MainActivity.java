@@ -1,8 +1,10 @@
 package org.roeg.sawroeg;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -11,7 +13,9 @@ import java.util.Iterator;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteException;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.ClipboardManager;
@@ -64,24 +68,92 @@ public class MainActivity extends AppCompatActivity {
 		itemsArray.notifyDataSetChanged();
 	}
 
+	private void copyFile(InputStream from, OutputStream to) {
+		try {
+			byte[] buffer = new byte[1024];
+			int readBytes = 0;
+			while ((readBytes = from.read(buffer)) != -1)
+				to.write(buffer, 0, readBytes);
+			from.close();
+			to.close();
+		} catch (Exception e1) {
+			throw new Error("Unable to create database");
+		} finally {
+		}
+	}
+
+	private int getDBVersion(SQLiteDatabase db) {
+		Cursor c;
+
+		try {
+			c = db.rawQuery("SELECT value FROM info WHERE key = 'version'", null);
+		} catch(SQLiteException e) {
+			return 0;
+		}
+
+		if(c.moveToNext()) {
+			String version_str = c.getString(c.getColumnIndex("value"));
+			int version;
+			try {
+				version = Integer.valueOf(version_str).intValue();
+			} catch(NumberFormatException e) {
+				version = 0;
+			}
+			return version;
+		} else {
+			return 0;
+		}
+	}
+
 	private void checkDatabase(String dbname) {
+		int version_orig;
+		int version;
+
+		String dbname_orig = dbname + ".origin";
+
+		File f_orig = new File("data/data/org.roeg.sawroeg/databases/" + dbname_orig);
+
+		if(f_orig.exists()) {
+			System.out.println("The database " + dbname_orig + " exists");
+
+			SQLiteDatabase db_orig = openOrCreateDatabase(dbname_orig, MODE_PRIVATE, null);
+			version_orig = getDBVersion(db_orig);
+			db_orig.close();
+		} else {
+			System.out.println("Copying the database " + dbname_orig);
+
+			try {
+				InputStream in = getResources().getAssets().open(dbname);
+				OutputStream out = new FileOutputStream(f_orig);
+				copyFile(in, out);
+
+				SQLiteDatabase db_orig = openOrCreateDatabase(dbname_orig, MODE_PRIVATE, null);
+				version_orig = getDBVersion(db_orig);
+				db_orig.close();
+			} catch (Exception e1) {
+				throw new Error("Unable to create database");
+			} finally {
+			}
+		}
+
 		File f = new File("data/data/org.roeg.sawroeg/databases/" + dbname);
 		if(f.exists()) {
 			System.out.println("The database " + dbname + " exists");
-			return;
+
+			SQLiteDatabase db = openOrCreateDatabase(dbname, MODE_PRIVATE, null);
+			version = getDBVersion(db);
+
+			if(version_orig <= version) {
+				return;
+			}
 		} else {
 			System.out.println("Copying the database " + dbname);
 		}
 
 		try {
-			FileOutputStream out = new FileOutputStream("data/data/org.roeg.sawroeg/databases/" + dbname);
-			InputStream in = getResources().getAssets().open(dbname);
-			byte[] buffer = new byte[1024];
-			int readBytes = 0;
-			while ((readBytes = in.read(buffer)) != -1)
-				out.write(buffer, 0, readBytes);
-			in.close();
-			out.close();
+			InputStream in = new FileInputStream(f_orig);
+			OutputStream out = new FileOutputStream(f);
+			copyFile(in, out);
 		} catch (Exception e1) {
 			throw new Error("Unable to create database");
 		} finally {
@@ -176,7 +248,7 @@ public class MainActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View v) {
 				text.dismissDropDown();
-				
+
 				String keyword = text.getText().toString();
 
 				newSearch(keyword);
