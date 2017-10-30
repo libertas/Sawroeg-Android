@@ -106,53 +106,10 @@ public class MainActivity extends AppCompatActivity {
 	}
 
 	private void checkDatabase(String dbname) {
-		int version_orig;
-		int version;
-
-		String dbname_orig = dbname + ".origin";
-
-		File f_orig = new File("data/data/org.roeg.sawroeg/databases/" + dbname_orig);
-
-		if(f_orig.exists()) {
-			System.out.println("The database " + dbname_orig + " exists");
-
-			SQLiteDatabase db_orig = openOrCreateDatabase(dbname_orig, MODE_PRIVATE, null);
-			version_orig = getDBVersion(db_orig);
-			db_orig.close();
-		} else {
-			System.out.println("Copying the database " + dbname_orig);
-
-			try {
-				InputStream in = getResources().getAssets().open(dbname);
-				OutputStream out = new FileOutputStream(f_orig);
-				copyFile(in, out);
-
-				SQLiteDatabase db_orig = openOrCreateDatabase(dbname_orig, MODE_PRIVATE, null);
-				version_orig = getDBVersion(db_orig);
-				db_orig.close();
-			} catch (Exception e1) {
-				throw new Error("Unable to create database");
-			} finally {
-			}
-		}
-
-		File f = new File("data/data/org.roeg.sawroeg/databases/" + dbname);
-		if(f.exists()) {
-			System.out.println("The database " + dbname + " exists");
-
-			SQLiteDatabase db = openOrCreateDatabase(dbname, MODE_PRIVATE, null);
-			version = getDBVersion(db);
-
-			if(version_orig <= version) {
-				return;
-			}
-		} else {
-			System.out.println("Copying the database " + dbname);
-		}
-
 		try {
-			InputStream in = new FileInputStream(f_orig);
-			OutputStream out = new FileOutputStream(f);
+			InputStream in = getResources().getAssets().open(dbname);
+			OutputStream out = new FileOutputStream("data/data/org.roeg.sawroeg/databases/"
+					+ dbname);
 			copyFile(in, out);
 		} catch (Exception e1) {
 			throw new Error("Unable to create database");
@@ -175,11 +132,16 @@ public class MainActivity extends AppCompatActivity {
 		datadb.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS idx_item ON favs (item)");
 
 		checkDatabase("sawguq.db");
-		checkDatabase("newdict.db");
 
-		db.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/newdict.db' AS 'new';");
 		db.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/sawguq.db' AS 'old';");
-		db.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM new.sawguq UNION SELECT * FROM old.sawguq;");
+
+		File newdict = new File("data/data/org.roeg.sawroeg/databases/newdict.db");
+		if(newdict.exists()) {
+			db.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/newdict.db' AS 'new';");
+			db.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM new.sawguq UNION SELECT * FROM old.sawguq;");
+		} else {
+			db.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM old.sawguq;");
+		}
 
 
 		//Create the UI

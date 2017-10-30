@@ -34,7 +34,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="e5574fb449104686ff1e80c0f59447fe2ac9f743">
+        sha1="20e5d3b266a6509a9c011c966144674a4884a8c1">
         <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_1193a13ab803808c27369411318ad3b26fdfd434.jar" />
     </item>
     <item
@@ -70,7 +70,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="b12fae75d8f1fc510b01fa7c104afddf6282f336">
+        sha1="7a422dbe517d9499ca722dc466eccb7781981730">
         <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/instant-run_b636e03551be4c99a6b938629649bdca9cca89c3.jar" />
     </item>
     <item
