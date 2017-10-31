@@ -1,7 +1,6 @@
 package org.roeg.sawroeg;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -124,6 +123,9 @@ public class MainActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_main);
 		Toast.makeText(MainActivity.this, "Angqcoux Ma Yungh Sawroeg~", Toast.LENGTH_SHORT).show();
 
+		//Check dict update
+		DictUpdateIntentService.startActionDictUpdate(this.getApplicationContext(), "newdict.db");
+
 
 		//Copy the database
 		db = openOrCreateDatabase(":memory:", MODE_PRIVATE, null);
@@ -132,6 +134,7 @@ public class MainActivity extends AppCompatActivity {
 		datadb.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS idx_item ON favs (item)");
 
 		checkDatabase("sawguq.db");
+		checkDatabase("newdict.db");
 
 		db.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/sawguq.db' AS 'old';");
 
