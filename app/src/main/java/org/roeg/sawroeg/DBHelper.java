@@ -18,7 +18,7 @@ public class DBHelper {
             from.close();
             to.close();
         } catch (Exception e1) {
-            throw new Error("Unable to create database");
+            System.out.println(e1);
         } finally {
         }
     }

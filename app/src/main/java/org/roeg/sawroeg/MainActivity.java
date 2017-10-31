@@ -101,8 +101,12 @@ public class MainActivity extends AppCompatActivity {
 
 		db.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/sawguq.db' AS 'old';");
 
+		File newdict_net = new File("data/data/org.roeg.sawroeg/databases/newdict.db.net");
 		File newdict = new File("data/data/org.roeg.sawroeg/databases/newdict.db");
-		if(newdict.exists()) {
+		if(newdict_net.exists()) {
+			db.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/newdict.db.net' AS 'new';");
+			db.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM new.sawguq UNION SELECT * FROM old.sawguq;");
+		} else if(newdict.exists()) {
 			db.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/newdict.db' AS 'new';");
 			db.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM new.sawguq UNION SELECT * FROM old.sawguq;");
 		} else {

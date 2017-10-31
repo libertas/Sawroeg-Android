@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Oct 31 21:38:43 CST 2017
+#Tue Oct 31 22:20:13 CST 2017
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_ic_star_black_36dp.png
