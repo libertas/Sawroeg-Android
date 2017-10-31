@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:2:1-42:12
+ADDED from /Users/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:2:1-44:12
 	package
 		ADDED from /Users/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:3:5-31
 		INJECTED from /Users/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml
@@ -84,6 +84,10 @@ ADDED from /Users/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.
 		ADDED from /Users/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:39:13-37
 	android:name
 		ADDED from /Users/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:38:13-52
+uses-permission#android.permission.INTERNET
+ADDED from /Users/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:42:5-66
+	android:name
+		ADDED from /Users/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:42:22-64
 uses-sdk
 INJECTED from /Users/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:24.0.0] /Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/AndroidManifest.xml:20:5-43
