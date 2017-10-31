@@ -6,7 +6,7 @@ ADDED from /Users/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.
 		INJECTED from /Users/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml
 	android:versionName
-		ADDED from /Users/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:5:5-32
+		ADDED from /Users/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:5:5-30
 		INJECTED from /Users/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml
 	android:versionCode
