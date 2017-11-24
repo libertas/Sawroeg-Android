@@ -103,7 +103,21 @@ public class MainActivity extends AppCompatActivity {
 
 		File newdict_net = new File("data/data/org.roeg.sawroeg/databases/newdict.db.net");
 		File newdict = new File("data/data/org.roeg.sawroeg/databases/newdict.db");
-		if(newdict_net.exists()) {
+		if(newdict_net.exists() && newdict.exists()) {
+			SQLiteDatabase newdb_net = openOrCreateDatabase("newdict.db.net", MODE_PRIVATE, null);
+			SQLiteDatabase newdb = openOrCreateDatabase("newdict.db", MODE_PRIVATE, null);
+
+			int version_net = DBHelper.getDBVersion(newdb_net);
+			int version = DBHelper.getDBVersion(newdb);
+
+			if(version < version_net) {
+				db.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/newdict.db.net' AS 'new';");
+			} else {
+				db.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/newdict.db' AS 'new';");
+			}
+
+			db.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM new.sawguq UNION SELECT * FROM old.sawguq;");
+		} else if(newdict_net.exists()) {
 			db.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/newdict.db.net' AS 'new';");
 			db.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM new.sawguq UNION SELECT * FROM old.sawguq;");
 		} else if(newdict.exists()) {
