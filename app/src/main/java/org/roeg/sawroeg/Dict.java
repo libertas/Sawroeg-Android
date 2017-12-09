@@ -52,6 +52,7 @@ public class Dict {
 		}
 		try {
 			boolean issc = isStringChinese(keyword);
+			keyword = keyword.replace(" ", " ");  // replace space with "\xa0"
 			if(issc)
 				c = db.rawQuery("SELECT * FROM sawguq WHERE value like \"%%$s%%\"".replace("$s", keyword), null);
 			else
@@ -96,7 +97,8 @@ public class Dict {
 			c = db.rawQuery("SELECT distinct(key) FROM sawguq", null);
 
 			while(c.moveToNext()) {
-				result.add(c.getString(c.getColumnIndex("key")));
+				// get and key words and replace "\xa0" with space
+				result.add(c.getString(c.getColumnIndex("key")).replace(" ", " "));
 			}
 
 		} catch (Exception e) {

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Dec 09 15:35:06 CST 2017
+#Sat Dec 09 15:52:22 CST 2017
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/res/resources-debug.ap_/res/color/abc_tint_default.xml
