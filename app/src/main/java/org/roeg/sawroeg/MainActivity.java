@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 	public static SQLiteDatabase datadb;
 	private ListView list;
 
-	AutoCompleteTextView text;
+	private AutoCompleteTextView text;
 
 	private void newSearch(String keyword) {
 		SharedPreferences settings = getSharedPreferences("org.roeg.sawroeg_preferences", MODE_PRIVATE);
@@ -238,7 +238,13 @@ public class MainActivity extends AppCompatActivity {
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		if (keyCode == KeyEvent.KEYCODE_BACK) {
-			moveTaskToBack(false);
+			if(event.getRepeatCount() == 2 || text.getText().toString().equals("")) {
+				moveTaskToBack(false);
+				return true;
+			}
+
+			text.setText("");
+
 			return true;
 		}
 		return super.onKeyDown(keyCode, event);
