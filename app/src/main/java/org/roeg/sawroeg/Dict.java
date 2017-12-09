@@ -64,9 +64,9 @@ public class Dict {
 				j = c.getString(c.getColumnIndex("value"));
 				result1.add(j);
 				if(issc)
-					distance = Levenshtein.distance(j, j.length(), keyword, keyword.length());
+					distance = Levenshtein.distance(j, keyword);
 				else
-					distance = Levenshtein.distance(i, i.length(), keyword, keyword.length());
+					distance = Levenshtein.distance(i, keyword);
 				distances.add(distance);
 			}
 		}
