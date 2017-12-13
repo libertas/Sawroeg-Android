@@ -1,4 +1,4 @@
-#Sat Dec 09 17:21:57 CST 2017
+#Wed Dec 13 19:51:43 CST 2017
 base.0=/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/dex/release/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/dex/release/folders/1000/1f/main/classes.dex
