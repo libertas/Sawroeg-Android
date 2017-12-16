@@ -5,33 +5,40 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="4539741496537"
+    timestamp="75996095496855"
     token="8730779652966741778"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="395" />
+        duration="336" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="34" />
     <task
         name="instant-run-transform"
-        duration="69" />
+        duration="66" />
     <task
         name="verifier"
-        duration="1" />
+        duration="9" />
 
     <artifact
-        location="/Users/libertas/Develop/Sawroeg-Android/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build
-        timestamp="22954079406599"
+        timestamp="75922985771596"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/libertas/Develop/Sawroeg-Android/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="75996095496855"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

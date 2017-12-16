@@ -9,15 +9,14 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteException;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.ClipboardManager;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -77,6 +76,19 @@ public class MainActivity extends AppCompatActivity {
 			throw new Error("Unable to create database");
 		} finally {
 		}
+	}
+
+	private void copyToClip(String data) {
+		ClipboardManager cm = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+		ClipData cd = ClipData.newPlainText("Sawroeg", data);
+		cm.setPrimaryClip(cd);
+		Toast.makeText(MainActivity.this, "Fukceih diuzmoeg \"" + data + "\"", Toast.LENGTH_SHORT).show();
+	}
+
+	private  void addToFav(String data) {
+		datadb.execSQL("INSERT OR IGNORE INTO favs VALUES (?, 0)", new Object[]{data});
+		Toast.makeText(MainActivity.this, "Gya \"" + data.split(" ", 2)[0] +
+				"\" haeuj diuzmoeg hoj bae liux", Toast.LENGTH_SHORT).show();
 	}
 
 
@@ -174,18 +186,14 @@ public class MainActivity extends AppCompatActivity {
 			@Override
 			public void onItemClick(AdapterView arg0, View arg1, int arg2, long arg3) {
 				String i = (String) items.get(arg2);
-				ClipboardManager cm = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-				cm.setText(i);
-				Toast.makeText(MainActivity.this, "Fukceih diuzmoeg \"" + i + "\"", Toast.LENGTH_SHORT).show();
+				copyToClip(i);
 			}
 		});
 
 		list.setOnItemLongClickListener(new OnItemLongClickListener() {
 			public boolean onItemLongClick(AdapterView<?> arg0, View view, final int location, long arg3) {
 				String fav_item = (String) items.get(location);
-				datadb.execSQL("INSERT OR IGNORE INTO favs VALUES (?, 0)", new Object[]{fav_item});
-				Toast.makeText(MainActivity.this, "Gya \"" + fav_item.split(" ", 2)[0] +
-						"\" haeuj diuzmoeg hoj bae liux", Toast.LENGTH_SHORT).show();
+				addToFav(fav_item);
 				return true;
 			}
 		});
