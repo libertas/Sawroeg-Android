@@ -6,6 +6,8 @@
     <string name="title_activity_settings">Sietceiq</string>
     <string name="title_activity_vocabulary">Diuzmoeg Hoj</string>
     <string name="title_activity_challenge">Diujcienq Sawcuengh</string>
+    <string name="action_copy">Guhmoq</string>
+    <string name="coqhaeuj_diuzmoeg_hoj">Coqhaeuj Diuzmoeg Hoj</string>
 
 
 </resources>

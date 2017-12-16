@@ -15,17 +15,8 @@
         jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
-        revision="24.0.0"
-        sha1="dff3a550fc44ed0092664de5a0053feca993227b">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_1193a13ab803808c27369411318ad3b26fdfd434.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
         revision="25.0.0"
-        sha1="b3431b8d454d7122e9342a1449239446f9dfadd7">
+        sha1="bc8063c81b3e605763b025e3505e064db0f80358">
         <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_1193a13ab803808c27369411318ad3b26fdfd434.jar" />
     </item>
     <item
@@ -39,30 +30,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_76a29379b01868f53138be89c6bc90fd6080b850.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
         <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_2924051315f0d4c9e5a37484183dfa46e2220eb9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.0"
-        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.4.0_80813cee055731d05f419aec55763d1890a3ec2f.jar" />
     </item>
     <item
         is-multidex="false"
@@ -85,38 +58,11 @@
     <item
         is-multidex="false"
         jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-8.4.0_9e1c3049ca7553a9c5458d374f70376bee5835da.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.0"
         sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
         <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-8.4.0_9e1c3049ca7553a9c5458d374f70376bee5835da.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d9f8a1766800cf951c7bb7428f2ae21b0684927c">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/instant-run_b636e03551be4c99a6b938629649bdca9cca89c3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.4.0_80813cee055731d05f419aec55763d1890a3ec2f.jar" />
     </item>
     <item
         is-multidex="false"
@@ -129,39 +75,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_fd670f857018f5998b87ff0c3e50cb68a1fca164.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/opt/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
         <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.0_c5dad26935e5309605957d824abc95b4e2134e8d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.0_92b5632a080c5e9a8f3cd989e1ca760b9c984d1d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.0.0_183b01320a283ca4690dc49a160446e141494cf0.jar" />
     </item>
     <item
         is-multidex="false"
@@ -204,54 +123,9 @@
         jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="25.0.0"
-        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-8.4.0_417d65d1ea8dfc02f3beab6810684c6c8a40bc1a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.0_3c76eb4a968752f848333e26313f7d667d85deb2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
         revision="24.0.0"
         sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
         <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-8.4.0_417d65d1ea8dfc02f3beab6810684c6c8a40bc1a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.0_a3befb1abba54d32b3cbd7f9c772cc461200342c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.0"
-        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-8.4.0_417d65d1ea8dfc02f3beab6810684c6c8a40bc1a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_fa2f5f1260381f13b325aef03408aaab089aee74.jar" />
     </item>
     <item
         is-multidex="false"
@@ -279,6 +153,132 @@
         revision="25.0.0"
         sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
         <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.0_1f48bbd7d9f713e933d3f29f04ce1b0c0318fb37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="dff3a550fc44ed0092664de5a0053feca993227b">
+        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_1193a13ab803808c27369411318ad3b26fdfd434.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_76a29379b01868f53138be89c6bc90fd6080b850.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.4.0_80813cee055731d05f419aec55763d1890a3ec2f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-8.4.0_9e1c3049ca7553a9c5458d374f70376bee5835da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3d2d4f52f8680898154b9f5130a6a3840b6a4153">
+        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/instant-run_b636e03551be4c99a6b938629649bdca9cca89c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.4.0_80813cee055731d05f419aec55763d1890a3ec2f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_fd670f857018f5998b87ff0c3e50cb68a1fca164.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.0_92b5632a080c5e9a8f3cd989e1ca760b9c984d1d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.0.0_183b01320a283ca4690dc49a160446e141494cf0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-8.4.0_417d65d1ea8dfc02f3beab6810684c6c8a40bc1a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.0_3c76eb4a968752f848333e26313f7d667d85deb2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.0_a3befb1abba54d32b3cbd7f9c772cc461200342c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-8.4.0_417d65d1ea8dfc02f3beab6810684c6c8a40bc1a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_fa2f5f1260381f13b325aef03408aaab089aee74.jar" />
     </item>
 
 </items>

@@ -17,8 +17,10 @@ import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.PopupMenu;
 import android.view.KeyEvent;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -29,6 +31,8 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import static android.R.attr.id;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -82,14 +86,43 @@ public class MainActivity extends AppCompatActivity {
 		ClipboardManager cm = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
 		ClipData cd = ClipData.newPlainText("Sawroeg", data);
 		cm.setPrimaryClip(cd);
-		Toast.makeText(MainActivity.this, "Fukceih diuzmoeg \"" + data + "\"", Toast.LENGTH_SHORT).show();
+		Toast.makeText(MainActivity.this, "Guhmoq diuzmoeg \"" + data + "\"", Toast.LENGTH_SHORT).show();
 	}
 
-	private  void addToFav(String data) {
+	private void addToFav(String data) {
 		datadb.execSQL("INSERT OR IGNORE INTO favs VALUES (?, 0)", new Object[]{data});
-		Toast.makeText(MainActivity.this, "Gya \"" + data.split(" ", 2)[0] +
+		Toast.makeText(MainActivity.this, "Coq \"" + data.split(" ", 2)[0] +
 				"\" haeuj diuzmoeg hoj bae liux", Toast.LENGTH_SHORT).show();
 	}
+
+	private void makePopMenu(View view, final String data) {
+
+		PopupMenu popup = new PopupMenu(this, view);
+
+		MenuInflater inflater = popup.getMenuInflater();
+
+		inflater.inflate(R.menu.popmenu, popup.getMenu());
+
+		popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+
+			@Override
+			public boolean onMenuItemClick(MenuItem item) {
+				int id = item.getItemId();
+				switch(id) {
+					case R.id.action_copy:
+						copyToClip(data);
+						break;
+					case R.id.coqhaeuj_diuzmoeg_hoj:
+						addToFav(data);
+						break;
+				}
+
+				return false;
+			}
+		});
+
+		popup.show();
+}
 
 
 	@Override
@@ -185,18 +218,12 @@ public class MainActivity extends AppCompatActivity {
 		list.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView arg0, View arg1, int arg2, long arg3) {
-				String i = (String) items.get(arg2);
-				copyToClip(i);
+				String data = items.get(arg2).toString();
+
+				makePopMenu(arg1, data);
 			}
 		});
 
-		list.setOnItemLongClickListener(new OnItemLongClickListener() {
-			public boolean onItemLongClick(AdapterView<?> arg0, View view, final int location, long arg3) {
-				String fav_item = (String) items.get(location);
-				addToFav(fav_item);
-				return true;
-			}
-		});
 		final Button ebutton = (Button) findViewById(R.id.buttonSearch);
 		ebutton.setOnClickListener(new View.OnClickListener() {
 			@Override

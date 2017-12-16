@@ -1,15 +1,11 @@
 [
     {
-        "merged": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/res/merged/debug/color/abc_background_cache_hint_selector_material_dark.xml",
-        "source": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_background_cache_hint_selector_material_dark.xml"
+        "merged": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_secondary_text_material_dark.xml"
     },
     {
         "merged": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
         "source": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_btn_colored_borderless_text_material.xml"
-    },
-    {
-        "merged": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
-        "source": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_secondary_text_material_dark.xml"
     },
     {
         "merged": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
@@ -98,10 +94,6 @@
     {
         "merged": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
         "source": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_tint_btn_checkable.xml"
-    },
-    {
-        "merged": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/res/merged/debug/color/abc_background_cache_hint_selector_material_light.xml",
-        "source": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_background_cache_hint_selector_material_light.xml"
     },
     {
         "merged": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",

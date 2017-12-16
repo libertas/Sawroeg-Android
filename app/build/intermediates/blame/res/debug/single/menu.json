@@ -10,5 +10,9 @@
     {
         "merged": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/res/merged/debug/menu/settings.xml",
         "source": "/Users/libertas/Develop/Sawroeg-Android/app/src/main/res/menu/settings.xml"
+    },
+    {
+        "merged": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/res/merged/debug/menu/popmenu.xml",
+        "source": "/Users/libertas/Develop/Sawroeg-Android/app/src/main/res/menu/popmenu.xml"
     }
 ]

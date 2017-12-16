@@ -2752,6 +2752,7 @@ containing a value of this type.
         public static final int action_bar_title=0x7f0c0046;
         public static final int action_container=0x7f0c008e;
         public static final int action_context_bar=0x7f0c0068;
+        public static final int action_copy=0x7f0c00a8;
         public static final int action_divider=0x7f0c0095;
         public static final int action_image=0x7f0c008f;
         public static final int action_menu_divider=0x7f0c0002;
@@ -2788,6 +2789,7 @@ containing a value of this type.
         public static final int clip_vertical=0x7f0c0031;
         public static final int collapseActionView=0x7f0c003b;
         public static final int contentPanel=0x7f0c0056;
+        public static final int coqhaeuj_diuzmoeg_hoj=0x7f0c00a9;
         public static final int custom=0x7f0c005c;
         public static final int customPanel=0x7f0c005b;
         public static final int dark=0x7f0c0042;
@@ -2988,8 +2990,9 @@ containing a value of this type.
     }
     public static final class menu {
         public static final int main=0x7f0d0000;
-        public static final int settings=0x7f0d0001;
-        public static final int vocabulary=0x7f0d0002;
+        public static final int popmenu=0x7f0d0001;
+        public static final int settings=0x7f0d0002;
+        public static final int vocabulary=0x7f0d0003;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f060000;
@@ -3023,13 +3026,14 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with=0x7f060010;
         public static final int abc_shareactionprovider_share_with_application=0x7f060011;
         public static final int abc_toolbar_collapse_description=0x7f060012;
-        public static final int action_settings=0x7f06003e;
-        public static final int app_name=0x7f06003f;
-        public static final int appbar_scrolling_view_behavior=0x7f060040;
-        public static final int auth_google_play_services_client_facebook_display_name=0x7f060041;
-        public static final int auth_google_play_services_client_google_display_name=0x7f060042;
-        public static final int bottom_sheet_behavior=0x7f060043;
-        public static final int character_counter_pattern=0x7f060044;
+        public static final int action_copy=0x7f06003e;
+        public static final int action_settings=0x7f06003f;
+        public static final int app_name=0x7f060040;
+        public static final int appbar_scrolling_view_behavior=0x7f060041;
+        public static final int auth_google_play_services_client_facebook_display_name=0x7f060042;
+        public static final int auth_google_play_services_client_google_display_name=0x7f060043;
+        public static final int bottom_sheet_behavior=0x7f060044;
+        public static final int character_counter_pattern=0x7f060045;
         public static final int common_google_play_services_api_unavailable_text=0x7f060013;
         public static final int common_google_play_services_enable_button=0x7f060014;
         public static final int common_google_play_services_enable_text=0x7f060015;
@@ -3059,11 +3063,12 @@ containing a value of this type.
         public static final int common_open_on_phone=0x7f06002d;
         public static final int common_signin_button_text=0x7f06002e;
         public static final int common_signin_button_text_long=0x7f06002f;
+        public static final int coqhaeuj_diuzmoeg_hoj=0x7f060046;
         public static final int search_menu_title=0x7f060030;
         public static final int status_bar_notification_info_overflow=0x7f060031;
-        public static final int title_activity_challenge=0x7f060045;
-        public static final int title_activity_settings=0x7f060046;
-        public static final int title_activity_vocabulary=0x7f060047;
+        public static final int title_activity_challenge=0x7f060047;
+        public static final int title_activity_settings=0x7f060048;
+        public static final int title_activity_vocabulary=0x7f060049;
     }
     public static final class style {
         public static final int AccentButton=0x7f08009b;
