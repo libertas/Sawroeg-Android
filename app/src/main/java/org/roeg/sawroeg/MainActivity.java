@@ -50,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
 	private AutoCompleteTextView text;
 
 	private void newSearch(String keyword) {
+		keyword = keyword.trim();
+
 		SharedPreferences settings = getSharedPreferences("org.roeg.sawroeg_preferences", MODE_PRIVATE);
 		String length_s = settings.getString("length_edit", "30");
 		int limit_length;
@@ -58,8 +60,11 @@ public class MainActivity extends AppCompatActivity {
 		} catch (Exception e) {
 			limit_length = 30;
 		}
+
 		Iterator<String> result = Dict.search(keyword, db, limit_length);
+
 		items.clear();
+
 		while (result.hasNext()) {
 			String[] tmp = result.next().split(" ", 2);
 			String key = tmp[0];
@@ -67,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
 			items.add(key + "\n" + value);
 		}
+
 		itemsArray.notifyDataSetChanged();
 	}
 
