@@ -1,7 +1,4 @@
-#Sat Dec 23 14:26:42 CST 2017
-base.0=/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_26142ef3979ca9b134dacef085323f6d24d0e50f
-renamed.1=classes2.dex
+#Sun Mar 04 18:46:09 CST 2018
+base.0=/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
-file.1=/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_74d6d5edc16d706ea50b82d9daceaed2d2aecd02/classes.dex
-base.1=/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_74d6d5edc16d706ea50b82d9daceaed2d2aecd02
-file.0=/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_26142ef3979ca9b134dacef085323f6d24d0e50f/classes.dex
+file.0=/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

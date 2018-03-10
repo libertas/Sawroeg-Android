@@ -23,6 +23,8 @@ public class DictUpdateIntentService extends IntentService {
 
     private static final String EXTRA_DBNAME = "org.roeg.sawroeg.extra.DBVERSIONTOUPDATE";
 
+    private static final String DB_URL = "https://sawroeg.rliber.com/download/db/";
+
     public DictUpdateIntentService() {
         super("DictUpdateIntentService");
     }
@@ -51,7 +53,7 @@ public class DictUpdateIntentService extends IntentService {
 
         try {
             HttpURLConnection connection = null;
-            URL versionUrl = new URL("http://sawroeg.rliber.com/download/db/version.txt");
+            URL versionUrl = new URL(DB_URL + "version.txt");
             connection=(HttpURLConnection)versionUrl.openConnection();
             connection.setRequestMethod("GET");
 
@@ -97,7 +99,7 @@ public class DictUpdateIntentService extends IntentService {
 
             try {
                 HttpURLConnection connection = null;
-                URL versionUrl = new URL("http://sawroeg.rliber.com/download/db/" + dbname);
+                URL versionUrl = new URL(DB_URL + dbname);
                 connection=(HttpURLConnection)versionUrl.openConnection();
                 connection.setRequestMethod("GET");
 
