@@ -1,1 +1,1 @@
-[{"outputType":{"type":"MERGED_MANIFESTS"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":8},"path":"AndroidManifest.xml","properties":{"packageId":"org.roeg.sawroeg","split":"","minSdkVersion":"11"}}]
+[{"outputType":{"type":"MERGED_MANIFESTS"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":8},"path":"AndroidManifest.xml","properties":{"packageId":"org.roeg.sawroeg","split":"","minSdkVersion":"14"}}]

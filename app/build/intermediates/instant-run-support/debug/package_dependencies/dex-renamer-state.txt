@@ -1,0 +1,4 @@
+#Fri Oct 12 13:13:53 CST 2018
+base.0=/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/dexMerger/debug/11
+path.0=classes.dex
+renamed.0=classes.dex
