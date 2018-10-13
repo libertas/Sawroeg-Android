@@ -28,22 +28,21 @@ public class Dict {
         		|| ub == Character.UnicodeBlock.CJK_SYMBOLS_AND_PUNCTUATION
         		|| ub == Character.UnicodeBlock.HALFWIDTH_AND_FULLWIDTH_FORMS) {
         	return true;
-        	}
+        }
         return false;
     }
 	private static boolean isStringChinese(String s) {
-		boolean flag = false;
 		for(char i:s.toCharArray()) {
 			if(isCharChinese(i))
-				flag = true;
+				return true;
 		}
-		return flag;
+		return false;
 	}
 	
 	public static Iterator<String> search(String keyword, SQLiteDatabase db, int limit_length) {
-		ArrayList<String> result = new ArrayList<String>();
-		ArrayList<String> result1 = new ArrayList<String>();
-		ArrayList distances = new ArrayList();
+		ArrayList<String> result = new ArrayList<>();
+		ArrayList<String> result1 = new ArrayList<>();
+		ArrayList<Integer> distances = new ArrayList<>();
 		Cursor c = null;
 		if(keyword.length() < 1)
 		{
@@ -57,18 +56,26 @@ public class Dict {
 				c = db.rawQuery("SELECT * FROM sawguq WHERE value like \"%%$s%%\"".replace("$s", keyword), null);
 			else
 				c = db.rawQuery("SELECT * FROM sawguq WHERE key like \"%%$s%%\"".replace("$s", keyword), null);
+
 			String i, j;
 			int distance;
+
 			while(c.moveToNext()) {
+
 				i = c.getString(c.getColumnIndex("key"));
 				j = c.getString(c.getColumnIndex("value"));
+
 				result1.add(j);
-				if(issc)
-					distance = Levenshtein.distance(j, keyword);
-				else
-					distance = Levenshtein.distance(i, keyword);
+
+				if(issc) {
+                    distance = Levenshtein.distance(j, keyword);
+                } else {
+                    distance = Levenshtein.distance(i, keyword);
+                }
+
 				distances.add(distance);
 			}
+
 		}
 		catch(Exception e){
 
@@ -77,6 +84,7 @@ public class Dict {
 			if(c != null)
 				c.close();
 		}
+
 		int m, index, count = 0;
 		while(distances.size() != 0 && count != limit_length) {
 			m = min(distances);
