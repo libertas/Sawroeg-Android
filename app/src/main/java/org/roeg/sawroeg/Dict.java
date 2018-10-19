@@ -1,11 +1,17 @@
 package org.roeg.sawroeg;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Iterator;
+import java.util.List;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Pair;
 
+import org.roeg.cytokenizer.CYTokenizer;
+import org.roeg.cytokenizer.CuenghTokenizer;
+import org.roeg.cytokenizer.Word;
 
 
 public class Dict {
@@ -38,19 +44,75 @@ public class Dict {
 		}
 		return false;
 	}
+
+	private static int wordsSimilarity(List<Word> a, List<Word> b) {
+		int result[] = new int[a.size() + b.size() - 1];
+
+		int results[][] = new int[a.size()][b.size()];
+
+		for(int i = 0; i < a.size(); i++) {
+			Word wa = a.get(i);
+			String sa = wa.toString();
+
+			for(int j = 0; j < b.size(); j++) {
+				Word wb = b.get(j);
+
+				String sb = wb.toString();
+
+				if(sa.equals(sb)) {
+					results[i][j] = 0;
+				} else if(wa.getMehsing().equals(wb.getMehsing())
+						&& wa.getMehyinh().equals(wb.getMehyinh())) {
+					results[i][j] = 1;
+				} else {
+					results[i][j] = 3;
+				}
+			}
+		}
+
+		for (int n = 0; n < b.size(); n++) {
+			for(int i = 0, j = n ; i < a.size() && j < b.size(); i++, j++) {
+				result[n] += results[i][j];
+			}
+		}
+
+		for(int n = 0; n < a.size() - 1; n++) {
+			for(int i = n + 1, j = 0; i < a.size() && j < b.size(); i++, j++) {
+				result[b.size() + n] += results[i][j];
+			}
+		}
+
+		int ans = Integer.MAX_VALUE;
+
+		for(int i = 0; i < result.length; i++) {
+			if(result[i] < ans) {
+				ans = result[i];
+			}
+		}
+
+		return ans;
+	}
 	
 	public static Iterator<String> search(String keyword, SQLiteDatabase db, int limit_length) {
+		CYTokenizer tokenizer = new CuenghTokenizer();
+
+		List<Word> keys = null;
+
 		ArrayList<String> result = new ArrayList<>();
 		ArrayList<String> result1 = new ArrayList<>();
 		ArrayList<Integer> distances = new ArrayList<>();
+		ArrayList<Integer> wordDistances = new ArrayList<>();
+
+		boolean issc = isStringChinese(keyword);
+
 		Cursor c = null;
 		if(keyword.length() < 1)
 		{
 			result.add("Ndi miz");
 			return result.iterator();
 		}
+
 		try {
-			boolean issc = isStringChinese(keyword);
 			keyword = keyword.replace(" ", " ");  // replace space with "\xa0"
 			if(issc)
 				c = db.rawQuery("SELECT * FROM sawguq WHERE value like \"%%$s%%\"".replace("$s", keyword), null);
@@ -59,6 +121,14 @@ public class Dict {
 
 			String i, j;
 			int distance;
+
+			if (!issc) {
+				keys = tokenizer.tokenize(keyword);
+
+				for(Word word: keys) {
+					System.out.println(word);
+				}
+			}
 
 			while(c.moveToNext()) {
 
@@ -71,6 +141,15 @@ public class Dict {
                     distance = Levenshtein.distance(j, keyword);
                 } else {
                     distance = Levenshtein.distance(i, keyword);
+
+					List<Word> values = tokenizer.tokenize(i);
+
+					int similarity = wordsSimilarity(keys, values);
+
+					wordDistances.add(similarity);
+
+					System.out.println("Words:\t" + keys.toString() + "\t" + values.toString() +
+							"\t" + String.valueOf(similarity));
                 }
 
 				distances.add(distance);
@@ -85,15 +164,40 @@ public class Dict {
 				c.close();
 		}
 
-		int m, index, count = 0;
-		while(distances.size() != 0 && count != limit_length) {
-			m = min(distances);
-			index = distances.indexOf(m);
-			result.add(result1.get(index));
-			result1.remove(index);
-			distances.remove(index);
-			count++;
+		if(issc) {
+			int m, index, count = 0;
+			while(distances.size() != 0 && count != limit_length) {
+				m = min(distances);
+				index = distances.indexOf(m);
+				result.add(result1.get(index));
+				result1.remove(index);
+				distances.remove(index);
+				count++;
+			}
+		} else {
+			ArrayList<Pair<String, Pair<Integer, Integer>>> pair = new ArrayList<>();
+			for(int i = 0; i < result1.size(); i++) {
+				pair.add(new Pair<String, Pair<Integer, Integer>>(result1.get(i),
+						new Pair<Integer, Integer>(wordDistances.get(i), distances.get(i))));
+			}
+
+			pair.sort(new Comparator<Pair<String, Pair<Integer, Integer>>>() {
+				@Override
+				public int compare(Pair<String, Pair<Integer, Integer>> o1,
+								   Pair<String, Pair<Integer, Integer>> o2) {
+					if(o1.second.first == o2.second.first) {
+						return o1.second.second - o2.second.second;
+					} else {
+						return o1.second.first - o2.second.first;
+					}
+				}
+			});
+
+			for(Pair<String, Pair<Integer, Integer>> p: pair) {
+				result.add(p.first + String.valueOf(p.second));
+			}
 		}
+
 		return result.iterator();
 	}
 

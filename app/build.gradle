@@ -19,6 +19,7 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:design:26.0.2'
-    compile 'com.google.firebase:firebase-appindexing:10.2.1'
+    implementation 'com.android.support:design:26.0.2'
+    implementation 'com.google.firebase:firebase-appindexing:10.2.1'
+    implementation files('libs/cytokenizer.jar')
 }

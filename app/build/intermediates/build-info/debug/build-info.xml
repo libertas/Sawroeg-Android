@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="arm64-v8a,armeabi-v7a,armeabi"
-    api-level="24"
+    api-level="25"
     build-mode="FULL"
-    density="420dpi"
+    density="xxhdpi"
     format="10"
     plugin-version="3.0.1"
-    timestamp="1539443161589"
+    timestamp="1539964585434"
     token="3908393224972194562"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -18,14 +18,11 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="114" />
     <task
         name="verifier"
         duration="0" />
 
-    <artifact
-        location="/home/libertas/Develop/Sawroeg-Android/app/build/outputs/apk/debug/app-debug.apk"
-        type="SPLIT_MAIN" />
     <artifact
         location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
         type="SPLIT" />
@@ -48,10 +45,10 @@
         location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
         type="SPLIT" />
     <artifact
-        location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
         type="SPLIT" />
     <artifact
-        location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
         type="SPLIT" />
     <artifact
         location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
@@ -59,14 +56,14 @@
     <artifact
         location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
         type="SPLIT" />
+    <artifact
+        location="/home/libertas/Develop/Sawroeg-Android/app/build/outputs/apk/debug/app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1539443161589"
+        timestamp="1539964585434"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="/home/libertas/Develop/Sawroeg-Android/app/build/outputs/apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
         <artifact
             location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
@@ -89,10 +86,10 @@
             location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
@@ -100,6 +97,9 @@
         <artifact
             location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
+        <artifact
+            location="/home/libertas/Develop/Sawroeg-Android/app/build/outputs/apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>
