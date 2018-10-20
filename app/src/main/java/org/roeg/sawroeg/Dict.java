@@ -132,7 +132,8 @@ public class Dict {
 				}
 			}
 
-			while(c.moveToNext()) {
+			int count = 0;
+			while(c.moveToNext() && count++ < limit_length) {
 
 				i = c.getString(c.getColumnIndex("key"));
 				j = c.getString(c.getColumnIndex("value"));
@@ -168,7 +169,7 @@ public class Dict {
 
 		if(issc) {
 			int m, index, count = 0;
-			while(distances.size() != 0 && count != limit_length) {
+			while(distances.size() != 0) {
 				m = min(distances);
 				index = distances.indexOf(m);
 				result.add(result1.get(index));

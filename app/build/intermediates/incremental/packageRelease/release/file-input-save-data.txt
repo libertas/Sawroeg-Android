@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Oct 20 21:01:22 CST 2018
+#Sat Oct 20 21:23:30 CST 2018
 1.base=/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/assets/release
 2.path=classes.dex
 0.baseType=DIRECTORY
