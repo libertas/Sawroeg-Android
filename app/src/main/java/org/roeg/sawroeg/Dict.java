@@ -94,6 +94,8 @@ public class Dict {
 	}
 	
 	public static Iterator<String> search(String keyword, SQLiteDatabase db, int limit_length) {
+		keyword = keyword.toLowerCase();
+
 		CYTokenizer tokenizer = new CuenghTokenizer();
 
 		List<Word> keys = null;
@@ -108,7 +110,7 @@ public class Dict {
 		Cursor c = null;
 		if(keyword.length() < 1)
 		{
-			result.add("Ndi miz");
+			result.add("\nNdi miz");
 			return result.iterator();
 		}
 
@@ -148,8 +150,8 @@ public class Dict {
 
 					wordDistances.add(similarity);
 
-					System.out.println("Words:\t" + keys.toString() + "\t" + values.toString() +
-							"\t" + String.valueOf(similarity));
+//					System.out.println("Words:\t" + keys.toString() + "\t" + values.toString() +
+//							"\t" + String.valueOf(similarity));
                 }
 
 				distances.add(distance);
@@ -194,7 +196,7 @@ public class Dict {
 			});
 
 			for(Pair<String, Pair<Integer, Integer>> p: pair) {
-				result.add(p.first + String.valueOf(p.second));
+				result.add(p.first);
 			}
 		}
 
