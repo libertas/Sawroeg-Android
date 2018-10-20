@@ -132,8 +132,7 @@ public class Dict {
 				}
 			}
 
-			int count = 0;
-			while(c.moveToNext() && count++ < limit_length) {
+			while(c.moveToNext()) {
 
 				i = c.getString(c.getColumnIndex("key"));
 				j = c.getString(c.getColumnIndex("value"));
@@ -169,7 +168,7 @@ public class Dict {
 
 		if(issc) {
 			int m, index, count = 0;
-			while(distances.size() != 0) {
+			while(distances.size() != 0 && count++ < limit_length) {
 				m = min(distances);
 				index = distances.indexOf(m);
 				result.add(result1.get(index));
@@ -196,8 +195,8 @@ public class Dict {
 				}
 			});
 
-			for(Pair<String, Pair<Integer, Integer>> p: pair) {
-				result.add(p.first);
+			for(int i = 0; i < limit_length; i++) {
+				result.add(pair.get(i).first);
 			}
 		}
 

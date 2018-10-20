@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 		try {
 			limit_length = Integer.valueOf(length_s).intValue();
 		} catch (Exception e) {
-			limit_length = 30;
+			limit_length = 500;
 		}
 
 		Iterator<String> result = Dict.search(keyword, db, limit_length);
