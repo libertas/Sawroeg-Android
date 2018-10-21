@@ -6,7 +6,7 @@
         <EditTextPreference
             android:key="length_edit"
             android:title="Diuzmoeg yienj ok ceiq lai"
-            android:defaultValue="30"
+            android:defaultValue="500"
             android:inputType="number">
         </EditTextPreference>
     </PreferenceCategory>

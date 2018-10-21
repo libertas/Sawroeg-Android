@@ -195,7 +195,7 @@ public class Dict {
 				}
 			});
 
-			for(int i = 0; i < limit_length; i++) {
+			for(int i = 0; i < pair.size() && i < limit_length; i++) {
 				result.add(pair.get(i).first);
 			}
 		}

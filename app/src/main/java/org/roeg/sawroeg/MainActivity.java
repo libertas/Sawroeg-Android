@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 		keyword = keyword.trim();
 
 		SharedPreferences settings = getSharedPreferences("org.roeg.sawroeg_preferences", MODE_PRIVATE);
-		String length_s = settings.getString("length_edit", "30");
+		String length_s = settings.getString("length_edit", "500");
 		int limit_length;
 		try {
 			limit_length = Integer.valueOf(length_s).intValue();
