@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
+import java.util.List;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -25,16 +26,16 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import static android.R.attr.id;
 
 public class MainActivity extends AppCompatActivity {
+
+	private Dict cuenghDict;
 
 	private ArrayAdapter<String> itemsArray;
 	private ArrayList<String> items;
@@ -61,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 			limit_length = 500;
 		}
 
-		Iterator<String> result = Dict.search(keyword, db, limit_length);
+		Iterator<String> result = cuenghDict.search(keyword, limit_length);
 
 		items.clear();
 
@@ -178,13 +179,16 @@ public class MainActivity extends AppCompatActivity {
 			db.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM old.sawguq;");
 		}
 
+		// Create the Dict object
+		cuenghDict = new LatinChineseDict(db);
+
 
 		//Create the UI
 		list = (ListView) findViewById(R.id.listView);
 
 		text = (AutoCompleteTextView) findViewById(R.id.editText);
 		historyStrings = new ArrayList<String>();
-		ArrayList<String> allKeys = Dict.getAll(db);
+		List<String> allKeys = cuenghDict.getAll();
 
 		Collections.sort(allKeys, new Comparator<String>() {
 			@Override
