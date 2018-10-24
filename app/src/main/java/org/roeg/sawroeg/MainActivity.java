@@ -32,6 +32,8 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import org.roeg.cytokenizer.CuenghTokenizer;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -180,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
 		}
 
 		// Create the Dict object
-		cuenghDict = new LatinChineseDict(db);
+		cuenghDict = new LatinChineseDict(db, new CuenghTokenizer(), "Loeng: Ra Mbouj Ok Saek Yiengh");
 
 
 		//Create the UI

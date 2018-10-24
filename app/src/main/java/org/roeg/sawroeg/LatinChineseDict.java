@@ -6,7 +6,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.util.Pair;
 
 import org.roeg.cytokenizer.CYTokenizer;
-import org.roeg.cytokenizer.CuenghTokenizer;
 import org.roeg.cytokenizer.Word;
 
 import java.util.ArrayList;
@@ -17,14 +16,12 @@ import java.util.List;
 public class LatinChineseDict extends Dict{
     protected SQLiteDatabase db;
     protected CYTokenizer tokenizer;
+    protected String errMsg;
 
-    LatinChineseDict(SQLiteDatabase db) {
-        this(db, new CuenghTokenizer());
-    }
-
-    LatinChineseDict(SQLiteDatabase db, CYTokenizer tokenizer) {
+    LatinChineseDict(SQLiteDatabase db, CYTokenizer tokenizer, String errMsg) {
         this.db = db;
         this.tokenizer = tokenizer;
+        this.errMsg = errMsg;
     }
 
     @Override
@@ -43,7 +40,7 @@ public class LatinChineseDict extends Dict{
         Cursor c = null;
         if(keyword.length() < 1)
         {
-            result.add("Loeng:\nRa Mbouj Ok Saek Yiengh");
+            result.add(errMsg);
             return result.iterator();
         }
 

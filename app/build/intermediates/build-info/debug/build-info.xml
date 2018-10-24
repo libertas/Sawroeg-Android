@@ -5,21 +5,21 @@
     build-mode="COLD"
     density="420dpi"
     format="10"
-    ir-eligibility="CLASS_ADDED"
+    ir-eligibility="FIELD_ADDED"
     plugin-version="3.0.1"
-    timestamp="1540362006174"
+    timestamp="1540363424137"
     token="3908393224972194562"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="94" />
+        duration="153" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="31" />
+        duration="24" />
     <task
         name="verifier"
         duration="2" />
@@ -71,8 +71,8 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="CLASS_ADDED"
-        timestamp="1540362006174"
+        ir-eligibility="FIELD_ADDED"
+        timestamp="1540363424137"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
