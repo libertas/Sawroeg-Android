@@ -38,6 +38,10 @@ public abstract class Dict {
 	}
 
 	protected static int wordsSimilarity(List<Word> a, List<Word> b) {
+		if(a.size() == 0 || b.size() == 0) {
+			return Integer.MAX_VALUE;
+		}
+
 		int result[] = new int[a.size() + b.size() - 1];
 
 		int results[][] = new int[a.size()][b.size()];
