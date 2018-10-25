@@ -30,6 +30,7 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import org.roeg.cytokenizer.BouyeiTokenizer;
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
 	private Dict cuenghDict;
 	private Dict bouyeiDict;
+	private Dict dict;
 
 	private ArrayAdapter<String> itemsArray;
 	private ArrayList<String> items;
@@ -67,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 			limit_length = 500;
 		}
 
-		Iterator<String> result = cuenghDict.search(keyword, limit_length);
+		Iterator<String> result = dict.search(keyword, limit_length);
 
 		items.clear();
 
@@ -199,13 +201,35 @@ public class MainActivity extends AppCompatActivity {
 		// Create the Dict object
 		cuenghDict = new LatinChineseDict(cuenghDb, new CuenghTokenizer(), "Loeng: Ra Mbouj Ok Saek Yiengh");
 		bouyeiDict = new LatinChineseDict(bouyeiDb, new BouyeiTokenizer(), "Longl: Ral Miz Os Sagt Yiangh");
+		dict = cuenghDict;
 
 		//Create the UI
+		final Spinner spinner = (Spinner) findViewById(R.id.spnLanguage);
+		spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+			@Override
+			public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+				switch (position) {
+					default:
+					case 0:
+						dict = cuenghDict;
+						break;
+					case 1:
+						dict = bouyeiDict;
+						break;
+				}
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> parent) {
+				dict = cuenghDict;
+			}
+		});
+
 		list = (ListView) findViewById(R.id.listView);
 
 		text = (AutoCompleteTextView) findViewById(R.id.editText);
 		historyStrings = new ArrayList<String>();
-		List<String> allKeys = cuenghDict.getAll();
+		List<String> allKeys = dict.getAll();
 
 		Collections.sort(allKeys, new Comparator<String>() {
 			@Override

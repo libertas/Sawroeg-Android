@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/design-26.0.2.aar/60a9ddc3fbb85ccb57342fa2852b427c/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/design-26.0.0.aar/c3929972da55ccb998f8810e096e5edd/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.2.aar/528e765fcf54cb4dd8541ad4bfd649b7/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0.aar/69db4688c3386eaae9ed4dcb72cbcc0c/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

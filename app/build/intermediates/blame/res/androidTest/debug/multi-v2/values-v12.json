@@ -1,26 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v12/values-v12.xml",
-            "map": [
-                {
-                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.2.aar/528e765fcf54cb4dd8541ad4bfd649b7/res/values-v12/values-v12.xml",
-                    "from": {
-                        "startLines": "2,5,8,9",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,279,479,598",
-                        "endLines": "4,7,8,9",
-                        "endColumns": "12,12,118,94",
-                        "endOffsets": "274,474,593,688"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v12/values-v12.xml",
             "map": [
                 {
-                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.0.0.aar/744edc340e093a05af5bd69bc7911754/res/values-v12/values-v12.xml",
+                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0.aar/69db4688c3386eaae9ed4dcb72cbcc0c/res/values-v12/values-v12.xml",
                     "from": {
                         "startLines": "2,5,8,9",
                         "startColumns": "4,4,4,4",

@@ -15,7 +15,6 @@
         android:debuggable="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="org.roeg.sawroeg.SplashActivity" >
             <intent-filter>
@@ -48,7 +47,7 @@
 
         <meta-data
             android:name="android.support.VERSION"
-            android:value="26.0.2" />
+            android:value="26.0.0" />
 
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"

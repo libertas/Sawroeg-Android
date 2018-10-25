@@ -4,32 +4,7 @@
             "outputFile": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.0.0.aar/744edc340e093a05af5bd69bc7911754/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v16/values-v16.xml",
-            "map": [
-                {
-                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.2.aar/6a580a94c1fd0118f0599953e9d8f93b/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.2.aar/528e765fcf54cb4dd8541ad4bfd649b7/res/values-v16/values-v16.xml",
+                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0.aar/69db4688c3386eaae9ed4dcb72cbcc0c/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -45,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0.aar/befd6acad52b99d4508f05d4a07e5973/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

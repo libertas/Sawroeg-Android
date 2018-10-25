@@ -4,22 +4,7 @@
             "outputFile": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.0.0.aar/744edc340e093a05af5bd69bc7911754/res/values-v24/values-v24.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,124,188,257",
-                        "endColumns": "68,63,68,69",
-                        "endOffsets": "119,183,252,322"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
-            "map": [
-                {
-                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.2.aar/528e765fcf54cb4dd8541ad4bfd649b7/res/values-v24/values-v24.xml",
+                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0.aar/69db4688c3386eaae9ed4dcb72cbcc0c/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",
@@ -29,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.2.aar/1dfd55d8bf5e9887bc4b5b9460d8f32d/res/values-v24/values-v24.xml",
+                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0.aar/0b3b97981b3e407ce296a0b97d6f5a7c/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

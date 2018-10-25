@@ -2267,6 +2267,7 @@
     <style name="Widget.Compat.NotificationActionContainer" parent=""/>
     <style name="Widget.Compat.NotificationActionText" parent=""/>
     <style name="Widget.Design.AppBarLayout" parent="Base.Widget.Design.AppBarLayout">
+        <item name="android:paddingLeft">300px</item>
     </style>
     <style name="Widget.Design.BottomNavigationView" parent="">
         <item name="itemBackground">?attr/selectableItemBackgroundBorderless</item>

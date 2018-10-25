@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-zh-rTW/values-zh-rTW.xml",
             "map": [
                 {
-                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.1.aar/acafbcbb7bd5ab890e3dcdb98d4e75a3/res/values-zh-rTW/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "287,386,546,659,759,925,1039,1159,1328,1427,1587,1700,1861,1995,2077,2160",
-                        "endColumns": "98,159,112,99,165,113,119,168,98,159,112,160,133,81,82,98",
-                        "endOffsets": "385,545,658,758,924,1038,1158,1327,1426,1586,1699,1860,1994,2076,2159,2258"
-                    },
-                    "to": {
-                        "startLines": "21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "1926,2029,2189,2306,2410,2576,2694,2980,3149,3252,3412,3529,3690,3828,3914,4001",
-                        "endColumns": "102,159,116,103,165,117,123,168,102,159,116,160,137,85,86,102",
-                        "endOffsets": "2024,2184,2301,2405,2571,2689,2813,3144,3247,3407,3524,3685,3823,3909,3996,4099"
-                    }
-                },
-                {
-                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.2.aar/528e765fcf54cb4dd8541ad4bfd649b7/res/values-zh-rTW/values-zh-rTW.xml",
+                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0.aar/69db4688c3386eaae9ed4dcb72cbcc0c/res/values-zh-rTW/values-zh-rTW.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.1.aar/b03e223a1d1962aeed85d76accf97f4b/res/values-zh-rTW/values.xml",
+                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.1.aar/b03e223a1d1962aeed85d76accf97f4b/res/values-zh-rTW/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -52,6 +35,23 @@
                         "startOffsets": "2818",
                         "endColumns": "161",
                         "endOffsets": "2975"
+                    }
+                },
+                {
+                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.1.aar/acafbcbb7bd5ab890e3dcdb98d4e75a3/res/values-zh-rTW/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "287,386,546,659,759,925,1039,1159,1328,1427,1587,1700,1861,1995,2077,2160",
+                        "endColumns": "98,159,112,99,165,113,119,168,98,159,112,160,133,81,82,98",
+                        "endOffsets": "385,545,658,758,924,1038,1158,1327,1426,1586,1699,1860,1994,2076,2159,2258"
+                    },
+                    "to": {
+                        "startLines": "21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1926,2029,2189,2306,2410,2576,2694,2980,3149,3252,3412,3529,3690,3828,3914,4001",
+                        "endColumns": "102,159,116,103,165,117,123,168,102,159,116,160,137,85,86,102",
+                        "endOffsets": "2024,2184,2301,2405,2571,2689,2813,3144,3247,3407,3524,3685,3823,3909,3996,4099"
                     }
                 }
             ]

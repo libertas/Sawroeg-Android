@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-sl/values-sl.xml",
+            "outputFile": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-sl/values-sl.xml",
             "map": [
                 {
-                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.1.aar/acafbcbb7bd5ab890e3dcdb98d4e75a3/res/values-sl/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "283,387,584,711,816,1022,1150,1279,1496,1601,1799,1927,2138,2316,2412,2500",
-                        "endColumns": "103,196,126,104,205,127,128,216,104,197,127,210,177,95,87,108",
-                        "endOffsets": "386,583,710,815,1021,1149,1278,1495,1600,1798,1926,2137,2315,2411,2499,2608"
-                    },
-                    "to": {
-                        "startLines": "21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2075,2183,2380,2511,2620,2826,2958,3290,3507,3616,3814,3946,4157,4339,4439,4531",
-                        "endColumns": "107,196,130,108,205,131,132,216,108,197,131,210,181,99,91,112",
-                        "endOffsets": "2178,2375,2506,2615,2821,2953,3086,3502,3611,3809,3941,4152,4334,4434,4526,4639"
-                    }
-                },
-                {
-                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.2.aar/528e765fcf54cb4dd8541ad4bfd649b7/res/values-sl/values-sl.xml",
+                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0.aar/69db4688c3386eaae9ed4dcb72cbcc0c/res/values-sl/values-sl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.1.aar/b03e223a1d1962aeed85d76accf97f4b/res/values-sl/values.xml",
+                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.1.aar/acafbcbb7bd5ab890e3dcdb98d4e75a3/res/values-sl/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "283,387,584,711,816,1022,1150,1279,1496,1601,1799,1927,2138,2316,2412,2500",
+                        "endColumns": "103,196,126,104,205,127,128,216,104,197,127,210,177,95,87,108",
+                        "endOffsets": "386,583,710,815,1021,1149,1278,1495,1600,1798,1926,2137,2315,2411,2499,2608"
+                    },
+                    "to": {
+                        "startLines": "21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2075,2183,2380,2511,2620,2826,2958,3290,3507,3616,3814,3946,4157,4339,4439,4531",
+                        "endColumns": "107,196,130,108,205,131,132,216,108,197,131,210,181,99,91,112",
+                        "endOffsets": "2178,2375,2506,2615,2821,2953,3086,3502,3611,3809,3941,4152,4334,4434,4526,4639"
+                    }
+                },
+                {
+                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.1.aar/b03e223a1d1962aeed85d76accf97f4b/res/values-sl/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
