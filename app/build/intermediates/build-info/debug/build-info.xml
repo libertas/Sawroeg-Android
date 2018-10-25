@@ -5,24 +5,24 @@
     build-mode="COLD"
     density="420dpi"
     format="10"
-    ir-eligibility="FIELD_ADDED"
+    ir-eligibility="METHOD_ADDED"
     plugin-version="3.0.1"
-    timestamp="1540363424137"
+    timestamp="1540438008886"
     token="3908393224972194562"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="153" />
+        duration="675" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="24" />
+        duration="66" />
     <task
         name="verifier"
-        duration="2" />
+        duration="36" />
 
     <artifact
         location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
@@ -30,16 +30,16 @@
 
     <build
         build-mode="FULL"
-        timestamp="1540361047975"
+        timestamp="1540436510259"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
         <artifact
             location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
             location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
             location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
@@ -71,8 +71,8 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="FIELD_ADDED"
-        timestamp="1540363424137"
+        ir-eligibility="METHOD_ADDED"
+        timestamp="1540438008886"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"

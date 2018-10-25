@@ -131,7 +131,46 @@ public class MainActivity extends AppCompatActivity {
 		});
 
 		popup.show();
-}
+	}
+
+	protected SQLiteDatabase getDatabase(String dbname_old, String dbname_new) {
+		String dbname_new_net = dbname_new + ".net";
+
+		SQLiteDatabase database = openOrCreateDatabase(":memory:", MODE_PRIVATE, null);
+
+		checkDatabase(dbname_old);
+		checkDatabase(dbname_new);
+
+		database.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/" + dbname_old + "' AS 'old';");
+
+		File newdict_net = new File("data/data/org.roeg.sawroeg/databases/" + dbname_new_net);
+		File newdict = new File("data/data/org.roeg.sawroeg/databases/" +dbname_new);
+		if(newdict_net.exists() && newdict.exists()) {
+			SQLiteDatabase newdb_net = openOrCreateDatabase(dbname_new_net, MODE_PRIVATE, null);
+			SQLiteDatabase newdb = openOrCreateDatabase(dbname_new, MODE_PRIVATE, null);
+
+			int version_net = DBHelper.getDBVersion(newdb_net);
+			int version = DBHelper.getDBVersion(newdb);
+
+			if(version < version_net) {
+				database.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/" + dbname_new_net + "' AS 'new';");
+			} else {
+				database.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/" + dbname_new + "' AS 'new';");
+			}
+
+			database.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM new.sawguq UNION SELECT * FROM old.sawguq;");
+		} else if(newdict_net.exists()) {
+			database.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/" + dbname_new_net + "' AS 'new';");
+			database.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM new.sawguq UNION SELECT * FROM old.sawguq;");
+		} else if(newdict.exists()) {
+			database.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/" + dbname_new + "' AS 'new';");
+			database.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM new.sawguq UNION SELECT * FROM old.sawguq;");
+		} else {
+			database.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM old.sawguq;");
+		}
+
+		return database;
+	}
 
 
 	@Override
@@ -145,41 +184,11 @@ public class MainActivity extends AppCompatActivity {
 
 
 		//Copy the database
-		db = openOrCreateDatabase(":memory:", MODE_PRIVATE, null);
+		db = getDatabase("sawguq.db", "newdict.db");
+
 		datadb = openOrCreateDatabase("data.db", MODE_PRIVATE, null);
 		datadb.execSQL("CREATE TABLE IF NOT EXISTS favs (item, data)");
 		datadb.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS idx_item ON favs (item)");
-
-		checkDatabase("sawguq.db");
-		checkDatabase("newdict.db");
-
-		db.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/sawguq.db' AS 'old';");
-
-		File newdict_net = new File("data/data/org.roeg.sawroeg/databases/newdict.db.net");
-		File newdict = new File("data/data/org.roeg.sawroeg/databases/newdict.db");
-		if(newdict_net.exists() && newdict.exists()) {
-			SQLiteDatabase newdb_net = openOrCreateDatabase("newdict.db.net", MODE_PRIVATE, null);
-			SQLiteDatabase newdb = openOrCreateDatabase("newdict.db", MODE_PRIVATE, null);
-
-			int version_net = DBHelper.getDBVersion(newdb_net);
-			int version = DBHelper.getDBVersion(newdb);
-
-			if(version < version_net) {
-				db.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/newdict.db.net' AS 'new';");
-			} else {
-				db.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/newdict.db' AS 'new';");
-			}
-
-			db.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM new.sawguq UNION SELECT * FROM old.sawguq;");
-		} else if(newdict_net.exists()) {
-			db.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/newdict.db.net' AS 'new';");
-			db.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM new.sawguq UNION SELECT * FROM old.sawguq;");
-		} else if(newdict.exists()) {
-			db.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/newdict.db' AS 'new';");
-			db.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM new.sawguq UNION SELECT * FROM old.sawguq;");
-		} else {
-			db.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM old.sawguq;");
-		}
 
 		// Create the Dict object
 		cuenghDict = new LatinChineseDict(db, new CuenghTokenizer(), "Loeng: Ra Mbouj Ok Saek Yiengh");
