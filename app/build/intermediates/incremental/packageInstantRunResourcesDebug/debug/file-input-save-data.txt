@@ -1,11 +1,15 @@
 #Internal package file, do not edit.
-#Fri Oct 12 13:13:34 CST 2018
+#Thu Oct 25 18:33:38 CST 2018
 1.base=/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/assets/debug
+2.path=newdict.db
 0.baseType=DIRECTORY
+2.base=/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/assets/debug
+2.set=ASSET
 1.baseType=DIRECTORY
-count=2
+count=3
 1.set=ASSET
-0.path=sawguq.db
+0.path=selgus.db
 0.set=ASSET
 0.base=/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/assets/debug
-1.path=newdict.db
+2.baseType=DIRECTORY
+1.path=sawguq.db

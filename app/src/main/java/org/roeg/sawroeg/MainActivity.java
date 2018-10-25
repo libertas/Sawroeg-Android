@@ -32,12 +32,14 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import org.roeg.cytokenizer.BouyeiTokenizer;
 import org.roeg.cytokenizer.CuenghTokenizer;
 
 
 public class MainActivity extends AppCompatActivity {
 
 	private Dict cuenghDict;
+	private Dict bouyeiDict;
 
 	private ArrayAdapter<String> itemsArray;
 	private ArrayList<String> items;
@@ -46,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
 	private ArrayList<String> historyStrings;
 
 
-	public static SQLiteDatabase db;
+	public static SQLiteDatabase cuenghDb;
+	public static SQLiteDatabase bouyeiDb;
 	public static SQLiteDatabase datadb;
 	private ListView list;
 
@@ -79,15 +82,17 @@ public class MainActivity extends AppCompatActivity {
 		itemsArray.notifyDataSetChanged();
 	}
 
-	private void checkDatabase(String dbname) {
+	private boolean checkDatabase(String dbname) {
 		try {
 			InputStream in = getResources().getAssets().open(dbname);
 			OutputStream out = new FileOutputStream("data/data/org.roeg.sawroeg/databases/"
 					+ dbname);
 			DBHelper.copyFile(in, out);
 		} catch (Exception e1) {
-			throw new Error("Unable to create database");
+			System.out.println("Unable to create database");
+			return false;
 		} finally {
+			return true;
 		}
 	}
 
@@ -184,15 +189,16 @@ public class MainActivity extends AppCompatActivity {
 
 
 		//Copy the database
-		db = getDatabase("sawguq.db", "newdict.db");
+		cuenghDb = getDatabase("sawguq.db", "newdict.db");
+		bouyeiDb = getDatabase("selgus.db", "newdict_bouyei.db");
 
 		datadb = openOrCreateDatabase("data.db", MODE_PRIVATE, null);
 		datadb.execSQL("CREATE TABLE IF NOT EXISTS favs (item, data)");
 		datadb.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS idx_item ON favs (item)");
 
 		// Create the Dict object
-		cuenghDict = new LatinChineseDict(db, new CuenghTokenizer(), "Loeng: Ra Mbouj Ok Saek Yiengh");
-
+		cuenghDict = new LatinChineseDict(cuenghDb, new CuenghTokenizer(), "Loeng: Ra Mbouj Ok Saek Yiengh");
+		bouyeiDict = new LatinChineseDict(bouyeiDb, new BouyeiTokenizer(), "Longl: Ral Miz Os Sagt Yiangh");
 
 		//Create the UI
 		list = (ListView) findViewById(R.id.listView);

@@ -89,7 +89,7 @@ public class LatinChineseDict extends Dict{
 
         }
         catch(Exception e){
-
+            System.out.println(e);
         }
         finally {
             if(c != null)
