@@ -4240,11 +4240,11 @@
                 {
                     "source": "/Users/libertas/Develop/Sawroeg-Android/app/src/main/res/values/strings.xml",
                     "from": {
-                        "startLines": "-1,-1,-1,-1,-1,10,-1,-1,-1",
-                        "startColumns": "-1,-1,-1,-1,-1,4,-1,-1,-1",
-                        "startOffsets": "-1,-1,-1,-1,-1,478,-1,-1,-1",
-                        "endColumns": "-1,-1,-1,-1,-1,50,-1,-1,-1",
-                        "endOffsets": "-1,-1,-1,-1,-1,524,-1,-1,-1"
+                        "startLines": "-1,-1,-1,3,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,4,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,56,-1,-1,-1,-1,-1",
+                        "endColumns": "-1,-1,-1,48,-1,-1,-1,-1,-1",
+                        "endOffsets": "-1,-1,-1,100,-1,-1,-1,-1,-1"
                     },
                     "to": {
                         "startLines": "2,768,769,770,791,798,800,801,802",

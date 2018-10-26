@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Oct 25 23:43:37 CST 2018
+#Fri Oct 26 15:20:55 CST 2018
 1.base=/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/assets/debug
 2.path=selgus.db
 0.baseType=DIRECTORY
