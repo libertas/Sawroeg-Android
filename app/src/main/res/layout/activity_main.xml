@@ -12,24 +12,25 @@
         android:id="@+id/spnLanguage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:drawSelectorOnTop="true"
         android:entries="@array/spnLanguageList"
+        android:prompt="@string/spnLanguagePromnt"
         android:spinnerMode="dropdown"
         android:layout_alignBottom="@id/textInputLayout"
         />
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/textInputLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/spnLanguage"
-        android:layout_toStartOf="@+id/spnLanguage"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_toRightOf="@+id/spnLanguage"
+        android:layout_toEndOf="@+id/spnLanguage"
+        android:layout_toLeftOf="@+id/buttonSearch"
+        android:layout_toStartOf="@+id/buttonSearch">
 
         <AutoCompleteTextView
             android:id="@+id/editText"
@@ -38,6 +39,17 @@
             android:hint="Saw"
             android:maxLines="1" />
     </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textInputLayout"
+        android:layout_alignBottom="@+id/textInputLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:minWidth="60dp"
+        android:text="Ra" />
 
     <ListView
         android:id="@+id/listView"

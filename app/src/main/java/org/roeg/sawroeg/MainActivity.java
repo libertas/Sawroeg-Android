@@ -274,6 +274,19 @@ public class MainActivity extends AppCompatActivity {
 				makePopMenu(arg1, data);
 			}
 		});
+
+		final Button ebutton = (Button) findViewById(R.id.buttonSearch);
+		ebutton.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				text.dismissDropDown();
+
+				String keyword = text.getText().toString();
+
+				newSearch(keyword);
+				list.setSelection(0);
+			}
+		});
 	}
 
 	@Override
