@@ -22,6 +22,7 @@ public class DictUpdateIntentService extends IntentService {
     private static final String ACTION_DictUpdate = "org.roeg.sawroeg.action.DICTUPDATE";
 
     private static final String EXTRA_DBNAME = "org.roeg.sawroeg.extra.DBVERSIONTOUPDATE";
+    private static final String EXTRA_DBVERSIONFILE = "org.roeg.sawroeg.extra.DBVERSIONFILE";
 
     private static final String DB_URL = "https://sawroeg.rliber.com/download/db/";
 
@@ -29,10 +30,11 @@ public class DictUpdateIntentService extends IntentService {
         super("DictUpdateIntentService");
     }
 
-    public static void startActionDictUpdate(Context context, String dbname) {
+    public static void startActionDictUpdate(Context context, String dbname, String versionFile) {
         Intent intent = new Intent(context, DictUpdateIntentService.class);
         intent.setAction(ACTION_DictUpdate);
         intent.putExtra(EXTRA_DBNAME, dbname);
+        intent.putExtra(EXTRA_DBVERSIONFILE, versionFile);
         context.startService(intent);
     }
 
@@ -42,18 +44,19 @@ public class DictUpdateIntentService extends IntentService {
             final String action = intent.getAction();
             if (ACTION_DictUpdate.equals(action)) {
                 final String dbname = intent.getStringExtra(EXTRA_DBNAME);
-                handleActionDictUpdate(dbname);
+                final String versionFile = intent.getStringExtra(EXTRA_DBVERSIONFILE);
+                handleActionDictUpdate(dbname, versionFile);
             }
         }
     }
 
-    private void handleActionDictUpdate(String dbname) {
+    private void handleActionDictUpdate(String dbname, String versionFile) {
         int version_net = 0;
         int version = 0;
 
         try {
             HttpURLConnection connection = null;
-            URL versionUrl = new URL(DB_URL + "version.txt");
+            URL versionUrl = new URL(DB_URL + versionFile);
             connection=(HttpURLConnection)versionUrl.openConnection();
             connection.setRequestMethod("GET");
 
@@ -72,16 +75,20 @@ public class DictUpdateIntentService extends IntentService {
 
             version_net = Integer.valueOf(response.toString());
 
-            File f = new File("data/data/org.roeg.sawroeg/databases/" + dbname + ".net");
+            File f_net = new File("data/data/org.roeg.sawroeg/databases/" + dbname + ".net");
+            File f = new File("data/data/org.roeg.sawroeg/databases/" + dbname);
             SQLiteDatabase db;
-            if(f.exists()) {
-                db = openOrCreateDatabase(dbname + ".net", MODE_PRIVATE, null);
+            if(f_net.exists()) {
+                db = SQLiteDatabase.openDatabase("data/data/org.roeg.sawroeg/databases/" + dbname + ".net", null, MODE_PRIVATE);
+                version = DBHelper.getDBVersion(db);
+                db.close();
+            } else if(f.exists()) {
+                db = SQLiteDatabase.openDatabase("data/data/org.roeg.sawroeg/databases/" + dbname, null, MODE_PRIVATE);
+                version = DBHelper.getDBVersion(db);
+                db.close();
             } else {
-                db = openOrCreateDatabase(dbname, MODE_PRIVATE, null);
+                version = Integer.MIN_VALUE;
             }
-
-            version = DBHelper.getDBVersion(db);
-            db.close();
         } catch(MalformedURLException e1) {
             System.out.println(e1);
             return;

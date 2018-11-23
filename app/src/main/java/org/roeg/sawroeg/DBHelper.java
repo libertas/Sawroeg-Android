@@ -29,7 +29,7 @@ public class DBHelper {
         try {
             c = db.rawQuery("SELECT value FROM info WHERE key = 'version'", null);
         } catch(SQLiteException e) {
-            return 0;
+            return Integer.MIN_VALUE;
         }
 
         if(c.moveToNext()) {
@@ -38,11 +38,11 @@ public class DBHelper {
             try {
                 version = Integer.valueOf(version_str).intValue();
             } catch(NumberFormatException e) {
-                version = 0;
+                version = Integer.MIN_VALUE;
             }
             return version;
         } else {
-            return 0;
+            return Integer.MIN_VALUE;
         }
     }
 }

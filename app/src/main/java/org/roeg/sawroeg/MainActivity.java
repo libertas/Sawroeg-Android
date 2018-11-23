@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
 		database.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/" + dbname_old + "' AS 'old';");
 
 		File newdict_net = new File("data/data/org.roeg.sawroeg/databases/" + dbname_new_net);
-		File newdict = new File("data/data/org.roeg.sawroeg/databases/" +dbname_new);
+		File newdict = new File("data/data/org.roeg.sawroeg/databases/" + dbname_new);
 		if(newdict_net.exists() && newdict.exists()) {
 			SQLiteDatabase newdb_net = openOrCreateDatabase(dbname_new_net, MODE_PRIVATE, null);
 			SQLiteDatabase newdb = openOrCreateDatabase(dbname_new, MODE_PRIVATE, null);
@@ -187,7 +187,8 @@ public class MainActivity extends AppCompatActivity {
 		Toast.makeText(MainActivity.this, "Angqcoux Ma Yungh Sawroeg~", Toast.LENGTH_SHORT).show();
 
 		//Check dict update
-		DictUpdateIntentService.startActionDictUpdate(this.getApplicationContext(), "newdict.db");
+		DictUpdateIntentService.startActionDictUpdate(this.getApplicationContext(), "newdict.db", "version.txt");
+		DictUpdateIntentService.startActionDictUpdate(this.getApplicationContext(), "newdict_bouyei.db", "version_bouyei.txt");
 
 
 		//Copy the database
