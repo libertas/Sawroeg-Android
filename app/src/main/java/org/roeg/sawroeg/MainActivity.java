@@ -220,6 +220,7 @@ public class MainActivity extends AppCompatActivity {
 				}
 				historyStrings = new ArrayList<String>();  // the default list for the adapter
 				historyStrings.addAll(dict.getAll());
+				historyArray.clear();
 				historyArray.addAll(historyStrings);
 				historyArray.notifyDataSetChanged();
 			}
