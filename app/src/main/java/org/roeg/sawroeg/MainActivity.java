@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
 	private ArrayList<String> items;
 
 	private ArrayAdapter<String> historyArray;
-	private ArrayList<String> historyStrings;
 
 
 	public static SQLiteDatabase cuenghDb;
@@ -218,6 +217,9 @@ public class MainActivity extends AppCompatActivity {
 						dict = bouyeiDict;
 						break;
 				}
+				historyArray.clear();
+				historyArray.addAll(dict.getAll());
+				historyArray.notifyDataSetChanged();
 			}
 
 			@Override
@@ -228,21 +230,13 @@ public class MainActivity extends AppCompatActivity {
 
 		list = (ListView) findViewById(R.id.listView);
 
-		text = (AutoCompleteTextView) findViewById(R.id.editText);
-		historyStrings = new ArrayList<String>();
 		List<String> allKeys = dict.getAll();
-
-		Collections.sort(allKeys, new Comparator<String>() {
-			@Override
-			public int compare(String s, String t1) {
-				return s.compareTo(t1);
-			}
-		});
-
+		List<String> historyStrings = new ArrayList<String>();  // the default list for the adapter
 		historyStrings.addAll(allKeys);
 		historyArray = new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1,
 				historyStrings);
+		text = (AutoCompleteTextView) findViewById(R.id.editText);
 		text.setAdapter(historyArray);
 
 		items = new ArrayList<String>();

@@ -18,11 +18,39 @@ public class LatinChineseDict extends Dict{
     protected SQLiteDatabase db;
     protected CYTokenizer tokenizer;
     protected String errMsg;
+    protected List<String> allKeys;
 
     LatinChineseDict(SQLiteDatabase db, CYTokenizer tokenizer, String errMsg) {
         this.db = db;
         this.tokenizer = tokenizer;
         this.errMsg = errMsg;
+
+
+        // Getting allKeys
+        this.allKeys = new ArrayList<String>();
+        Cursor c = null;
+
+        try {
+            c = db.rawQuery("SELECT distinct(key) FROM sawguq", null);
+
+            while(c.moveToNext()) {
+                // get and key words and replace "\xa0" with space
+                this.allKeys.add(c.getString(c.getColumnIndex("key")).replace(" ", " "));
+            }
+
+        } catch (Exception e) {
+
+        } finally {
+            if(c != null)
+                c.close();
+        }
+
+        Collections.sort(this.allKeys, new Comparator<String>() {
+            @Override
+            public int compare(String s, String t1) {
+                return s.compareTo(t1);
+            }
+        });
     }
 
     @Override
@@ -138,24 +166,6 @@ public class LatinChineseDict extends Dict{
 
     @Override
     public List<String> getAll() {
-        List<String> result = new ArrayList<String>();
-        Cursor c = null;
-
-        try {
-            c = db.rawQuery("SELECT distinct(key) FROM sawguq", null);
-
-            while(c.moveToNext()) {
-                // get and key words and replace "\xa0" with space
-                result.add(c.getString(c.getColumnIndex("key")).replace(" ", " "));
-            }
-
-        } catch (Exception e) {
-
-        } finally {
-            if(c != null)
-                c.close();
-        }
-
-        return result;
+        return this.allKeys;
     }
 }
