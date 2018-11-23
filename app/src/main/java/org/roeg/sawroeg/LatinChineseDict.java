@@ -118,7 +118,9 @@ public class LatinChineseDict extends Dict{
                 @Override
                 public int compare(Pair<String, Pair<Integer, Integer>> o1,
                                    Pair<String, Pair<Integer, Integer>> o2) {
-                    if(o1.second.first == o2.second.first) {
+                    if(o1.second.first == o2.second.first
+                            || o1.second.first == Integer.MAX_VALUE
+                            || o2.second.first == Integer.MAX_VALUE) {
                         return o1.second.second - o2.second.second;
                     } else {
                         return o1.second.first - o2.second.first;
