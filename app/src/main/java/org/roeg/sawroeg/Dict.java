@@ -1,6 +1,7 @@
 package org.roeg.sawroeg;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
@@ -183,7 +184,7 @@ public class Dict {
 						new Pair<Integer, Integer>(wordDistances.get(i), distances.get(i))));
 			}
 
-			pair.sort(new Comparator<Pair<String, Pair<Integer, Integer>>>() {
+			Collections.sort(pair, new Comparator<Pair<String, Pair<Integer, Integer>>>() {
 				@Override
 				public int compare(Pair<String, Pair<Integer, Integer>> o1,
 								   Pair<String, Pair<Integer, Integer>> o2) {
