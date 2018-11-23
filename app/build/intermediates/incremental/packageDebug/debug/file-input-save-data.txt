@@ -1,15 +1,15 @@
 #Internal package file, do not edit.
-#Sun Oct 21 22:34:35 CST 2018
-1.base=/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/dexMerger/debug/57
-2.path=newdict.db
+#Fri Nov 23 17:05:22 CST 2018
+1.base=/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/assets/debug
+2.path=classes.dex
 0.baseType=DIRECTORY
-2.base=/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/assets/debug
-2.set=ASSET
+2.base=/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/dexMerger/debug/57
+2.set=DEX
 1.baseType=DIRECTORY
 count=3
-1.set=DEX
-0.path=sawguq.db
+1.set=ASSET
+0.path=newdict.db
 0.set=ASSET
-0.base=/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/assets/debug
+0.base=/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/assets/debug
 2.baseType=DIRECTORY
-1.path=classes.dex
+1.path=sawguq.db

@@ -47,6 +47,10 @@ public class Dict {
 	}
 
 	private static int wordsSimilarity(List<Word> a, List<Word> b) {
+		if(a.size() == 0 && b.size() == 0) {
+			return Integer.MAX_VALUE;
+		}
+
 		int result[] = new int[a.size() + b.size() - 1];
 
 		int results[][] = new int[a.size()][b.size()];
@@ -160,7 +164,7 @@ public class Dict {
 
 		}
 		catch(Exception e){
-
+			System.out.println(e);
 		}
 		finally {
 			if(c != null)
@@ -188,7 +192,9 @@ public class Dict {
 				@Override
 				public int compare(Pair<String, Pair<Integer, Integer>> o1,
 								   Pair<String, Pair<Integer, Integer>> o2) {
-					if(o1.second.first == o2.second.first) {
+					if(o1.second.first == o2.second.first
+							||o1.second.first == Integer.MAX_VALUE
+							||o2.second.first == Integer.MAX_VALUE) {
 						return o1.second.second - o2.second.second;
 					} else {
 						return o1.second.first - o2.second.first;

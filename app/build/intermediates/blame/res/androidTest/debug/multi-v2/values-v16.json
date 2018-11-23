@@ -4,7 +4,26 @@
             "outputFile": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.0.0.aar/744edc340e093a05af5bd69bc7911754/res/values-v16/values-v16.xml",
+                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.2.aar/ee01125572ffef2021da5ccfc093e29a/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.2.aar/72e3b772bde40cdbb9548db37743a35c/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

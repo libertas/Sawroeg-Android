@@ -4,7 +4,7 @@
             "outputFile": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.0.0.aar/744edc340e093a05af5bd69bc7911754/res/values-land/values-land.xml",
+                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.2.aar/ee01125572ffef2021da5ccfc093e29a/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/design-25.0.0.aar/aa329471434d0eea3ed54c1e477a3b83/res/values-land/values-land.xml",
+                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/design-26.0.2.aar/b257e54cb63552459a73efb6c41bb4bc/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
