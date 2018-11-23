@@ -3,203 +3,143 @@
 
     <item
         is-multidex="false"
-        jar="/Users/libertas/.gradle/caches/transforms-1/files-1.1/multidex-1.0.1.aar/a4fc87ec6528c9b376f2c5b216e6d2d0/jars/classes.jar"
+        jar="/home/libertas/.gradle/caches/transforms-1/files-1.1/multidex-1.0.1.aar/a4fc87ec6528c9b376f2c5b216e6d2d0/jars/classes.jar"
         jumboMode="false"
         min-sdk-version="14"
         optimize="true"
         revision="26.0.2"
         sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/4.jar" />
+        <dex dex="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/4.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0.aar/69db4688c3386eaae9ed4dcb72cbcc0c/jars/classes.jar"
-        jumboMode="false"
-        min-sdk-version="14"
-        optimize="true"
-        revision="26.0.2"
-        sha1="db0171d21d064bab7ad72685f3c7df40544b03a8">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0.aar/02ea36e01c57b87f99c88c3a500fcfb6/jars/classes.jar"
-        jumboMode="false"
-        min-sdk-version="14"
-        optimize="true"
-        revision="26.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/11.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-10.2.1.aar/ece2e50fc191c187321cc60c9e8b91f5/jars/classes.jar"
-        jumboMode="false"
-        min-sdk-version="14"
-        optimize="true"
-        revision="26.0.2"
-        sha1="125bce1fb2d481b964fabf75f0949957ebe9ecd1">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0.aar/bbcd2437d0c6033a7a89ba7eb3e2594f/jars/classes.jar"
-        jumboMode="false"
-        min-sdk-version="14"
-        optimize="true"
-        revision="26.0.2"
-        sha1="df733e6865d662899ec247e8c3dbff3e0961b8a7">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/12.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.1.aar/acafbcbb7bd5ab890e3dcdb98d4e75a3/jars/classes.jar"
-        jumboMode="false"
-        min-sdk-version="14"
-        optimize="true"
-        revision="26.0.2"
-        sha1="19696dc358ac668e341f28c41e3387d61ccdb81d">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0.aar/d64fdc11d367f1a1e38765958999da20/jars/classes.jar"
-        jumboMode="false"
-        min-sdk-version="14"
-        optimize="true"
-        revision="26.0.2"
-        sha1="a8655e6077da9526c0c94bf063f1275430ce8574">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/13.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.1.aar/b03e223a1d1962aeed85d76accf97f4b/jars/classes.jar"
-        jumboMode="false"
-        min-sdk-version="14"
-        optimize="true"
-        revision="26.0.2"
-        sha1="bdcc2a9572f18b8c90a3a157cab6cdfc97c6c736">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/10.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0.aar/0b3b97981b3e407ce296a0b97d6f5a7c/jars/classes.jar"
-        jumboMode="false"
-        min-sdk-version="14"
-        optimize="true"
-        revision="26.0.2"
-        sha1="cbb26a4f659b17abc1f75ff735a607aa299697ac">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/17.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0.aar/05174a1c5043131fb64c71b9927b8468/jars/classes.jar"
-        jumboMode="false"
-        min-sdk-version="14"
-        optimize="true"
-        revision="26.0.2"
-        sha1="b102f892442929c3457de1ef6a94f5dda3dd8864">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/15.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0.aar/a84cbfea6b14d4d30c3512d1a6b1d5f8/jars/classes.jar"
+        jar="/home/libertas/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0.aar/ad055f8d46d365918a6a1aa185746f2f/jars/classes.jar"
         jumboMode="false"
         min-sdk-version="14"
         optimize="true"
         revision="26.0.2"
         sha1="1a94a06ec585c9423a3c03bde1f7bf9268f83d66">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/18.jar" />
+        <dex dex="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/18.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/libertas/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0.aar/b36e315ccf0dc8f1a33d32d795c26766/jars/classes.jar"
-        jumboMode="false"
-        min-sdk-version="14"
-        optimize="true"
-        revision="26.0.2"
-        sha1="2520dd452fb1f487eba29ccd2d44358f0b8da788">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/16.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/.gradle/caches/transforms-1/files-1.1/transition-26.0.0.aar/70cf71804255fd3710f472e5763d44bf/jars/classes.jar"
-        jumboMode="false"
-        min-sdk-version="14"
-        optimize="true"
-        revision="26.0.2"
-        sha1="dd2e7a567260ca4e40c09ba330f4f2d318660554">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.0.0/db09a97f4f0db8892c1a0111a4b966f97920d082/support-annotations-26.0.0.jar"
-        jumboMode="false"
-        min-sdk-version="14"
-        optimize="true"
-        revision="26.0.2"
-        sha1="db09a97f4f0db8892c1a0111a4b966f97920d082">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/20.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/.gradle/caches/transforms-1/files-1.1/firebase-common-10.2.1.aar/e46360c8bb16465e72c2ac3e70f94023/jars/classes.jar"
-        jumboMode="false"
-        min-sdk-version="14"
-        optimize="true"
-        revision="26.0.2"
-        sha1="a1aa1dd9917e887bfe732cc5e561ae6ae8f9a84a">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/Develop/Sawroeg-Android/app/libs/cytokenizer.jar"
-        jumboMode="false"
-        min-sdk-version="14"
-        optimize="true"
-        revision="26.0.2"
-        sha1="918a77057fca8f5c15bd6ad48f4f552b5fe8a627">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/.gradle/caches/transforms-1/files-1.1/design-26.0.0.aar/c3929972da55ccb998f8810e096e5edd/jars/classes.jar"
-        jumboMode="false"
-        min-sdk-version="14"
-        optimize="true"
-        revision="26.0.2"
-        sha1="d30ac0c26495d7264529e333cec806eec64dd6f3">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0.aar/73a43196e6be42b081eeedf5940118ed/jars/classes.jar"
-        jumboMode="false"
-        min-sdk-version="14"
-        optimize="true"
-        revision="26.0.2"
-        sha1="f7b86f1beb2b3625c6a1a5da6b5fc5294b64aea9">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/14.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/.gradle/caches/transforms-1/files-1.1/play-services-tasks-10.2.1.aar/3efae6bed349a5f85a65e64ef320681d/jars/classes.jar"
-        jumboMode="false"
-        min-sdk-version="14"
-        optimize="true"
-        revision="26.0.2"
-        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/libertas/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0.aar/befd6acad52b99d4508f05d4a07e5973/jars/classes.jar"
+        jar="/home/libertas/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0.aar/32e10ca0acbfa909031c361912b339c0/jars/classes.jar"
         jumboMode="false"
         min-sdk-version="14"
         optimize="true"
         revision="26.0.2"
         sha1="8602ab07133e6ee182726fa27588420dba9d6d55">
-        <dex dex="/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/19.jar" />
+        <dex dex="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/libertas/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0.aar/8f3f2500649064493110747cda273fcb/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2520dd452fb1f487eba29ccd2d44358f0b8da788">
+        <dex dex="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/libertas/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0.aar/43ba14c0e550bbfc20888a4a6769f0c7/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b102f892442929c3457de1ef6a94f5dda3dd8864">
+        <dex dex="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/libertas/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0.aar/2cd45a62387bf32e490200a7a42ea424/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a8655e6077da9526c0c94bf063f1275430ce8574">
+        <dex dex="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/libertas/.gradle/caches/transforms-1/files-1.1/transition-26.0.0.aar/3d7377526837301c208f148abb13dba9/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="dd2e7a567260ca4e40c09ba330f4f2d318660554">
+        <dex dex="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/libertas/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0.aar/7087d52f606cd3f437f5b2038aeb61c9/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f7b86f1beb2b3625c6a1a5da6b5fc5294b64aea9">
+        <dex dex="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0.aar/6d9916265b035e34f8f151f205e0c4d9/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="db0171d21d064bab7ad72685f3c7df40544b03a8">
+        <dex dex="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/libertas/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0.aar/8533b64eb9daa86233071a59caddf9d6/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="cbb26a4f659b17abc1f75ff735a607aa299697ac">
+        <dex dex="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/17.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/libertas/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0.aar/0e0575fbdd7222826c583fb9f8faee39/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="df733e6865d662899ec247e8c3dbff3e0961b8a7">
+        <dex dex="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/libertas/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.0.0/db09a97f4f0db8892c1a0111a4b966f97920d082/support-annotations-26.0.0.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="db09a97f4f0db8892c1a0111a4b966f97920d082">
+        <dex dex="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/20.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/libertas/.gradle/caches/transforms-1/files-1.1/design-26.0.0.aar/74b75ba365a9e0b9d443d9f8058df508/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d30ac0c26495d7264529e333cec806eec64dd6f3">
+        <dex dex="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/libertas/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0.aar/3019a7b3abf5bc80ac868edaf9ac3d1f/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/preDex/release/11.jar" />
     </item>
 
 </items>

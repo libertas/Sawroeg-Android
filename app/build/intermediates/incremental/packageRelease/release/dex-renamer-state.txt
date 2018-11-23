@@ -1,4 +1,4 @@
-#Fri Oct 26 15:22:02 CST 2018
-base.0=/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/dex/release/0
+#Fri Nov 23 12:14:55 CST 2018
+base.0=/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/transforms/dex/release/0
 path.0=classes.dex
 renamed.0=classes.dex
