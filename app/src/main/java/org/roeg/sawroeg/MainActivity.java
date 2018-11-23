@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
 	private ArrayAdapter<String> itemsArray;
 	private ArrayList<String> items;
 
+	private List<String> historyStrings;
 	private ArrayAdapter<String> historyArray;
 
 
@@ -217,8 +218,9 @@ public class MainActivity extends AppCompatActivity {
 						dict = bouyeiDict;
 						break;
 				}
-				historyArray.clear();
-				historyArray.addAll(dict.getAll());
+				historyStrings = new ArrayList<String>();  // the default list for the adapter
+				historyStrings.addAll(dict.getAll());
+				historyArray.addAll(historyStrings);
 				historyArray.notifyDataSetChanged();
 			}
 
@@ -231,7 +233,7 @@ public class MainActivity extends AppCompatActivity {
 		list = (ListView) findViewById(R.id.listView);
 
 		List<String> allKeys = dict.getAll();
-		List<String> historyStrings = new ArrayList<String>();  // the default list for the adapter
+		historyStrings = new ArrayList<String>();  // the default list for the adapter
 		historyStrings.addAll(allKeys);
 		historyArray = new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1,
