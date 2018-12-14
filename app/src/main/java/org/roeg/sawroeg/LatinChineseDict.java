@@ -75,10 +75,11 @@ public class LatinChineseDict extends Dict{
 
         try {
             keyword = keyword.replace(" ", " ");  // replace space with "\xa0"
-            if(issc)
+            if(issc) {
                 c = db.rawQuery("SELECT * FROM sawguq WHERE value like \"%%$s%%\"".replace("$s", keyword), null);
-            else
+            } else {
                 c = db.rawQuery("SELECT * FROM sawguq WHERE key like \"%%$s%%\"".replace("$s", keyword), null);
+            }
 
             String i, j;
             int distance;
@@ -92,13 +93,13 @@ public class LatinChineseDict extends Dict{
             }
 
             while(c.moveToNext()) {
-
                 i = c.getString(c.getColumnIndex("key"));
                 j = c.getString(c.getColumnIndex("value"));
 
                 result1.add(j);
 
                 if(issc) {
+                    j = filter(j, issc);
                     distance = Levenshtein.distance(j, keyword);
                 } else {
                     distance = Levenshtein.distance(i, keyword);

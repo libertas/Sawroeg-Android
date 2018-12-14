@@ -16,6 +16,17 @@ public abstract class Dict {
 		return tmp;
 	}
 
+	protected static String filter(String s, boolean returnChinese) {
+		StringBuilder sb = new StringBuilder();
+		for(int i = 0; i < s.length(); i++) {
+			char c = s.charAt(i);
+			if(isCharChinese(c) == returnChinese) {
+				sb.append(c);
+			}
+		}
+		return sb.toString();
+	}
+
 	protected static boolean isCharChinese(char c) {
 		Character.UnicodeBlock ub = Character.UnicodeBlock.of(c);
 		if (ub == Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS
