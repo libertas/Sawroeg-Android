@@ -6,22 +6,14 @@ import java.util.Iterator;
 import java.util.List;
 
 public abstract class Dict {
-
-	protected static int min(List a) {
-		int tmp = (Integer) a.get(0);
-		for(int i = 0; i < a.size(); i++) {
-			if((Integer) a.get(i) < tmp)
-				tmp = (Integer) a.get(i);
-		}
-		return tmp;
-	}
-
-	protected static String filter(String s, boolean returnChinese) {
+	protected static String languageFilter(String s, boolean returnChinese) {
 		StringBuilder sb = new StringBuilder();
 		for(int i = 0; i < s.length(); i++) {
 			char c = s.charAt(i);
 			if(isCharChinese(c) == returnChinese) {
 				sb.append(c);
+			} else {
+				sb.append(" ");
 			}
 		}
 		return sb.toString();
@@ -31,10 +23,7 @@ public abstract class Dict {
 		Character.UnicodeBlock ub = Character.UnicodeBlock.of(c);
 		if (ub == Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS
 				|| ub == Character.UnicodeBlock.CJK_COMPATIBILITY_IDEOGRAPHS
-				|| ub == Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS_EXTENSION_A
-				|| ub == Character.UnicodeBlock.GENERAL_PUNCTUATION
-				|| ub == Character.UnicodeBlock.CJK_SYMBOLS_AND_PUNCTUATION
-				|| ub == Character.UnicodeBlock.HALFWIDTH_AND_FULLWIDTH_FORMS) {
+				|| ub == Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS_EXTENSION_A) {
 			return true;
 		}
 		return false;

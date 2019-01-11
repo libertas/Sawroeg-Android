@@ -53,6 +53,12 @@ public class LatinChineseDict extends Dict{
         });
     }
 
+    String filter(String s) {
+        s = s.replaceAll("\\[[^\\]]+\\]", "");
+        s = s.replaceAll("（[^）]*\\）", "");
+        return s;
+    }
+
     @Override
     public Iterator<String> search(String keyword, int limit_length) {
         keyword = keyword.toLowerCase();
@@ -61,7 +67,7 @@ public class LatinChineseDict extends Dict{
 
         ArrayList<String> result = new ArrayList<>();
         ArrayList<String> result1 = new ArrayList<>();
-        ArrayList<Integer> distances = new ArrayList<>();
+        ArrayList<Float> distances = new ArrayList<>();
         ArrayList<Integer> wordDistances = new ArrayList<>();
 
         boolean issc = isStringChinese(keyword);
@@ -82,7 +88,7 @@ public class LatinChineseDict extends Dict{
             }
 
             String i, j;
-            int distance;
+            float distance;
 
             if (!issc) {
                 keys = tokenizer.tokenize(keyword);
@@ -99,8 +105,23 @@ public class LatinChineseDict extends Dict{
                 result1.add(j);
 
                 if(issc) {
-                    j = filter(j, issc);
-                    distance = Levenshtein.distance(j, keyword);
+                    List<Float> disArray = new ArrayList<>();
+                    j = languageFilter(filter(j), issc);
+
+                    String[] js = j.split("[ ]+");
+                    for(String part: js) {
+                        if(part.equals("")) {
+                            continue;
+                        }
+                        disArray.add((float)Levenshtein.distance(part, keyword));
+                    }
+
+                    distance = 0;
+                    for(Float f: disArray) {
+                        distance += f;
+                    }
+                    distance /= disArray.size();
+
                 } else {
                     distance = Levenshtein.distance(i, keyword);
 
@@ -127,32 +148,38 @@ public class LatinChineseDict extends Dict{
         }
 
         if(issc) {
-            int m, index, count = 0;
-            while(distances.size() != 0 && count++ < limit_length) {
-                m = min(distances);
-                index = distances.indexOf(m);
-                result.add(result1.get(index));
-                result1.remove(index);
-                distances.remove(index);
-                count++;
+            ArrayList<Pair<String, Float>> pair = new ArrayList<>();
+            for(int i = 0; i < result1.size(); i++) {
+                pair.add(new Pair<String, Float>(result1.get(i), distances.get(i)));
+            }
+            Collections.sort(pair, new Comparator<Pair<String, Float>>() {
+
+                @Override
+                public int compare(Pair<String, Float> o1, Pair<String, Float> o2) {
+                    return Float.compare(o1.second, o2.second);
+                }
+            });
+
+            for(int i = 0; i < pair.size() && i < limit_length; i++) {
+                result.add(pair.get(i).first + String.valueOf(pair.get(i).second));
             }
         } else {
-            ArrayList<Pair<String, Pair<Integer, Integer>>> pair = new ArrayList<>();
+            ArrayList<Pair<String, Pair<Integer, Float>>> pair = new ArrayList<>();
             for(int i = 0; i < result1.size(); i++) {
-                pair.add(new Pair<String, Pair<Integer, Integer>>(result1.get(i),
-                        new Pair<Integer, Integer>(wordDistances.get(i), distances.get(i))));
+                pair.add(new Pair<String, Pair<Integer, Float>>(result1.get(i),
+                        new Pair<Integer, Float>(wordDistances.get(i), distances.get(i))));
             }
 
-            Collections.sort(pair, new Comparator<Pair<String, Pair<Integer, Integer>>>() {
+            Collections.sort(pair, new Comparator<Pair<String, Pair<Integer, Float>>>() {
                 @Override
-                public int compare(Pair<String, Pair<Integer, Integer>> o1,
-                                   Pair<String, Pair<Integer, Integer>> o2) {
+                public int compare(Pair<String, Pair<Integer, Float>> o1,
+                                   Pair<String, Pair<Integer, Float>> o2) {
                     if(o1.second.first == o2.second.first
                             || o1.second.first == Integer.MAX_VALUE
                             || o2.second.first == Integer.MAX_VALUE) {
-                        return o1.second.second - o2.second.second;
+                        return Float.compare(o1.second.second, o2.second.second);
                     } else {
-                        return o1.second.first - o2.second.first;
+                        return Float.compare(o1.second.first, o2.second.first);
                     }
                 }
             });
