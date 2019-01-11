@@ -15,6 +15,8 @@ import java.util.Iterator;
 import java.util.List;
 
 public class LatinChineseDict extends Dict{
+    protected final int Max_Ch_Word_Length = 7;
+
     protected SQLiteDatabase db;
     protected CYTokenizer tokenizer;
     protected String errMsg;
@@ -110,7 +112,8 @@ public class LatinChineseDict extends Dict{
 
                     String[] js = j.split("[ ]+");
                     for(String part: js) {
-                        if(part.equals("")) {
+                        if(part.equals("") || (keyword.length() < Max_Ch_Word_Length
+                                && part.length() > Max_Ch_Word_Length)) {
                             continue;
                         }
                         disArray.add((float)Levenshtein.distance(part, keyword));
@@ -121,7 +124,6 @@ public class LatinChineseDict extends Dict{
                         distance += f;
                     }
                     distance /= disArray.size();
-
                 } else {
                     distance = Levenshtein.distance(i, keyword);
 
@@ -161,7 +163,7 @@ public class LatinChineseDict extends Dict{
             });
 
             for(int i = 0; i < pair.size() && i < limit_length; i++) {
-                result.add(pair.get(i).first + String.valueOf(pair.get(i).second));
+                result.add(pair.get(i).first);
             }
         } else {
             ArrayList<Pair<String, Pair<Integer, Float>>> pair = new ArrayList<>();
