@@ -16,6 +16,7 @@ import java.util.List;
 
 public class LatinChineseDict extends Dict{
     protected final int Max_Ch_Word_Length = 7;
+    protected final int Max_Ch_Word_Times = 2;
 
     protected SQLiteDatabase db;
     protected CYTokenizer tokenizer;
@@ -58,6 +59,8 @@ public class LatinChineseDict extends Dict{
     String filter(String s) {
         s = s.replaceAll("\\[[^\\]]+\\]", "");
         s = s.replaceAll("（[^）]*\\）", "");
+        s = s.replaceAll("<[^>]*>", "");
+        s = s.replaceAll("\\{[^\\}]*\\}", "");
         return s;
     }
 
@@ -110,13 +113,19 @@ public class LatinChineseDict extends Dict{
                     List<Float> disArray = new ArrayList<>();
                     j = languageFilter(filter(j), issc);
 
-                    String[] js = j.split("[ ]+");
+                    String[] js = j.split("[ ，；。]+");
                     for(String part: js) {
                         if(part.equals("") || (keyword.length() < Max_Ch_Word_Length
                                 && part.length() > Max_Ch_Word_Length)) {
                             continue;
                         }
-                        disArray.add((float)Levenshtein.distance(part, keyword));
+                        int ldistance = Levenshtein.distance(part, keyword);
+                        if(ldistance == 0) {
+                            disArray = new ArrayList<>(1);
+                            disArray.add((float)ldistance);
+                            break;
+                        }
+                        disArray.add((float)ldistance);
                     }
 
                     distance = 0;
