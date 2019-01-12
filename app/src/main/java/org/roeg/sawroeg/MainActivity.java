@@ -165,13 +165,13 @@ public class MainActivity extends AppCompatActivity {
 				database.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/" + dbname_new + "' AS 'new';");
 			}
 
-			database.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM new.sawguq UNION SELECT * FROM old.sawguq;");
+			database.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM new.sawguq UNION ALL SELECT * FROM old.sawguq;");
 		} else if(newdict_net.exists()) {
 			database.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/" + dbname_new_net + "' AS 'new';");
-			database.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM new.sawguq UNION SELECT * FROM old.sawguq;");
+			database.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM new.sawguq UNION ALL SELECT * FROM old.sawguq;");
 		} else if(newdict.exists()) {
 			database.execSQL("ATTACH DATABASE 'data/data/org.roeg.sawroeg/databases/" + dbname_new + "' AS 'new';");
-			database.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM new.sawguq UNION SELECT * FROM old.sawguq;");
+			database.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM new.sawguq UNION ALL SELECT * FROM old.sawguq;");
 		} else {
 			database.execSQL("CREATE TEMP VIEW sawguq AS SELECT * FROM old.sawguq;");
 		}

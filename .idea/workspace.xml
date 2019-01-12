@@ -19,21 +19,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/roeg/sawroeg/LatinChineseDict$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/roeg/sawroeg/LatinChineseDict$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/roeg/sawroeg/LatinChineseDict$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/roeg/sawroeg/LatinChineseDict$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/roeg/sawroeg/LatinChineseDict$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/roeg/sawroeg/LatinChineseDict$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/roeg/sawroeg/LatinChineseDict.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/roeg/sawroeg/LatinChineseDict.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/213/org/roeg/sawroeg/LatinChineseDict$1.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/213/org/roeg/sawroeg/LatinChineseDict$1.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/213/org/roeg/sawroeg/LatinChineseDict$2.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/213/org/roeg/sawroeg/LatinChineseDict$2.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/213/org/roeg/sawroeg/LatinChineseDict$3.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/213/org/roeg/sawroeg/LatinChineseDict$3.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/213/org/roeg/sawroeg/LatinChineseDict.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/213/org/roeg/sawroeg/LatinChineseDict.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/roeg/sawroeg/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/org/roeg/sawroeg/MainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/213/org/roeg/sawroeg/MainActivity.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/213/org/roeg/sawroeg/MainActivity.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/152/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/152/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/__content__.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/roeg/sawroeg/LatinChineseDict.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/roeg/sawroeg/LatinChineseDict.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/org/roeg/sawroeg/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/org/roeg/sawroeg/MainActivity.java" />
     </list>
     <ignored path="Sawroeg-Android.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -137,11 +129,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/org/roeg/sawroeg/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4440">
-              <caret line="258" column="0" lean-forward="false" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
+            <state relative-caret-position="552">
+              <caret line="173" column="91" lean-forward="false" selection-start-line="173" selection-start-column="91" selection-end-line="173" selection-end-column="91" />
               <folding />
             </state>
           </provider>
@@ -150,7 +142,7 @@
       <file leaf-file-name="DictUpdateIntentService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/org/roeg/sawroeg/DictUpdateIntentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1360">
+            <state relative-caret-position="817">
               <caret line="85" column="91" lean-forward="false" selection-start-line="85" selection-start-column="91" selection-end-line="85" selection-end-column="91" />
               <folding />
             </state>
@@ -177,7 +169,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LatinChineseDict.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LatinChineseDict.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/org/roeg/sawroeg/LatinChineseDict.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="382">
@@ -1839,11 +1831,11 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/roeg/sawroeg/DBHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/roeg/sawroeg/DictUpdateIntentService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/roeg/sawroeg/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/roeg/sawroeg/Dict.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/roeg/sawroeg/LatinChineseDict.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/roeg/sawroeg/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -2139,7 +2131,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1547263988098" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1547264703015" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2187,7 +2179,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1547263988098" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1547264703015" />
       </method>
     </configuration>
     <configuration default="true" type="AppEngineRunConfiguration" factoryName="App Engine DevAppServer">
@@ -2372,7 +2364,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1547263988100" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1547264703017" />
       </method>
     </configuration>
     <list size="6">
@@ -2993,22 +2985,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/roeg/sawroeg/DictUpdateIntentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="85" column="91" lean-forward="false" selection-start-line="85" selection-start-column="91" selection-end-line="85" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/roeg/sawroeg/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4440">
-          <caret line="258" column="0" lean-forward="false" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/org/roeg/sawroeg/Dict.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -3030,6 +3006,22 @@
             <element signature="e#5875#6547#0" expanded="true" />
             <element signature="e#6546#6547#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/roeg/sawroeg/DictUpdateIntentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="85" column="91" lean-forward="false" selection-start-line="85" selection-start-column="91" selection-end-line="85" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/roeg/sawroeg/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="173" column="91" lean-forward="false" selection-start-line="173" selection-start-column="91" selection-end-line="173" selection-end-column="91" />
+          <folding />
         </state>
       </provider>
     </entry>
