@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
 	private Dict cuenghDict;
 	private Dict bouyeiDict;
+	private Dict cuenghEngDict;
 	private Dict dict;
 
 	private ArrayAdapter<String> itemsArray;
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
 	public static SQLiteDatabase cuenghDb;
 	public static SQLiteDatabase bouyeiDb;
+	public static SQLiteDatabase cuenghEngDb;
 	public static SQLiteDatabase datadb;
 	private ListView list;
 
@@ -189,11 +191,13 @@ public class MainActivity extends AppCompatActivity {
 		//Check dict update
 		DictUpdateIntentService.startActionDictUpdate(this.getApplicationContext(), "newdict.db", "version.txt");
 		DictUpdateIntentService.startActionDictUpdate(this.getApplicationContext(), "newdict_bouyei.db", "version_bouyei.txt");
+		DictUpdateIntentService.startActionDictUpdate(this.getApplicationContext(), "newdict_cuengh_eng.db", "version_cuengh_eng.txt");
 
 
 		//Copy the database
 		cuenghDb = getDatabase("sawguq.db", "newdict.db");
 		bouyeiDb = getDatabase("selgus.db", "newdict_bouyei.db");
+		cuenghEngDb = getDatabase("cuengh_eng.db", "newdict_cuengh_eng.db");
 
 		datadb = openOrCreateDatabase("data.db", MODE_PRIVATE, null);
 		datadb.execSQL("CREATE TABLE IF NOT EXISTS favs (item, data)");
@@ -202,6 +206,7 @@ public class MainActivity extends AppCompatActivity {
 		// Create the Dict object
 		cuenghDict = new LatinChineseDict(cuenghDb, new CuenghTokenizer(), "Loeng: Ra Mbouj Ok Saek Yiengh");
 		bouyeiDict = new LatinChineseDict(bouyeiDb, new BouyeiTokenizer(), "Longl: Ral Miz Os Sagt Yiangh");
+		cuenghEngDict = new LatinChineseDict(cuenghEngDb, new CuenghTokenizer(), "Loeng: Ra Mbouj Ok Saek Yiengh");
 		dict = cuenghDict;
 
 		//Create the UI
@@ -216,6 +221,9 @@ public class MainActivity extends AppCompatActivity {
 						break;
 					case 1:
 						dict = bouyeiDict;
+						break;
+					case 2:
+						dict = cuenghEngDict;
 						break;
 				}
 				historyStrings = new ArrayList<String>();  // the default list for the adapter
