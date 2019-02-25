@@ -6,6 +6,8 @@ import java.util.Iterator;
 import java.util.List;
 
 public abstract class Dict {
+	protected List<String> allKeys;
+
 	protected static String languageFilter(String s, boolean returnChinese) {
 		StringBuilder sb = new StringBuilder();
 		for(int i = 0; i < s.length(); i++) {
@@ -90,5 +92,8 @@ public abstract class Dict {
 	}
 
 	public abstract Iterator<String> search(String keyword, int limit_length);
-	public abstract List<String> getAll();
+
+	public List<String> getAll() {
+		return this.allKeys;
+	}
 }

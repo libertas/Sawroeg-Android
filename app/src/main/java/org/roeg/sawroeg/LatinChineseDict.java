@@ -21,7 +21,6 @@ public class LatinChineseDict extends Dict{
     protected SQLiteDatabase db;
     protected CYTokenizer tokenizer;
     protected String errMsg;
-    protected List<String> allKeys;
 
     LatinChineseDict(SQLiteDatabase db, CYTokenizer tokenizer, String errMsg) {
         this.db = db;
@@ -201,10 +200,5 @@ public class LatinChineseDict extends Dict{
         }
 
         return result.iterator();
-    }
-
-    @Override
-    public List<String> getAll() {
-        return this.allKeys;
     }
 }
