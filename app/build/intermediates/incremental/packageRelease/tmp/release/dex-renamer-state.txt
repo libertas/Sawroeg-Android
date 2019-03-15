@@ -1,0 +1,4 @@
+#Fri Mar 15 21:02:23 CST 2019
+base.0=/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/dex/release/mergeDexRelease/out
+path.0=classes.dex
+renamed.0=classes.dex
