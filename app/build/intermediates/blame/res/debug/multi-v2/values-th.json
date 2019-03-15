@@ -1,83 +1,44 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-th/values-th.xml",
-            "map": [
-                {
-                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.1.aar/b03e223a1d1962aeed85d76accf97f4b/res/values-th/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "285",
-                        "endColumns": "187",
-                        "endOffsets": "472"
-                    },
-                    "to": {
-                        "startLines": "28",
-                        "startColumns": "4",
-                        "startOffsets": "2998",
-                        "endColumns": "187",
-                        "endOffsets": "3181"
-                    }
-                },
-                {
-                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.1.aar/acafbcbb7bd5ab890e3dcdb98d4e75a3/res/values-th/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "283,387,566,687,792,987,1109,1242,1445,1548,1726,1846,2045,2222,2312,2406",
-                        "endColumns": "103,178,120,104,194,121,132,202,102,177,119,198,176,89,93,108",
-                        "endOffsets": "386,565,686,791,986,1108,1241,1444,1547,1725,1845,2044,2221,2311,2405,2514"
-                    },
-                    "to": {
-                        "startLines": "21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2019,2127,2306,2431,2540,2735,2861,3186,3389,3496,3674,3798,3997,4178,4272,4370",
-                        "endColumns": "107,178,124,108,194,125,136,202,106,177,123,198,180,93,97,112",
-                        "endOffsets": "2122,2301,2426,2535,2730,2856,2993,3384,3491,3669,3793,3992,4173,4267,4365,4478"
-                    }
-                },
-                {
-                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0.aar/69db4688c3386eaae9ed4dcb72cbcc0c/res/values-th/values-th.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,160,268,391,489,597,686,788,898,975,1053,1134,1242,1346,1444,1552,1657,1758,1874,1969,2050",
-                        "endColumns": "104,107,122,97,107,88,101,109,76,77,80,107,103,97,107,104,100,115,94,80,100",
-                        "endOffsets": "155,263,386,484,592,681,783,893,970,1048,1129,1237,1341,1439,1547,1652,1753,1869,1964,2045,2146"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,38,39",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,210,318,441,539,647,736,838,948,1025,1103,1184,1292,1396,1494,1602,1707,1808,1924,4483,4564",
-                        "endColumns": "104,107,122,97,107,88,101,109,76,77,80,107,103,97,107,104,100,115,94,80,100",
-                        "endOffsets": "205,313,436,534,642,731,833,943,1020,1098,1179,1287,1391,1489,1597,1702,1803,1919,2014,4559,4660"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-th/values-th.xml",
             "map": [
                 {
-                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.1.aar/b03e223a1d1962aeed85d76accf97f4b/res/values-th/values.xml",
+                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/5a86a1b76e966b3e475a6240fc793799/res/values-th/values-th.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "285",
-                        "endColumns": "187",
-                        "endOffsets": "472"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "28",
+                        "startLines": "47",
                         "startColumns": "4",
-                        "startOffsets": "2998",
-                        "endColumns": "187",
-                        "endOffsets": "3181"
+                        "startOffsets": "5309",
+                        "endColumns": "100",
+                        "endOffsets": "5405"
                     }
                 },
                 {
-                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.1.aar/acafbcbb7bd5ab890e3dcdb98d4e75a3/res/values-th/values.xml",
+                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/215f7ade92a0a90e1b38ef6c288f2e70/res/values-th/values-th.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,210,308,416,505,607,717,794,872,963,1056,1152,1246,1347,1440,1535,1629,1720,1811,1892,2000,2104,2202,2310,2415,2516,2669,2764",
+                        "endColumns": "104,97,107,88,101,109,76,77,90,92,95,93,100,92,94,93,90,90,80,107,103,97,107,104,100,152,94,80",
+                        "endOffsets": "205,303,411,500,602,712,789,867,958,1051,1147,1241,1342,1435,1530,1624,1715,1806,1887,1995,2099,2197,2305,2410,2511,2664,2759,2840"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,46",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,210,308,416,505,607,717,794,872,963,1056,1152,1246,1347,1440,1535,1629,1720,1811,1892,2000,2104,2202,2310,2415,2516,2669,5228",
+                        "endColumns": "104,97,107,88,101,109,76,77,90,92,95,93,100,92,94,93,90,90,80,107,103,97,107,104,100,152,94,80",
+                        "endOffsets": "205,303,411,500,602,712,789,867,958,1051,1147,1241,1342,1435,1530,1624,1715,1806,1887,1995,2099,2197,2305,2410,2511,2664,2759,5304"
+                    }
+                },
+                {
+                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.1.aar/92ba308afa0a8acd7ccf010bc0a342eb/res/values-th/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -86,28 +47,28 @@
                         "endOffsets": "386,565,686,791,986,1108,1241,1444,1547,1725,1845,2044,2221,2311,2405,2514"
                     },
                     "to": {
-                        "startLines": "21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37",
+                        "startLines": "29,30,31,32,33,34,35,37,38,39,40,41,42,43,44,45",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2019,2127,2306,2431,2540,2735,2861,3186,3389,3496,3674,3798,3997,4178,4272,4370",
+                        "startOffsets": "2764,2872,3051,3176,3285,3480,3606,3931,4134,4241,4419,4543,4742,4923,5017,5115",
                         "endColumns": "107,178,124,108,194,125,136,202,106,177,123,198,180,93,97,112",
-                        "endOffsets": "2122,2301,2426,2535,2730,2856,2993,3384,3491,3669,3793,3992,4173,4267,4365,4478"
+                        "endOffsets": "2867,3046,3171,3280,3475,3601,3738,4129,4236,4414,4538,4737,4918,5012,5110,5223"
                     }
                 },
                 {
-                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0.aar/6d9916265b035e34f8f151f205e0c4d9/res/values-th/values-th.xml",
+                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.1.aar/0f3094219732be656d686c3a11bd484d/res/values-th/values.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,160,268,391,489,597,686,788,898,975,1053,1134,1242,1346,1444,1552,1657,1758,1874,1969,2050",
-                        "endColumns": "104,107,122,97,107,88,101,109,76,77,80,107,103,97,107,104,100,115,94,80,100",
-                        "endOffsets": "155,263,386,484,592,681,783,893,970,1048,1129,1237,1341,1439,1547,1652,1753,1869,1964,2045,2146"
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "285",
+                        "endColumns": "187",
+                        "endOffsets": "472"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,38,39",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,210,318,441,539,647,736,838,948,1025,1103,1184,1292,1396,1494,1602,1707,1808,1924,4483,4564",
-                        "endColumns": "104,107,122,97,107,88,101,109,76,77,80,107,103,97,107,104,100,115,94,80,100",
-                        "endOffsets": "205,313,436,534,642,731,833,943,1020,1098,1179,1287,1391,1489,1597,1702,1803,1919,2014,4559,4660"
+                        "startLines": "36",
+                        "startColumns": "4",
+                        "startOffsets": "3743",
+                        "endColumns": "187",
+                        "endOffsets": "3926"
                     }
                 }
             ]

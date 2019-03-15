@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ko/values-ko.xml",
+            "outputFile": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ko/values-ko.xml",
             "map": [
                 {
-                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.1.aar/acafbcbb7bd5ab890e3dcdb98d4e75a3/res/values-ko/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "283,385,556,670,770,944,1059,1179,1383,1484,1651,1767,1944,2089,2174,2258",
-                        "endColumns": "101,170,113,99,173,114,119,203,100,166,115,176,144,84,83,99",
-                        "endOffsets": "384,555,669,769,943,1058,1178,1382,1483,1650,1766,1943,2088,2173,2257,2357"
-                    },
-                    "to": {
-                        "startLines": "21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "1940,2046,2217,2335,2439,2613,2732,3036,3240,3345,3512,3632,3809,3958,4047,4135",
-                        "endColumns": "105,170,117,103,173,118,123,203,104,166,119,176,148,88,87,103",
-                        "endOffsets": "2041,2212,2330,2434,2608,2727,2851,3235,3340,3507,3627,3804,3953,4042,4130,4234"
-                    }
-                },
-                {
-                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.1.aar/b03e223a1d1962aeed85d76accf97f4b/res/values-ko/values.xml",
+                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.1.aar/b03e223a1d1962aeed85d76accf97f4b/res/values-ko/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0.aar/69db4688c3386eaae9ed4dcb72cbcc0c/res/values-ko/values-ko.xml",
+                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.1.aar/acafbcbb7bd5ab890e3dcdb98d4e75a3/res/values-ko/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "283,385,556,670,770,944,1059,1179,1383,1484,1651,1767,1944,2089,2174,2258",
+                        "endColumns": "101,170,113,99,173,114,119,203,100,166,115,176,144,84,83,99",
+                        "endOffsets": "384,555,669,769,943,1058,1178,1382,1483,1650,1766,1943,2088,2173,2257,2357"
+                    },
+                    "to": {
+                        "startLines": "21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1940,2046,2217,2335,2439,2613,2732,3036,3240,3345,3512,3632,3809,3958,4047,4135",
+                        "endColumns": "105,170,117,103,173,118,123,203,104,166,119,176,148,88,87,103",
+                        "endOffsets": "2041,2212,2330,2434,2608,2727,2851,3235,3340,3507,3627,3804,3953,4042,4130,4234"
+                    }
+                },
+                {
+                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0.aar/6d9916265b035e34f8f151f205e0c4d9/res/values-ko/values-ko.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

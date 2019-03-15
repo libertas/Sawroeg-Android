@@ -1,0 +1,23 @@
+#Internal package file, do not edit.
+#Fri Mar 15 18:35:42 CST 2019
+2.base=/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
+0.path=classes.dex
+2.baseType=DIRECTORY
+3.base=/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
+2.set=ASSET
+1.path=newdict.db
+4.base=/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
+count=5
+2.path=cuengh_eng.db
+4.set=ASSET
+3.path=sawguq.db
+3.baseType=DIRECTORY
+1.set=ASSET
+4.path=selgus.db
+1.baseType=DIRECTORY
+0.base=/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/dex/debug/mergeDexDebug/out
+0.baseType=DIRECTORY
+3.set=ASSET
+1.base=/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
+4.baseType=DIRECTORY
+0.set=DEX

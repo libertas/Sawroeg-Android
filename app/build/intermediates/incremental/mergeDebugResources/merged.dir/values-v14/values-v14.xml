@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#448AFF</color>
+    <color name="primary">#2a9ef1</color>
+    <color name="primaryDark">#000000</color>
+    <color name="textHint">#7F7F7F</color>
+    <color name="textPrimary">#000000</color>
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+    </style>
+</resources>

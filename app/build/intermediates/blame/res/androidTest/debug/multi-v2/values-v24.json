@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0.aar/69db4688c3386eaae9ed4dcb72cbcc0c/res/values-v24/values-v24.xml",
+                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0.aar/6d9916265b035e34f8f151f205e0c4d9/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/libertas/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0.aar/0b3b97981b3e407ce296a0b97d6f5a7c/res/values-v24/values-v24.xml",
+                    "source": "/home/libertas/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0.aar/8533b64eb9daa86233071a59caddf9d6/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
