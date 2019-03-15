@@ -1416,6 +1416,7 @@ string abc_toolbar_collapse_description
 string action_copy
 string action_settings
 string app_name
+string app_name_version
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string character_counter_content_description

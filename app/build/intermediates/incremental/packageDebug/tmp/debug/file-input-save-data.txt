@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Mar 15 18:35:42 CST 2019
+#Fri Mar 15 19:10:53 CST 2019
 2.base=/home/libertas/Develop/Sawroeg-Android/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
 0.path=classes.dex
 2.baseType=DIRECTORY

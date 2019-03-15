@@ -101,9 +101,9 @@ ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.x
 	android:name
 		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:16:27-74
 activity#org.roeg.sawroeg.MainActivity
-ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:19:9-21:57
+ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:19:9-21:65
 	android:label
-		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:21:13-45
+		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:21:13-53
 	android:name
 		ADDED from /home/libertas/Develop/Sawroeg-Android/app/src/main/AndroidManifest.xml:20:13-41
 activity#org.roeg.sawroeg.SettingsActivity
