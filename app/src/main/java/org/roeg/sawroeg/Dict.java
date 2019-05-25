@@ -7,7 +7,7 @@ import java.util.List;
 
 public abstract class Dict {
 
-	protected static int min(List a) {
+	public static int min(List a) {
 		int tmp = (Integer) a.get(0);
 		for(int i = 0; i < a.size(); i++) {
 			if((Integer) a.get(i) < tmp)
@@ -16,7 +16,7 @@ public abstract class Dict {
 		return tmp;
 	}
 
-	protected static boolean isCharChinese(char c) {
+	public static boolean isCharChinese(char c) {
 		Character.UnicodeBlock ub = Character.UnicodeBlock.of(c);
 		if (ub == Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS
 				|| ub == Character.UnicodeBlock.CJK_COMPATIBILITY_IDEOGRAPHS
@@ -29,7 +29,7 @@ public abstract class Dict {
 		return false;
 	}
 
-	protected static boolean isStringChinese(String s) {
+	public static boolean isStringChinese(String s) {
 		for(char i:s.toCharArray()) {
 			if(isCharChinese(i))
 				return true;
@@ -37,7 +37,7 @@ public abstract class Dict {
 		return false;
 	}
 
-	protected static int wordsSimilarity(List<Word> a, List<Word> b) {
+	public static int wordsSimilarity(List<Word> a, List<Word> b) {
 		if(a.size() == 0 || b.size() == 0) {
 			return Integer.MAX_VALUE;
 		}
