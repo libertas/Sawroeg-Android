@@ -6,9 +6,9 @@ import java.util.Iterator;
 import java.util.List;
 
 public abstract class Dict {
-	protected List<String> allKeys;
+	public List<String> allKeys;
 
-	protected static String languageFilter(String s, boolean returnChinese) {
+	public static String languageFilter(String s, boolean returnChinese) {
 		StringBuilder sb = new StringBuilder();
 		for(int i = 0; i < s.length(); i++) {
 			char c = s.charAt(i);
@@ -21,7 +21,7 @@ public abstract class Dict {
 		return sb.toString();
 	}
 
-	protected static boolean isCharChinese(char c) {
+	public static boolean isCharChinese(char c) {
 		Character.UnicodeBlock ub = Character.UnicodeBlock.of(c);
 		if (ub == Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS
 				|| ub == Character.UnicodeBlock.CJK_COMPATIBILITY_IDEOGRAPHS
@@ -31,7 +31,7 @@ public abstract class Dict {
 		return false;
 	}
 
-	protected static boolean isStringChinese(String s) {
+	public static boolean isStringChinese(String s) {
 		for(char i:s.toCharArray()) {
 			if(isCharChinese(i))
 				return true;
@@ -39,7 +39,7 @@ public abstract class Dict {
 		return false;
 	}
 
-	protected static int wordsSimilarity(List<Word> a, List<Word> b) {
+	public static int wordsSimilarity(List<Word> a, List<Word> b) {
 		if(a.size() == 0 || b.size() == 0) {
 			return Integer.MAX_VALUE;
 		}
