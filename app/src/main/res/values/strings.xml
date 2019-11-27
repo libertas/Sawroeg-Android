@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Sawroeg</string>
-    <string name="app_name_version">Sawroeg 4.1</string>
+    <string name="app_name_version">Sawroeg 4.2</string>
     <string name="action_settings">Sietceiq</string>
     <string name="title_activity_settings">Sietceiq</string>
     <string name="title_activity_vocabulary">Diuzmoeg Hoj</string>
