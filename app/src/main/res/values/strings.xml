@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Sawroeg</string>
-    <string name="app_name_version">Sawroeg 4.2</string>
+    <string name="app_name_version">Sawroeg 4.3</string>
     <string name="action_settings">Sietceiq</string>
     <string name="title_activity_settings">Sietceiq</string>
     <string name="title_activity_vocabulary">Diuzmoeg Hoj</string>
@@ -10,6 +10,8 @@
     <string name="action_copy">Guhmoq</string>
     <string name="coqhaeuj_diuzmoeg_hoj">Coqhaeuj Diuzmoeg Hoj</string>
     <string name="spnLanguagePromnt">Lieg</string>
+    <string name="action_close">Ndaep</string>
+    <string name="blank_page">MBAW BYOUQ</string>
     <string-array name="spnLanguageList">
         <item>Cuengh-Gun</item>
         <item>Qyaix-Has</item>

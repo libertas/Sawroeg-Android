@@ -7,6 +7,7 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.List;
 
@@ -17,8 +18,11 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.support.design.widget.TabItem;
+import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.PopupMenu;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -35,6 +39,7 @@ import android.widget.Toast;
 
 import org.roeg.cytokenizer.BouyeiTokenizer;
 import org.roeg.cytokenizer.CuenghTokenizer;
+import org.roeg.cytokenizer.Main;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -59,8 +64,46 @@ public class MainActivity extends AppCompatActivity {
 
 	private AutoCompleteTextView text;
 
+	private Hashtable<Integer, ArrayList<String>> spinnerTabDict = new Hashtable<>();
+	private int spinnerLastPosition = 0;
+
+	private void createTab(String keyword) {
+		keyword = keyword.trim().toLowerCase();
+
+		if(keyword.equals("")) {
+			return;
+		}
+
+		final TabLayout tabs = (TabLayout) findViewById((R.id.TabLayout));
+		TabLayout.Tab tab = tabs.getTabAt(tabs.getSelectedTabPosition());
+		if(tab.getText().toString().equals(getResources().getString(R.string.blank_page))) {
+			if(!keyword.equals("")) {
+				tab.setText(keyword);
+			}
+		} else if(tab.getText().toString().equals(keyword)){
+			return;
+		} else {
+			TabLayout.Tab newTab = null;
+			for(int i = 0; i < tabs.getTabCount(); i++) {
+				if(tabs.getTabAt(i).getText().toString().toLowerCase().equals(keyword)) {
+					newTab = tabs.getTabAt(i);
+					break;
+				}
+			}
+			if(newTab == null) {
+				newTab = tabs.newTab().setText(keyword);
+				tabs.addTab(newTab);
+			}
+			newTab.select();
+		}
+	}
+
 	private void newSearch(String keyword) {
-		keyword = keyword.trim();
+		keyword = keyword.trim().toLowerCase();
+
+		if(keyword.equals("")) {
+			return;
+		}
 
 		SharedPreferences settings = getSharedPreferences("org.roeg.sawroeg_preferences", MODE_PRIVATE);
 		String length_s = settings.getString("length_edit", "500");
@@ -181,7 +224,6 @@ public class MainActivity extends AppCompatActivity {
 		return database;
 	}
 
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -210,10 +252,17 @@ public class MainActivity extends AppCompatActivity {
 		dict = cuenghDict;
 
 		//Create the UI
+		text = (AutoCompleteTextView) findViewById(R.id.editText);
+		final TabLayout tabs = (TabLayout) findViewById((R.id.TabLayout));
+
 		final Spinner spinner = (Spinner) findViewById(R.id.spnLanguage);
 		spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 			@Override
 			public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+				if(position == spinnerLastPosition) {
+					return;
+				}
+
 				switch (position) {
 					default:
 					case 0:
@@ -231,6 +280,23 @@ public class MainActivity extends AppCompatActivity {
 				historyArray.clear();
 				historyArray.addAll(historyStrings);
 				historyArray.notifyDataSetChanged();
+
+				ArrayList<String> tabArray = new ArrayList<>();
+				for(int i = 0; i < tabs.getTabCount(); i++) {
+					tabArray.add(tabs.getTabAt(i).getText().toString());
+				}
+				spinnerTabDict.put(spinnerLastPosition, tabArray);
+				spinnerLastPosition = position;
+				tabs.removeAllTabs();
+				if(spinnerTabDict.containsKey(position)) {
+					for(String tabName: spinnerTabDict.get(position)) {
+						tabs.addTab(tabs.newTab().setText(tabName));
+					}
+				} else {
+					tabs.addTab(tabs.newTab().setText(getResources().getString(R.string.blank_page)));
+				}
+
+				text.setText("");
 			}
 
 			@Override
@@ -247,7 +313,6 @@ public class MainActivity extends AppCompatActivity {
 		historyArray = new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1,
 				historyStrings);
-		text = (AutoCompleteTextView) findViewById(R.id.editText);
 		text.setAdapter(historyArray);
 
 		items = new ArrayList<String>();
@@ -263,8 +328,9 @@ public class MainActivity extends AppCompatActivity {
 						text.dismissDropDown();
 
 						String keyword = text.getText().toString();
-
+						createTab((keyword));
 						newSearch(keyword);
+
 						list.setSelection(0);
 						return true;
 					}
@@ -281,6 +347,54 @@ public class MainActivity extends AppCompatActivity {
 			}
 		});
 
+		tabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+			@Override
+			public void onTabSelected(TabLayout.Tab tab) {
+				Log.e("TAG","tab position:"+tab.getPosition());
+
+				String tabword = tab.getText().toString();
+				text.setText(tabword);
+				text.setSelection(tabword.length());
+
+				newSearch(tabword);
+			}
+			@Override
+			public void onTabUnselected(TabLayout.Tab tab) {
+			}
+
+			@Override
+			public void onTabReselected(TabLayout.Tab tab) {
+				PopupMenu popup = new PopupMenu(MainActivity.this, (View)tabs);
+				MenuInflater inflater = popup.getMenuInflater();
+
+				inflater.inflate(R.menu.tabpopmenu, popup.getMenu());
+
+				popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+
+					@Override
+					public boolean onMenuItemClick(MenuItem item) {
+						int id = item.getItemId();
+						switch(id) {
+							case R.id.action_close:
+								if(tabs.getTabCount() > 1) {
+									tabs.removeTabAt(tabs.getSelectedTabPosition());
+								} else {
+									tabs.getTabAt(0).setText(R.string.blank_page);
+									text.setText("");
+									items.clear();
+									itemsArray.notifyDataSetChanged();
+								}
+								break;
+						}
+
+						return false;
+					}
+				});
+
+				popup.show();
+			}
+		});
+
 		final Button ebutton = (Button) findViewById(R.id.buttonSearch);
 		ebutton.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -288,8 +402,9 @@ public class MainActivity extends AppCompatActivity {
 				text.dismissDropDown();
 
 				String keyword = text.getText().toString();
-
+				createTab(keyword);
 				newSearch(keyword);
+
 				list.setSelection(0);
 			}
 		});
