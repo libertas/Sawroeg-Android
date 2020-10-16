@@ -80,25 +80,24 @@ public class MainActivity extends AppCompatActivity {
 			if(!keyword.equals("")) {
 				tab.setText(keyword);
 			}
-		} else if(tab.getText().toString().equals(keyword)){
-			return;
 		} else {
-			TabLayout.Tab newTab = null;
 			for(int i = 0; i < tabs.getTabCount(); i++) {
 				if(tabs.getTabAt(i).getText().toString().toLowerCase().equals(keyword)) {
-					newTab = tabs.getTabAt(i);
+					tabs.removeTabAt(i);
 					break;
 				}
 			}
-			if(newTab == null) {
-				newTab = tabs.newTab().setText(keyword);
-				tabs.addTab(newTab);
+			TabLayout.Tab newTab = tabs.newTab().setText(keyword);
+			tabs.addTab(newTab, 0);
+			if(!newTab.isSelected()) {
+				newTab.select();
 			}
-			newTab.select();
 		}
 	}
 
 	private void newSearch(String keyword) {
+		text.dismissDropDown();
+
 		keyword = keyword.trim().toLowerCase();
 
 		if(keyword.equals("")) {
@@ -296,7 +295,15 @@ public class MainActivity extends AppCompatActivity {
 					tabs.addTab(tabs.newTab().setText(getResources().getString(R.string.blank_page)));
 				}
 
-				text.setText("");
+				String tabword = tabs.getTabAt(0).getText().toString();
+				if(tabword.equals(getResources().getString(R.string.blank_page))) {
+					text.setText("");
+				} else {
+					text.setText(tabword);
+					text.setSelection(tabword.length());
+				}
+
+				text.dismissDropDown();
 			}
 
 			@Override
@@ -330,8 +337,6 @@ public class MainActivity extends AppCompatActivity {
 						String keyword = text.getText().toString();
 						createTab((keyword));
 						newSearch(keyword);
-
-						list.setSelection(0);
 						return true;
 					}
 				return false;
@@ -404,8 +409,6 @@ public class MainActivity extends AppCompatActivity {
 				String keyword = text.getText().toString();
 				createTab(keyword);
 				newSearch(keyword);
-
-				list.setSelection(0);
 			}
 		});
 	}
