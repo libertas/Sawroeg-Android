@@ -144,9 +144,9 @@ public class MainActivity extends AppCompatActivity {
 
 	private void copyToClip(String data) {
 		ClipboardManager cm = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-		ClipData cd = ClipData.newPlainText("Sawroeg", data);
+		ClipData cd = ClipData.newPlainText(this.getString(R.string.app_name), data);
 		cm.setPrimaryClip(cd);
-		Toast.makeText(MainActivity.this, "Guhmoq diuzmoeg \"" + data + "\"", Toast.LENGTH_SHORT).show();
+		Toast.makeText(MainActivity.this, "Guhmoq diuzmoeg\n\"" + data + "\"", Toast.LENGTH_SHORT).show();
 	}
 
 	private void addToFav(String data) {
@@ -167,13 +167,14 @@ public class MainActivity extends AppCompatActivity {
 
 			@Override
 			public boolean onMenuItemClick(MenuItem item) {
+				final String data_line = data.replace("\n", " ");
 				int id = item.getItemId();
 				switch(id) {
 					case R.id.action_copy:
-						copyToClip(data);
+						copyToClip(data_line);
 						break;
 					case R.id.coqhaeuj_diuzmoeg_hoj:
-						addToFav(data);
+						addToFav(data_line);
 						break;
 				}
 
