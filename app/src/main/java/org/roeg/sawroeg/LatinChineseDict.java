@@ -85,7 +85,7 @@ public class LatinChineseDict extends Dict{
         }
 
         try {
-            keyword = keyword.replace(" ", " ");  // replace space with "\xa0"
+//            keyword = keyword.replace(" ", " ");  // replace space with "\xa0"
             if(issc) {
                 c = db.rawQuery("SELECT * FROM sawguq WHERE value like \"%%$s%%\"".replace("$s", keyword), null);
             } else {
