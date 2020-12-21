@@ -1,5 +1,7 @@
 package org.roeg.sawroeg;
 
+import android.util.Pair;
+
 import org.roeg.cytokenizer.Word;
 
 import java.util.Iterator;
@@ -91,7 +93,7 @@ public abstract class Dict {
 		return ans;
 	}
 
-	public abstract Iterator<String> search(String keyword, int limit_length);
+	public abstract Iterator<Pair<String, String>>  search(String keyword, int limit_length);
 
 	public List<String> getAll() {
 		return this.allKeys;

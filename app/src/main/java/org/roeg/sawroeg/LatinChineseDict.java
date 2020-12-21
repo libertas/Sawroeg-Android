@@ -64,13 +64,14 @@ public class LatinChineseDict extends Dict{
     }
 
     @Override
-    public Iterator<String> search(String keyword, int limit_length) {
+    // Iterator<Pair<KEY, CONTENT>>
+    public Iterator<Pair<String, String>> search(String keyword, int limit_length) {
         keyword = keyword.toLowerCase();
 
         List<Word> keys = null;
 
-        ArrayList<String> result = new ArrayList<>();
-        ArrayList<String> result1 = new ArrayList<>();
+        ArrayList<Pair<String, String>> result = new ArrayList<>();
+        ArrayList<Pair<String, String>> result1 = new ArrayList<>();
         ArrayList<Float> distances = new ArrayList<>();
         ArrayList<Integer> wordDistances = new ArrayList<>();
 
@@ -79,7 +80,7 @@ public class LatinChineseDict extends Dict{
         Cursor c = null;
         if(keyword.length() < 1)
         {
-            result.add(errMsg);
+            result.add(new Pair<>("", errMsg));
             return result.iterator();
         }
 
@@ -106,7 +107,7 @@ public class LatinChineseDict extends Dict{
                 i = c.getString(c.getColumnIndex("key"));
                 j = c.getString(c.getColumnIndex("value"));
 
-                result1.add(j);
+                result1.add(new Pair<>(i, j));
 
                 if(issc) {
                     List<Float> disArray = new ArrayList<>();
@@ -158,14 +159,14 @@ public class LatinChineseDict extends Dict{
         }
 
         if(issc) {
-            ArrayList<Pair<String, Float>> pair = new ArrayList<>();
+            ArrayList<Pair<Pair<String, String>, Float>> pair = new ArrayList<>();
             for(int i = 0; i < result1.size(); i++) {
-                pair.add(new Pair<String, Float>(result1.get(i), distances.get(i)));
+                pair.add(new Pair<>(result1.get(i), distances.get(i)));
             }
-            Collections.sort(pair, new Comparator<Pair<String, Float>>() {
+            Collections.sort(pair, new Comparator<Pair<Pair<String, String>, Float>>() {
 
                 @Override
-                public int compare(Pair<String, Float> o1, Pair<String, Float> o2) {
+                public int compare(Pair<Pair<String, String>, Float> o1, Pair<Pair<String, String>, Float> o2) {
                     return Float.compare(o1.second, o2.second);
                 }
             });
@@ -174,16 +175,16 @@ public class LatinChineseDict extends Dict{
                 result.add(pair.get(i).first);
             }
         } else {
-            ArrayList<Pair<String, Pair<Integer, Float>>> pair = new ArrayList<>();
+            ArrayList<Pair<Pair<String, String>, Pair<Integer, Float>>> pair = new ArrayList<>();
             for(int i = 0; i < result1.size(); i++) {
-                pair.add(new Pair<String, Pair<Integer, Float>>(result1.get(i),
-                        new Pair<Integer, Float>(wordDistances.get(i), distances.get(i))));
+                pair.add(new Pair<>(result1.get(i),
+                        new Pair<>(wordDistances.get(i), distances.get(i))));
             }
 
-            Collections.sort(pair, new Comparator<Pair<String, Pair<Integer, Float>>>() {
+            Collections.sort(pair, new Comparator<Pair<Pair<String, String>, Pair<Integer, Float>>>() {
                 @Override
-                public int compare(Pair<String, Pair<Integer, Float>> o1,
-                                   Pair<String, Pair<Integer, Float>> o2) {
+                public int compare(Pair<Pair<String, String>, Pair<Integer, Float>> o1,
+                                   Pair<Pair<String, String>, Pair<Integer, Float>> o2) {
                     if(o1.second.first == o2.second.first
                             || o1.second.first == Integer.MAX_VALUE
                             || o2.second.first == Integer.MAX_VALUE) {

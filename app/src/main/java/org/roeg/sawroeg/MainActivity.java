@@ -23,6 +23,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.PopupMenu;
 import android.util.Log;
+import android.util.Pair;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -113,14 +114,14 @@ public class MainActivity extends AppCompatActivity {
 			limit_length = 500;
 		}
 
-		Iterator<String> result = dict.search(keyword, limit_length);
+		Iterator<Pair<String, String>> result = dict.search(keyword, limit_length);
 
 		items.clear();
 
 		while (result.hasNext()) {
-			String[] tmp = result.next().split(" ", 2);
-			String key = tmp[0];
-			String value = tmp[1];
+			Pair<String, String> tmp = result.next();
+			String key = tmp.first;
+			String value = tmp.second.replace(key, "").trim();
 
 			items.add(key + "\n" + value);
 		}
